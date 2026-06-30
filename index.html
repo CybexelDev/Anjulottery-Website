@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anju Lottery</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        instrument: ["Instrument Sans", "sans-serif"],
+                        cormorant: ["Cormorant Garamond", "serif"],
+                        inter: ["Inter", "sans-serif"],
+                        montserrat: ["Montserrat", "sans-serif"],
+                        hanken: ["Hanken Grotesk", "sans-serif"],
+                        libre: ["Libre Caslon Text", "serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+
+    <!-- <link rel="stylesheet" href="./dist/output.css"> -->
+    <link rel="stylesheet" href="input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&family=Hanken+Grotesk:wght@100..900&family=Inter:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+<body class="bg-[#0F0B3C] text-white">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="relative border-b border-white/10 bg-[#18124A]">
+        <div class="mx-auto px-5 lg:px-[60px]">
+
+            <div class="h-20 flex items-center justify-between">
+
+                <!-- Logo -->
+                <h2 class="text-[#F2CA50] font-montserrat font-bold text-[16px] leading-6">
+                    ANJU LOTTERY
+                </h2>
+
+                <!-- Desktop Menu -->
+                <ul id="navbar" class="relative hidden md:flex md:gap-6 lg:gap-8 font-inter text-[15px]">
+
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#results" class="nav-link">Results</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#shop" class="nav-link">Shop Gallery</a></li>
+                    <li><a href="#tickets" class="nav-link">Daily Tickets</a></li>
+                    <li><a href="#bumberTickets" class="nav-link">Bumper Tickets</a></li>
+
+                    <!-- Sliding underline -->
+                    <span id="indicator"></span>
+
+                </ul>
+
+                <!-- Mobile Button -->
+                <button id="menuBtn" class="md:hidden text-[#F2CA50]">
+
+                    <!-- Hamburger -->
+                    <svg id="openIcon" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                    <!-- Close -->
+                    <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M6 6L18 18M18 6L6 18" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="absolute top-full left-0 w-full
+bg-[#18124A]
+overflow-hidden
+transform
+max-h-0
+opacity-0
+-translate-y-4
+transition-all
+duration-500
+ease-in-out
+z-50">
+
+                <ul class="flex flex-col gap-5 px-6 py-6 font-inter text-white text-[15px]">
+
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#results" class="nav-link">Results</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#shop" class="nav-link">Shop Gallery</a></li>
+                    <li><a href="#tickets" class="nav-link">Daily Tickets</a></li>
+                    <li><a href="#bumberTickets" class="nav-link">Bumper Tickets</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <div class="pt-12 lg:pt-24">
+
+        <section id="home" class="pb-16 lg:pb-24 px-5 sm:px-8 lg:px-[60px]">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
+
+                <!-- Left Content -->
+                <div class="flex flex-col gap-6">
+
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex w-fit items-center gap-2 px-4 py-2 border bg-[#FFECB90D] border-[#FFECB94D] rounded-full">
+
+                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
+                                fill="#FACC15" />
+                        </svg>
+
+                        <p
+                            class="font-hanken text-[10px] sm:text-[12px] font-[650] tracking-[1.4px] uppercase text-[#FACC15]">
+                            Government Authorized Distributor
+                        </p>
+
+                    </div>
+
+                    <!-- Heading -->
+                    <h1
+                        class="font-libre text-[36px] leading-[46px] sm:text-[42px] sm:leading-[52px] lg:text-[48px] lg:leading-[60px] font-[700] gradient-text">
+
+                        Welcome to Anju <br>
+
+                        <span class="text-white">
+                            Lottery Agency
+                        </span>
+
+                    </h1>
+
+                    <!-- Description -->
+                    <p
+                        class="font-hanken text-[16px] sm:text-[18px] lg:text-[20px] font-[400] leading-7 text-[#D1C6AB]">
+
+                        Kerala's Most Trusted Lottery Agency Since 2020.
+                        Providing authentic government lottery tickets to
+                        over 50,000+ happy customers across India with
+                        instant digital booking.
+
+                    </p>
+
+                    <!-- Button & Counter -->
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-5">
+
+                        <button
+                            class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-hanken font-[700] px-8 py-4 rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
+
+                            VIEW DAILY TICKETS
+
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
+                                    fill="#6C5700" />
+                            </svg>
+
+                        </button>
+
+                        <div class="font-hanken border-l border-[#4D4632] pl-6">
+
+                            <h3 class="font-[700] text-[16px] leading-[24px] text-[#FFECB9]">
+                                50,000+
+                            </h3>
+
+                            <p class="text-[12px] font-[400] leading-[16px] uppercase text-[#D1C6AB]">
+                                Happy Customers
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative flex justify-center lg:justify-end">
+
+                    <!-- Glow -->
+                    <div
+                        class="absolute w-[260px] h-[260px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px] rounded-full bg-yellow-400/10 blur-[120px]">
+                    </div>
+
+                    <!-- Image -->
+                    <img src="assets/images/shop2.png" alt="Lottery Shop"
+                        class="relative w-full max-w-[678px] h-[260px] sm:h-[380px] lg:w-[678px] lg:h-[500px] object-cover rounded-[20px] border border-[#FFECB996] shadow-2xl">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="shop" class="py-10 sm:py-12 md:py-14 lg:py-[65px] px-5 sm:px-8 md:px-10 lg:px-[60px]">
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-[32px] font-[700] leading-[40px] font-libre text-[#FFECB9]">
+                    Visit Our Branches
+                </h2>
+                <p
+                    class="font-hanken text-[#D1C6AB] font-[350] text-sm md:text-[16px] leading-[24px] mt-3 max-w-2xl mx-auto">
+                    Experience the professional environment where millions of dreams are processed daily with
+                    transparency and care.
+                </p>
+            </div>
+
+            <!-- MAIN LAYOUT -->
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-16">
+
+                <!-- LEFT SIDE (RIGHT-ALIGNED CARDS) -->
+                <div class="flex flex-col gap-5 font-hanken w-full lg:w-1/3">
+
+                    <!-- card -->
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute right-0 top-0 h-full w-[4px] rounded-r-[16px] bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Cheruthoni, Idukki, Kerala</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute right-0 top-0 h-full w-[4px] rounded-r-[16px] bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Medical center Hospital, Rajakkad, Idukki</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute right-0 top-0 h-full w-[4px] rounded-r-[16px] bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Rajakkad, Idukki, Kerala</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute right-0 top-0 h-full w-[4px] rounded-r-[16px] bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Rajakumari, Idukki, Kerala</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute right-0 top-0 h-full w-[4px] rounded-r-[16px]
+              bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Poopara, Idukki, Kerala</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                </div>
+
+                <!-- CENTER CARD -->
+                <div class="w-full lg:w-1/3 flex justify-center">
+                    <div class="bg-[#1A1A4D] p-3 rounded-[20px] w-full shadow-xl">
+
+                        <img src="assets/images/shop2.png" alt="Lottery Shop"
+                            class="rounded-[15px] w-full h-[220px] sm:h-[260px] lg:h-72 object-cover" />
+
+                        <div class="mt-4 px-2 sm:px-4 text-start font-hanken">
+
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                    fill="#FFECB9" />
+                            </svg>
+
+                            <p class="text-[12px] font-[400] text-[#D1C6AB] mt-[6px] uppercase">
+                                Location
+                            </p>
+
+                            <h3
+                                class="font-[700] text-[15px] sm:text-[16px] text-[#FFECB9] max-w-full lg:max-w-[280px]">
+                                Medical center Hospital, Rajakkad, Idukki
+                            </h3>
+
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-5">
+
+                                <p
+                                    class="text-[13px] sm:text-[14px] text-[#D1C6AB] font-[400] text-center sm:text-left">
+                                    Open Daily: 9:00 AM - 9:00 PM
+                                </p>
+
+                                <button
+                                    class="w-full sm:w-auto bg-[#FACC15] text-[#1E1B4B] px-6 py-2 rounded-[9px] font-[700] text-[13.1px] hover:bg-yellow-300 transition">
+                                    CONTACT NOW
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE (LEFT-ALIGNED CARDS) -->
+                <div class="flex flex-col gap-5 font-hanken w-full lg:w-1/3">
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute left-0 top-0 h-full w-[4px] bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Near Sree Krishna Jewellery, Adimaly</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute left-0 top-0 h-full w-[4px] bg-[#FFECB9]">
+                        </div>
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Private, Bus Stand Road, Adimaly, Idukki</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute left-0 top-0 h-full w-[4px] bg-[#FFECB9]">
+                        </div> <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Near Matha Bar, Adimaly, Idukki</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute left-0 top-0 h-full w-[4px] bg-[#FFECB9]">
+                        </div> <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Poopara, Idukki, Kerala</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                    <div
+                        class="relative w-full bg-[#312E81CC] px-5 py-6 rounded-[16px]  backdrop-blur-md text-left overflow-hidden hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                        <div class="absolute left-0 top-0 h-full w-[4px] bg-[#FFECB9]">
+                        </div> <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
+                                fill="#FFECB9" />
+                        </svg>
+                        <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9]">Near Adimally pvt busstand, Idukki</h3>
+                        <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class=" overflow-hidden">
+            <!-- Hero Banner Section -->
+            <div class="px-4 sm:px-6 md:px-12 lg:px-[60px]">
+
+                <div
+                    class="mx-2 sm:mx-4 md:mx-6 my-8 sm:my-12 md:my-20 bg-[url('./assets/images/banner.png')] bg-cover bg-center rounded-xl sm:rounded-2xl overflow-hidden border border-[#FACC1533]  shadow-[0_0_40px_rgba(250,204,21,0.15)]">
+
+                    <!-- Content -->
+                    <div class="relative z-10 p-4 sm:p-6 md:p-8">
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col md:flex-row justify-between items-start gap-6 sm:gap-8">
+                            <!-- Left Content -->
+                            <div
+                                class="flex-1 max-w-[660px] px-4 sm:px-8 md:px-12 lg:px-14 py-6 sm:py-8 md:py-10 w-full md:w-auto">
+                                <!-- Badge -->
+                                <div
+                                    class="inline-flex items-center gap-2 bg-[#FACC151A] border border-[#FACC154D] rounded-full px-3 py-2 mb-4 sm:mb-6">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 10.6667L6.66667 8.63333L9.33333 10.6667L8.33333 7.36667L11 5.46667H7.73333L6.66667 2L5.6 5.46667H2.33333L5 7.36667L4 10.6667ZM6.66667 13.3333C5.74444 13.3333 4.87778 13.1583 4.06667 12.8083C3.25556 12.4583 2.55 11.9833 1.95 11.3833C1.35 10.7833 0.875 10.0778 0.525 9.26667C0.175 8.45555 0 7.58889 0 6.66667C0 5.74444 0.175 4.87778 0.525 4.06667C0.875 3.25556 1.35 2.55 1.95 1.95C2.55 1.35 3.25556 0.875 4.06667 0.525C4.87778 0.175 5.74444 0 6.66667 0C7.58889 0 8.45555 0.175 9.26667 0.525C10.0778 0.875 10.7833 1.35 11.3833 1.95C11.9833 2.55 12.4583 3.25556 12.8083 4.06667C13.1583 4.87778 13.3333 5.74444 13.3333 6.66667C13.3333 7.58889 13.1583 8.45555 12.8083 9.26667C12.4583 10.0778 11.9833 10.7833 11.3833 11.3833C10.7833 11.9833 10.0778 12.4583 9.26667 12.8083C8.45555 13.1583 7.58889 13.3333 6.66667 13.3333Z"
+                                            fill="#FACC15" />
+                                    </svg>
+
+                                    <span
+                                        class="text-[#FACC15] font-[700] text-[11px] sm:text-[12px] font-hanken">PREMIUM
+                                        DRAW</span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h1
+                                    class="text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]">
+                                    WIN BIG TODAY!
+                                </h1>
+
+                                <!-- Subheading -->
+                                <p
+                                    class="text-lg sm:text-xl md:text-2xl text-[#D1C6AB] font-[400] font-libre mb-4 sm:mb-6">
+                                    Limited Tickets
+                                    Available
+                                </p>
+
+                                <!-- Description -->
+                                <p
+                                    class="text-[#E3DFFFCC] font-[350] max-w-[450px] text-sm sm:text-base md:text-lg lg:text-[18px] leading-6 sm:leading-7 lg:leading-[28px] font-hanken mb-6 sm:mb-8">
+                                    Experience the gold standard of lottery gaming. Secure your entry for the upcoming
+                                    grand
+                                    draw and join the ranks of our elite winners.
+                                </p>
+
+                                <!-- CTA and Stats -->
+                                <div
+                                    class="flex flex-col xs:flex-row sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[16px]">
+                                    <button
+                                        class="bg-[#FACC15] hover:bg-yellow-500 text-[#1E1B4B] text-[11px] sm:text-[12px] hanken font-[700] py-3 sm:py-4 px-6 sm:px-10 shadow-[0_0_40px_rgba(250,204,21,0.15)] rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center sm:justify-start gap-2 whitespace-nowrap">
+                                        BOOK NOW
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.13125 6.75H0V5.25H9.13125L4.93125 1.05L6 0L12 6L6 12L4.93125 10.95L9.13125 6.75Z"
+                                                fill="#1E1B4B" />
+                                        </svg>
+
+                                    </button>
+                                    <div
+                                        class="border border-[#4D4632] rounded-[8px] px-3 sm:px-4 py-2 flex items-center gap-2 sm:gap-4 bg-[#0F0B3C66] backdrop-blur-md w-full sm:w-fit">
+                                        <!-- User Icons -->
+                                        <svg width="40" height="24" viewBox="0 0 56 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="sm:w-14 sm:h-8">
+                                            <rect x="1" y="1" width="30" height="30" rx="15" fill="#1C1949" />
+                                            <rect x="1" y="1" width="30" height="30" rx="15" stroke="#1E1B4B"
+                                                stroke-width="2" />
+                                            <path
+                                                d="M15.9997 16C15.358 16 14.8087 15.7716 14.3518 15.3146C13.8948 14.8577 13.6663 14.3084 13.6663 13.6667C13.6663 13.025 13.8948 12.4757 14.3518 12.0188C14.8087 11.5618 15.358 11.3334 15.9997 11.3334C16.6413 11.3334 17.1906 11.5618 17.6476 12.0188C18.1045 12.4757 18.333 13.025 18.333 13.6667C18.333 14.3084 18.1045 14.8577 17.6476 15.3146C17.1906 15.7716 16.6413 16 15.9997 16ZM11.333 20.6667V19.0334C11.333 18.7028 11.4181 18.399 11.5882 18.1219C11.7584 17.8448 11.9844 17.6334 12.2663 17.4875C12.8691 17.1862 13.4816 16.9601 14.1038 16.8094C14.7261 16.6587 15.358 16.5834 15.9997 16.5834C16.6413 16.5834 17.2733 16.6587 17.8955 16.8094C18.5177 16.9601 19.1302 17.1862 19.733 17.4875C20.015 17.6334 20.241 17.8448 20.4111 18.1219C20.5813 18.399 20.6663 18.7028 20.6663 19.0334V20.6667H11.333ZM12.4997 19.5H19.4997V19.0334C19.4997 18.9264 19.4729 18.8292 19.4195 18.7417C19.366 18.6542 19.2955 18.5862 19.208 18.5375C18.683 18.275 18.1531 18.0782 17.6184 17.9469C17.0837 17.8157 16.5441 17.75 15.9997 17.75C15.4552 17.75 14.9156 17.8157 14.3809 17.9469C13.8462 18.0782 13.3163 18.275 12.7913 18.5375C12.7038 18.5862 12.6334 18.6542 12.5799 18.7417C12.5264 18.8292 12.4997 18.9264 12.4997 19.0334V19.5ZM15.9997 14.8334C16.3205 14.8334 16.5952 14.7191 16.8236 14.4907C17.0521 14.2622 17.1663 13.9875 17.1663 13.6667C17.1663 13.3459 17.0521 13.0712 16.8236 12.8427C16.5952 12.6143 16.3205 12.5 15.9997 12.5C15.6788 12.5 15.4042 12.6143 15.1757 12.8427C14.9472 13.0712 14.833 13.3459 14.833 13.6667C14.833 13.9875 14.9472 14.2622 15.1757 14.4907C15.4042 14.7191 15.6788 14.8334 15.9997 14.8334Z"
+                                                fill="#E3DFFF" />
+                                            <rect x="25" y="1" width="30" height="30" rx="15" fill="#1C1949" />
+                                            <rect x="25" y="1" width="30" height="30" rx="15" stroke="#1E1B4B"
+                                                stroke-width="2" />
+                                            <path
+                                                d="M39.9997 16C39.358 16 38.8087 15.7716 38.3518 15.3146C37.8948 14.8577 37.6663 14.3084 37.6663 13.6667C37.6663 13.025 37.8948 12.4757 38.3518 12.0188C38.8087 11.5618 39.358 11.3334 39.9997 11.3334C40.6413 11.3334 41.1906 11.5618 41.6476 12.0188C42.1045 12.4757 42.333 13.025 42.333 13.6667C42.333 14.3084 42.1045 14.8577 41.6476 15.3146C41.1906 15.7716 40.6413 16 39.9997 16ZM35.333 20.6667V19.0334C35.333 18.7028 35.4181 18.399 35.5882 18.1219C35.7584 17.8448 35.9844 17.6334 36.2663 17.4875C36.8691 17.1862 37.4816 16.9601 38.1038 16.8094C38.7261 16.6587 39.358 16.5834 39.9997 16.5834C40.6413 16.5834 41.2733 16.6587 41.8955 16.8094C42.5177 16.9601 43.1302 17.1862 43.733 17.4875C44.015 17.6334 44.241 17.8448 44.4111 18.1219C44.5813 18.399 44.6663 18.7028 44.6663 19.0334V20.6667H35.333ZM36.4997 19.5H43.4997V19.0334C43.4997 18.9264 43.4729 18.8292 43.4195 18.7417C43.366 18.6542 43.2955 18.5862 43.208 18.5375C42.683 18.275 42.1531 18.0782 41.6184 17.9469C41.0837 17.8157 40.5441 17.75 39.9997 17.75C39.4552 17.75 38.9156 17.8157 38.3809 17.9469C37.8462 18.0782 37.3163 18.275 36.7913 18.5375C36.7038 18.5862 36.6334 18.6542 36.5799 18.7417C36.5264 18.8292 36.4997 18.9264 36.4997 19.0334V19.5ZM39.9997 14.8334C40.3205 14.8334 40.5952 14.7191 40.8236 14.4907C41.0521 14.2622 41.1663 13.9875 41.1663 13.6667C41.1663 13.3459 41.0521 13.0712 40.8236 12.8427C40.5952 12.6143 40.3205 12.5 39.9997 12.5C39.6788 12.5 39.4042 12.6143 39.1757 12.8427C38.9472 13.0712 38.833 13.3459 38.833 13.6667C38.833 13.9875 38.9472 14.2622 39.1757 14.4907C39.4042 14.7191 39.6788 14.8334 39.9997 14.8334Z"
+                                                fill="#E3DFFF" />
+                                        </svg>
+
+
+                                        <!-- Text -->
+                                        <div>
+                                            <p
+                                                class="text-[#D1C6AB] leading-5 sm:leading-[21px] text-xs sm:text-[14px] font-[400] font-hanken whitespace-nowrap">
+                                                1,240+ Booking Today</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Side - Badges and Decorative -->
+                            <div
+                                class="flex flex-row md:flex-col gap-3 font-hanken sm:gap-4 w-full md:w-fit md:ml-auto md:mt-auto md:items-end">
+                                <!-- Government Authorized Badge -->
+                                <div
+                                    class="bg-[#1E1B4B99] border border-[#FFECB933] w-fit rounded-lg sm:rounded-xl p-2 sm:p-3 backdrop-blur-md hover:border-slate-600/70 transition-all flex-1 md:flex-initial">
+                                    <div class="flex items-center gap-2">
+                                        <svg width="20" height="20" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 sm:w-[22px] sm:h-[21px] flex-shrink-0">
+                                            <path
+                                                d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM8.45 18.45L11 17.35L13.6 18.45L15 16.05L17.75 15.4L17.5 12.6L19.35 10.5L17.5 8.35L17.75 5.55L15 4.95L13.55 2.55L11 3.65L8.4 2.55L7 4.95L4.25 5.55L4.5 8.35L2.65 10.5L4.5 12.6L4.25 15.45L7 16.05L8.45 18.45ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
+                                                fill="#FACC15" />
+                                        </svg>
+
+                                        <div>
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Government Authorised
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secure Payment Badge -->
+                                <div
+                                    class="bg-[#1E1B4B99] border border-[#FFECB933] w-fit rounded-lg sm:rounded-xl p-2 sm:p-3 backdrop-blur-md hover:border-slate-600/70 transition-all flex-1 md:flex-initial">
+                                    <div class="flex items-center gap-2">
+                                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="w-4 h-5 sm:w-4 sm:h-[21px] flex-shrink-0">
+                                            <path
+                                                d="M2 21C1.45 21 0.979167 20.8042 0.5875 20.4125C0.195833 20.0208 0 19.55 0 19V9C0 8.45 0.195833 7.97917 0.5875 7.5875C0.979167 7.19583 1.45 7 2 7H3V5C3 3.61667 3.4875 2.4375 4.4625 1.4625C5.4375 0.4875 6.61667 0 8 0C9.38333 0 10.5625 0.4875 11.5375 1.4625C12.5125 2.4375 13 3.61667 13 5V7H14C14.55 7 15.0208 7.19583 15.4125 7.5875C15.8042 7.97917 16 8.45 16 9V19C16 19.55 15.8042 20.0208 15.4125 20.4125C15.0208 20.8042 14.55 21 14 21H2ZM2 19H14V9H2V19ZM8 16C8.55 16 9.02083 15.8042 9.4125 15.4125C9.80417 15.0208 10 14.55 10 14C10 13.45 9.80417 12.9792 9.4125 12.5875C9.02083 12.1958 8.55 12 8 12C7.45 12 6.97917 12.1958 6.5875 12.5875C6.19583 12.9792 6 13.45 6 14C6 14.55 6.19583 15.0208 6.5875 15.4125C6.97917 15.8042 7.45 16 8 16ZM5 7H11V5C11 4.16667 10.7083 3.45833 10.125 2.875C9.54167 2.29167 8.83333 2 8 2C7.16667 2 6.45833 2.29167 5.875 2.875C5.29167 3.45833 5 4.16667 5 5V7ZM2 19V9V19Z"
+                                                fill="#FACC15" />
+                                        </svg>
+
+                                        <div>
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Secure Payment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Grid Section -->
+            <div class="bg-[#18144580] px-6 sm:px-6 md:px-12 lg:px-[60px] py-10 sm:py-20">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <!-- Card 1: Govt Authorized -->
+                    <div
+                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                        <!-- Icon -->
+                        <div class="flex items-center justify-center">
+                            <svg width="24" height="30" viewBox="0 0 24 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 30C8.525 29.125 5.65625 27.1312 3.39375 24.0187C1.13125 20.9062 0 17.45 0 13.65V4.5L12 0L24 4.5V13.65C24 17.45 22.8688 20.9062 20.6063 24.0187C18.3438 27.1312 15.475 29.125 12 30ZM12 26.85C14.425 26.1 16.45 24.6187 18.075 22.4062C19.7 20.1938 20.65 17.725 20.925 15H12V3.1875L3 6.5625V13.65C3 13.925 3 14.15 3 14.325C3 14.5 3.025 14.725 3.075 15H12V26.85Z"
+                                    fill="#FFECB9" />
+                            </svg>
+                        </div>
+
+                        <!-- Content -->
+                        <h3
+                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                            Govt Authorized
+                        </h3>
+
+                        <p
+                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                            Official Kerala State Lottery agency since 1967
+                        </p>
+
+                    </div>
+
+                    <!-- Card 2: Daily Results -->
+                    <div
+                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                        <!-- Icon -->
+                        <div class="flex items-center justify-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.95 22.05L22.05 19.95L16.5 14.4V7.5H13.5V15.6L19.95 22.05ZM15 30C12.925 30 10.975 29.6063 9.15 28.8188C7.325 28.0312 5.7375 26.9625 4.3875 25.6125C3.0375 24.2625 1.96875 22.675 1.18125 20.85C0.39375 19.025 0 17.075 0 15C0 12.925 0.39375 10.975 1.18125 9.15C1.96875 7.325 3.0375 5.7375 4.3875 4.3875C5.7375 3.0375 7.325 1.96875 9.15 1.18125C10.975 0.39375 12.925 0 15 0C17.075 0 19.025 0.39375 20.85 1.18125C22.675 1.96875 24.2625 3.0375 25.6125 4.3875C26.9625 5.7375 28.0312 7.325 28.8188 9.15C29.6063 10.975 30 12.925 30 15C30 17.075 29.6063 19.025 28.8188 20.85C28.0312 22.675 26.9625 24.2625 25.6125 25.6125C24.2625 26.9625 22.675 28.0312 20.85 28.8188C19.025 29.6063 17.075 30 15 30ZM15 27C18.325 27 21.1562 25.8312 23.4937 23.4937C25.8312 21.1562 27 18.325 27 15C27 11.675 25.8312 8.84375 23.4937 6.50625C21.1562 4.16875 18.325 3 15 3C11.675 3 8.84375 4.16875 6.50625 6.50625C4.16875 8.84375 3 11.675 3 15C3 18.325 4.16875 21.1562 6.50625 23.4937C8.84375 25.8312 11.675 27 15 27Z"
+                                    fill="#FFECB9" />
+                            </svg>
+
+                        </div>
+
+                        <!-- Content -->
+                        <h3
+                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                            Daily Results
+                        </h3>
+
+                        <p
+                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                            Winner announcements sharp at 3:00 PM daily.
+                        </p>
+
+                    </div>
+
+                    <!-- Card 3: 24/7 Support -->
+                    <div
+                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                        <!-- Icon -->
+                        <div class="flex items-center justify-center">
+                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.5 27V24H25.5V13.35C25.5 10.425 24.4813 7.94375 22.4438 5.90625C20.4062 3.86875 17.925 2.85 15 2.85C12.075 2.85 9.59375 3.86875 7.55625 5.90625C5.51875 7.94375 4.5 10.425 4.5 13.35V22.5H3C2.175 22.5 1.46875 22.2062 0.88125 21.6187C0.29375 21.0312 0 20.325 0 19.5V16.5C0 15.975 0.13125 15.4812 0.39375 15.0188C0.65625 14.5563 1.025 14.1875 1.5 13.9125L1.6125 11.925C1.8125 10.225 2.30625 8.65 3.09375 7.2C3.88125 5.75 4.86875 4.4875 6.05625 3.4125C7.24375 2.3375 8.60625 1.5 10.1438 0.9C11.6813 0.3 13.3 0 15 0C16.7 0 18.3125 0.3 19.8375 0.9C21.3625 1.5 22.725 2.33125 23.925 3.39375C25.125 4.45625 26.1125 5.7125 26.8875 7.1625C27.6625 8.6125 28.1625 10.1875 28.3875 11.8875L28.5 13.8375C28.975 14.0625 29.3438 14.4 29.6063 14.85C29.8688 15.3 30 15.775 30 16.275V19.725C30 20.225 29.8688 20.7 29.6063 21.15C29.3438 21.6 28.975 21.9375 28.5 22.1625V24C28.5 24.825 28.2062 25.5312 27.6187 26.1187C27.0312 26.7062 26.325 27 25.5 27H13.5ZM10.5 16.5C10.075 16.5 9.71875 16.3563 9.43125 16.0688C9.14375 15.7812 9 15.425 9 15C9 14.575 9.14375 14.2188 9.43125 13.9312C9.71875 13.6437 10.075 13.5 10.5 13.5C10.925 13.5 11.2812 13.6437 11.5688 13.9312C11.8563 14.2188 12 14.575 12 15C12 15.425 11.8563 15.7812 11.5688 16.0688C11.2812 16.3563 10.925 16.5 10.5 16.5ZM19.5 16.5C19.075 16.5 18.7188 16.3563 18.4312 16.0688C18.1437 15.7812 18 15.425 18 15C18 14.575 18.1437 14.2188 18.4312 13.9312C18.7188 13.6437 19.075 13.5 19.5 13.5C19.925 13.5 20.2812 13.6437 20.5688 13.9312C20.8563 14.2188 21 14.575 21 15C21 15.425 20.8563 15.7812 20.5688 16.0688C20.2812 16.3563 19.925 16.5 19.5 16.5ZM6.0375 14.175C5.8625 11.525 6.6625 9.25 8.4375 7.35C10.2125 5.45 12.425 4.5 15.075 4.5C17.3 4.5 19.2563 5.20625 20.9438 6.61875C22.6313 8.03125 23.65 9.8375 24 12.0375C21.725 12.0125 19.6313 11.4 17.7188 10.2C15.8062 9 14.3375 7.375 13.3125 5.325C12.9125 7.325 12.0688 9.10625 10.7812 10.6687C9.49375 12.2312 7.9125 13.4 6.0375 14.175Z"
+                                    fill="#FFECB9" />
+                            </svg>
+
+                        </div>
+
+                        <!-- Content -->
+                        <h3
+                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                            24/7 Support
+                        </h3>
+
+                        <p
+                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                            Dedicated WhatsApp assistance for all bookings.
+                        </p>
+
+                    </div>
+
+                    <!-- Card 4: Fast Claims -->
+                    <div
+                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                        <!-- Icon -->
+                        <div class="flex items-center justify-center">
+                            <svg width="33" height="24" viewBox="0 0 33 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5 13.5C18.25 13.5 17.1875 13.0625 16.3125 12.1875C15.4375 11.3125 15 10.25 15 9C15 7.75 15.4375 6.6875 16.3125 5.8125C17.1875 4.9375 18.25 4.5 19.5 4.5C20.75 4.5 21.8125 4.9375 22.6875 5.8125C23.5625 6.6875 24 7.75 24 9C24 10.25 23.5625 11.3125 22.6875 12.1875C21.8125 13.0625 20.75 13.5 19.5 13.5ZM9 18C8.175 18 7.46875 17.7062 6.88125 17.1187C6.29375 16.5312 6 15.825 6 15V3C6 2.175 6.29375 1.46875 6.88125 0.88125C7.46875 0.29375 8.175 0 9 0H30C30.825 0 31.5313 0.29375 32.1188 0.88125C32.7063 1.46875 33 2.175 33 3V15C33 15.825 32.7063 16.5312 32.1188 17.1187C31.5313 17.7062 30.825 18 30 18H9ZM12 15H27C27 14.175 27.2938 13.4688 27.8813 12.8813C28.4688 12.2938 29.175 12 30 12V6C29.175 6 28.4688 5.70625 27.8813 5.11875C27.2938 4.53125 27 3.825 27 3H12C12 3.825 11.7062 4.53125 11.1187 5.11875C10.5312 5.70625 9.825 6 9 6V12C9.825 12 10.5312 12.2938 11.1187 12.8813C11.7062 13.4688 12 14.175 12 15ZM28.5 24H3C2.175 24 1.46875 23.7062 0.88125 23.1187C0.29375 22.5312 0 21.825 0 21V4.5H3V21H28.5V24ZM9 15V3V15Z"
+                                    fill="#FFECB9" />
+                            </svg>
+
+                        </div>
+
+                        <!-- Content -->
+                        <h3
+                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                            Fast Claims
+                        </h3>
+
+                        <p
+                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                            Expert guidance for hassle-free prize collection.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tickets" class="py-10 sm:py-12 md:py-14 lg:py-[65px] px-5 sm:px-8 md:px-10 lg:px-[60px]">
+
+            <div class="flex flex-col gap-[52px]">
+
+                <!-- Heading -->
+
+                <div class="text-center flex flex-col gap-[10px] md:gap-[17px]">
+
+                    <h2 class="font-libre font-[700] text-[26px] sm:text-[32px] text-[#FFECB9] leading-[44px]">
+                        Daily Fortune Draws
+                    </h2>
+
+                    <p
+                        class="text-[#D1C6AB] font-hanken max-w-[330px] md:max-w-[739.2px] font-[400] mx-auto text-[12px] sm:text-[17px] leading-6">
+                        Discover our collection of daily lottery tickets. Each day offers
+                        a unique chance to win the ₹1 Crore jackpot.
+                    </p>
+
+                </div>
+
+                <!-- Cards -->
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- CARD -->
+
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                MONDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery1.jpg" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Bhagyadhara
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+
+                    <!-- CARD -->
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                TUESDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery1.jpg" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Sthree Sakthi
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+
+
+                    <!-- CARD -->
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                WEDNESDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery2.jpg" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Dhanalakshmi
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+
+                    <!-- Friday -->
+
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                THURSDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery3.png" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Karunya Plus
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+
+                    <!-- Saturday -->
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                FRIDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery1.jpg" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Bhagyadhara
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                SATURDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery2.jpg" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Sthree Sakthi
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Sunday -->
+
+                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
+                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
+                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
+                                SUNDAY
+                            </div>
+                            <div class="flex  items-center px-3">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.5 9.33333L5.83333 7.55417L8.16667 9.33333L7.29167 6.44583L9.625 4.78333H6.76667L5.83333 1.75L4.9 4.78333H2.04167L4.375 6.44583L3.5 9.33333ZM5.83333 11.6667C5.02639 11.6667 4.26806 11.5135 3.55833 11.2073C2.84861 10.901 2.23125 10.4854 1.70625 9.96042C1.18125 9.43542 0.765625 8.81806 0.459375 8.10833C0.153125 7.39861 0 6.64028 0 5.83333C0 5.02639 0.153125 4.26806 0.459375 3.55833C0.765625 2.84861 1.18125 2.23125 1.70625 1.70625C2.23125 1.18125 2.84861 0.765625 3.55833 0.459375C4.26806 0.153125 5.02639 0 5.83333 0C6.64028 0 7.39861 0.153125 8.10833 0.459375C8.81806 0.765625 9.43542 1.18125 9.96042 1.70625C10.4854 2.23125 10.901 2.84861 11.2073 3.55833C11.5135 4.26806 11.6667 5.02639 11.6667 5.83333C11.6667 6.64028 11.5135 7.39861 11.2073 8.10833C10.901 8.81806 10.4854 9.43542 9.96042 9.96042C9.43542 10.4854 8.81806 10.901 8.10833 11.2073C7.39861 11.5135 6.64028 11.6667 5.83333 11.6667ZM5.83333 10.5C7.13611 10.5 8.23958 10.0479 9.14375 9.14375C10.0479 8.23958 10.5 7.13611 10.5 5.83333C10.5 4.53056 10.0479 3.42708 9.14375 2.52292C8.23958 1.61875 7.13611 1.16667 5.83333 1.16667C4.53056 1.16667 3.42708 1.61875 2.52292 2.52292C1.61875 3.42708 1.16667 4.53056 1.16667 5.83333C1.16667 7.13611 1.61875 8.23958 2.52292 9.14375C3.42708 10.0479 4.53056 10.5 5.83333 10.5Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="assets/images/lottery3.png" class="w-full h-40 object-cover mt-0">
+
+                        </div>
+
+
+                        <div class="p-6">
+
+                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px]">
+                                Bhagyadhara
+                            </h3>
+
+                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
+                                Prize: ₹1 Crore
+                            </p>
+
+                            <div class="flex justify-between items-center font-hanken mt-6">
+
+                                <div>
+
+                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
+                                        DRAW: 3 PM
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    Contact Now
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD -->
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Header -->
+            <div id="results" class="mb-12 mt-20 sm:mt-32">
+                <h2
+                    class="text-[26px] text-center sm:text-start md:text-[32px] leading-[40px] font-[700] text-[#FFECB9] font-libre mb-2 sm:mb-4">
+                    Latest Draw Results
+                    <span class="hidden sm:inline"> (Daily)</span>
+                </h2>
+                <p
+                    class="text-[#D1C6AB] hanken text-center sm:text-start font-[400] leading-[24px] text-[16px] sm:text-[16px] max-w-xl">
+                    Check the winning numbers from the most recent Kerala State Lottery draws.
+                </p>
+            </div>
+
+            <!-- Results Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-[90px] items-start">
+
+                <!-- Card 1: Akshaya -->
+                <div
+                    class="bg-[#312E81CC] rounded-[16px] p-8 border border-[#FFECB933] backdrop-blur-md hover:border-[#FFECB966]  transition-all duration-300">
+                    <!-- Top Section with Title and Medal Icon -->
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-[#FFECB9] text-[16px] font-[400] font-libre mb-1">
+                                Akshaya
+                            </h3>
+                            <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase">
+                                Draw Date: MAY 22, 2024
+                            </p>
+                        </div>
+                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.675 11.7L6.55 8.85L4.25 7H7.1L8 4.2L8.9 7H11.75L9.425 8.85L10.3 11.7L8 9.925L5.675 11.7ZM2 21V13.275C1.36667 12.575 0.875 11.775 0.525 10.875C0.175 9.975 0 9.01667 0 8C0 5.76667 0.775 3.875 2.325 2.325C3.875 0.775 5.76667 0 8 0C10.2333 0 12.125 0.775 13.675 2.325C15.225 3.875 16 5.76667 16 8C16 9.01667 15.825 9.975 15.475 10.875C15.125 11.775 14.6333 12.575 14 13.275V21L8 19L2 21ZM8 14C9.66667 14 11.0833 13.4167 12.25 12.25C13.4167 11.0833 14 9.66667 14 8C14 6.33333 13.4167 4.91667 12.25 3.75C11.0833 2.58333 9.66667 2 8 2C6.33333 2 4.91667 2.58333 3.75 3.75C2.58333 4.91667 2 6.33333 2 8C2 9.66667 2.58333 11.0833 3.75 12.25C4.91667 13.4167 6.33333 14 8 14ZM4 18.025L8 17L12 18.025V14.925C11.4167 15.2583 10.7875 15.5208 10.1125 15.7125C9.4375 15.9042 8.73333 16 8 16C7.26667 16 6.5625 15.9042 5.8875 15.7125C5.2125 15.5208 4.58333 15.2583 4 14.925V18.025Z"
+                                fill="#FACC15" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Winning Number Section -->
+                    <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
+                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]">
+                            Winning Number
+                        </p>
+                        <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
+                            AK-123456
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Karunya Plus -->
+                <div
+                    class="bg-[#312E81CC] rounded-[16px] p-8 border border-[#FFECB933] backdrop-blur-md hover:border-[#FFECB966]  transition-all duration-300">
+                    <!-- Top Section with Title and Medal Icon -->
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-[#FFECB9] text-[16px] font-[400] font-libre mb-1">
+                                Karunya Plus
+                            </h3>
+                            <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase">
+                                Draw Date: MAY 21, 2024
+                            </p>
+                        </div>
+                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.675 11.7L6.55 8.85L4.25 7H7.1L8 4.2L8.9 7H11.75L9.425 8.85L10.3 11.7L8 9.925L5.675 11.7ZM2 21V13.275C1.36667 12.575 0.875 11.775 0.525 10.875C0.175 9.975 0 9.01667 0 8C0 5.76667 0.775 3.875 2.325 2.325C3.875 0.775 5.76667 0 8 0C10.2333 0 12.125 0.775 13.675 2.325C15.225 3.875 16 5.76667 16 8C16 9.01667 15.825 9.975 15.475 10.875C15.125 11.775 14.6333 12.575 14 13.275V21L8 19L2 21ZM8 14C9.66667 14 11.0833 13.4167 12.25 12.25C13.4167 11.0833 14 9.66667 14 8C14 6.33333 13.4167 4.91667 12.25 3.75C11.0833 2.58333 9.66667 2 8 2C6.33333 2 4.91667 2.58333 3.75 3.75C2.58333 4.91667 2 6.33333 2 8C2 9.66667 2.58333 11.0833 3.75 12.25C4.91667 13.4167 6.33333 14 8 14ZM4 18.025L8 17L12 18.025V14.925C11.4167 15.2583 10.7875 15.5208 10.1125 15.7125C9.4375 15.9042 8.73333 16 8 16C7.26667 16 6.5625 15.9042 5.8875 15.7125C5.2125 15.5208 4.58333 15.2583 4 14.925V18.025Z"
+                                fill="#FACC15" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Winning Number Section -->
+                    <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
+                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]">
+                            Winning Number
+                        </p>
+                        <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
+                            KN-987654
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Bhagyadhara -->
+                <div
+                    class="bg-[#312E81CC] rounded-[16px] p-8 border border-[#FFECB933] backdrop-blur-md hover:border-[#FFECB966]  transition-all duration-300">
+                    <!-- Top Section with Title and Medal Icon -->
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-[#FFECB9] text-[16px] font-[400] font-libre mb-1">
+                                Bhagyadhara
+                            </h3>
+                            <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase">
+                                Draw Date: MAY 20, 2024
+                            </p>
+                        </div>
+                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.675 11.7L6.55 8.85L4.25 7H7.1L8 4.2L8.9 7H11.75L9.425 8.85L10.3 11.7L8 9.925L5.675 11.7ZM2 21V13.275C1.36667 12.575 0.875 11.775 0.525 10.875C0.175 9.975 0 9.01667 0 8C0 5.76667 0.775 3.875 2.325 2.325C3.875 0.775 5.76667 0 8 0C10.2333 0 12.125 0.775 13.675 2.325C15.225 3.875 16 5.76667 16 8C16 9.01667 15.825 9.975 15.475 10.875C15.125 11.775 14.6333 12.575 14 13.275V21L8 19L2 21ZM8 14C9.66667 14 11.0833 13.4167 12.25 12.25C13.4167 11.0833 14 9.66667 14 8C14 6.33333 13.4167 4.91667 12.25 3.75C11.0833 2.58333 9.66667 2 8 2C6.33333 2 4.91667 2.58333 3.75 3.75C2.58333 4.91667 2 6.33333 2 8C2 9.66667 2.58333 11.0833 3.75 12.25C4.91667 13.4167 6.33333 14 8 14ZM4 18.025L8 17L12 18.025V14.925C11.4167 15.2583 10.7875 15.5208 10.1125 15.7125C9.4375 15.9042 8.73333 16 8 16C7.26667 16 6.5625 15.9042 5.8875 15.7125C5.2125 15.5208 4.58333 15.2583 4 14.925V18.025Z"
+                                fill="#FACC15" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Winning Number Section -->
+                    <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
+                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]">
+                            Winning Number
+                        </p>
+                        <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
+                            AK-123456
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="bumberTickets"
+            class="bg-[#181445] py-10 sm:py-12 md:py-14 lg:py-[65px] px-5 sm:px-8 md:px-10 lg:px-[60px]">
+
+
+            <!-- Heading -->
+            <div class="mb-12">
+                <h2 class="font-libre font-[700] text-[#FFECB9] text-[26px] md:text-[32px] ">
+                    Lottery Insights & Winner Stories
+                </h2>
+
+                <p class="text-[#D1C6AB] font-hanken mt-4 text-[12px] sm:text-[16px] max-w-4xl">
+                    Stay updated with the latest news, winning strategies, and heartwarming stories from our community.
+                </p>
+            </div>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="rounded-[20px] overflow-hidden bg-[#312E81CC] backdrop-blur-md border border-[#FACC151A] hover:-translate-y-1 transition duration-300">
+
+                    <div class="relative">
+
+                        <img src="assets/images/blog1.png" class="w-full h-[210px] object-cover">
+
+                        <span
+                            class="absolute top-4 font-hanken left-4 bg-[#FACC15] text-[#6C5700] text-[10px] uppercase  font-[400] rounded-full px-3 py-1">
+                            News
+                        </span>
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <h3 class="font-libre text-[20px] leading-[30px] max-w-[320px] font-[400] text-[#FFECB9]">
+                            The Golden Ticket: Understanding Kerala State Lotteries
+                        </h3>
+
+                        <p class="mt-4 font-hanken text-[#D1C6AB] text-[14px] max-w-[320px] leading-[20px] font-[400]">
+                            Explore the rich history and government-backed security
+                            behind India's most trusted lottery system.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 mt-8 text-[#FACC15] uppercase text-[12px] font-hanken font-[400]">
+
+                            READ MORE
+
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M5 12h14" />
+                                <path d="m13 5 7 7-7 7" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="rounded-[20px] overflow-hidden bg-[#312E81CC] backdrop-blur-md border border-[#FACC151A] hover:-translate-y-1 transition duration-300">
+
+                    <div class="relative">
+
+                        <img src="assets/images/blog1.png" class="w-full h-[210px] object-cover">
+
+                        <span
+                            class="absolute top-4 font-hanken left-4 bg-[#FACC15] text-[#6C5700] text-[10px] uppercase  font-[400] rounded-full px-3 py-1">
+                            STORIES
+                        </span>
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <h3 class="font-libre text-[20px] leading-[30px] max-w-[320px] font-[400] text-[#FFECB9]">
+                            Dreams Turned Reality: Meet Our Latest Jackpot Winner
+                        </h3>
+
+                        <p class="mt-4 font-hanken text-[#D1C6AB] text-[14px] max-w-[320px] leading-[20px] font-[400]">
+                            Read the inspiring journey of Mr. Rajesh, whose life was transformed by a single Karunya
+                            Plus ticket.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 mt-8 text-[#FACC15] uppercase text-[12px] font-hanken font-[400]">
+
+                            READ MORE
+
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M5 12h14" />
+                                <path d="m13 5 7 7-7 7" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="rounded-[20px] overflow-hidden bg-[#312E81CC] backdrop-blur-md border border-[#FACC151A] hover:-translate-y-1 transition duration-300">
+
+                    <div class="relative">
+
+                        <img src="assets/images/blog1.png" class="w-full h-[210px] object-cover">
+
+                        <span
+                            class="absolute top-4 font-hanken left-4 bg-[#FACC15] text-[#6C5700] text-[10px] uppercase  font-[400] rounded-full px-3 py-1">
+                            TIPS
+                        </span>
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <h3 class="font-libre text-[20px] leading-[30px] max-w-[320px] font-[400] text-[#FFECB9]">
+                            Security First: How to Verify Your Winning Tickets
+                        </h3>
+
+                        <p class="mt-4 font-hanken text-[#D1C6AB] text-[14px] max-w-[320px] leading-[20px] font-[400]">
+                            Learn our expert tips on identifying authentic tickets and navigating the secure claim
+                            process safely.
+                        </p>
+
+                        <a href="#"
+                            class="inline-flex items-center gap-2 mt-8 text-[#FACC15] uppercase text-[12px] font-hanken font-[400]">
+
+                            READ MORE
+
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M5 12h14" />
+                                <path d="m13 5 7 7-7 7" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about"
+            class="bg-[#1814454D] py-8 sm:py-10 md:py-12 lg:py-14 xl:py-[65px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[60px]">
+
+            <div class="px-3 sm:px-4 md:px-6 lg:px-12">
+
+                <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 items-center">
+
+                    <!-- LEFT -->
+                    <div class="flex flex-col gap-6 sm:gap-8">
+
+                        <h2
+                            class="font-libre text-[24px]  sm:text-[32px] leading-tight sm:leading-[36px] md:leading-[38px] lg:leading-[40px] font-[700] text-[#FFECB9]">
+                            Decades of Trust in Every Ticket
+                        </h2>
+
+                        <p class="font-hanken text-[15px] sm:text-[16px] leading-6 sm:leading-7 text-[#D1C6AB]">
+                            Founded in 2020, Anju Lottery Agency has quickly risen to become
+                            Palakkad's premier government-authorized distributor. We represent
+                            the prestigious Kerala State Lottery department—a legacy of integrity
+                            founded in 1967.
+                        </p>
+
+                        <!-- Features -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+
+                            <!-- Item -->
+                            <div>
+
+                                <div class="flex items-start sm:items-center gap-2 sm:gap-3">
+
+                                    <!-- icon -->
+                                    <div class="flex-shrink-0">
+
+                                        <svg width="20" height="19" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-[22px] sm:h-[21px]">
+                                            <path
+                                                d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM8.45 18.45L11 17.35L13.6 18.45L15 16.05L17.75 15.4L17.5 12.6L19.35 10.5L17.5 8.35L17.75 5.55L15 4.95L13.55 2.55L11 3.65L8.4 2.55L7 4.95L4.25 5.55L4.5 8.35L2.65 10.5L4.5 12.6L4.25 15.45L7 16.05L8.45 18.45ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
+                                                fill="#FFECB9" />
+                                        </svg>
+
+                                    </div>
+
+                                    <h4
+                                        class="text-[#FFECB9] font-[400] font-hanken uppercase text-[15px] sm:text-[16px] leading-tight sm:leading-normal">
+                                        FULLY COMPLIANT
+                                    </h4>
+
+                                </div>
+
+                                <p
+                                    class="mt-2 text-[#D1C6AB] font-hanken font-[400] text-[13px] lsm:text-[14px] leading-5 sm:leading-6 lg:leading-[20px]">
+                                    We strictly follow all Kerala Government Lottery Department
+                                    regulations for 100% legal play.
+                                </p>
+
+                            </div>
+
+                            <!-- Item -->
+
+                            <div>
+
+                                <div class="flex items-start sm:items-center gap-2 sm:gap-3">
+
+                                    <div class="flex-shrink-0">
+
+                                        <svg width="20" height="18" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-[22px] sm:h-[20px]">
+                                            <path
+                                                d="M10.885 18C10.9517 18 11.0183 17.9833 11.085 17.95C11.1517 17.9167 11.2017 17.8833 11.235 17.85L19.435 9.65C19.635 9.45 19.7808 9.225 19.8725 8.975C19.9642 8.725 20.01 8.475 20.01 8.225C20.01 7.95833 19.9642 7.70417 19.8725 7.4625C19.7808 7.22083 19.635 7.00833 19.435 6.825L15.185 2.575C15.0017 2.375 14.7892 2.22917 14.5475 2.1375C14.3058 2.04583 14.0517 2 13.785 2C13.535 2 13.285 2.04583 13.035 2.1375C12.785 2.22917 12.56 2.375 12.36 2.575L12.085 2.85L13.935 4.725C14.185 4.95833 14.3683 5.225 14.485 5.525C14.6017 5.825 14.66 6.14167 14.66 6.475C14.66 7.175 14.4225 7.7625 13.9475 8.2375C13.4725 8.7125 12.885 8.95 12.185 8.95C11.8517 8.95 11.5308 8.89167 11.2225 8.775C10.9142 8.65833 10.6433 8.48333 10.41 8.25L8.535 6.4L4.16 10.775C4.11 10.825 4.0725 10.8792 4.0475 10.9375C4.0225 10.9958 4.01 11.0583 4.01 11.125C4.01 11.2583 4.06 11.3792 4.16 11.4875C4.26 11.5958 4.37667 11.65 4.51 11.65C4.57667 11.65 4.64333 11.6333 4.71 11.6C4.77667 11.5667 4.82667 11.5333 4.86 11.5L8.26 8.1L9.66 9.5L6.285 12.9C6.235 12.95 6.1975 13.0042 6.1725 13.0625C6.1475 13.1208 6.135 13.1833 6.135 13.25C6.135 13.3833 6.185 13.5 6.285 13.6C6.385 13.7 6.50167 13.75 6.635 13.75C6.70167 13.75 6.76833 13.7333 6.835 13.7C6.90167 13.6667 6.95167 13.6333 6.985 13.6L10.385 10.225L11.785 11.625L8.41 15.025C8.36 15.0583 8.3225 15.1083 8.2975 15.175C8.2725 15.2417 8.26 15.3083 8.26 15.375C8.26 15.5083 8.31 15.625 8.41 15.725C8.51 15.825 8.62667 15.875 8.76 15.875C8.82667 15.875 8.88917 15.8625 8.9475 15.8375C9.00583 15.8125 9.06 15.775 9.11 15.725L12.51 12.35L13.91 13.75L10.51 17.15C10.46 17.2 10.4225 17.2542 10.3975 17.3125C10.3725 17.3708 10.36 17.4333 10.36 17.5C10.36 17.6333 10.4142 17.75 10.5225 17.85C10.6308 17.95 10.7517 18 10.885 18ZM10.86 20C10.2433 20 9.6975 19.7958 9.2225 19.3875C8.7475 18.9792 8.46833 18.4667 8.385 17.85C7.81833 17.7667 7.34333 17.5333 6.96 17.15C6.57667 16.7667 6.34333 16.2917 6.26 15.725C5.69333 15.6417 5.2225 15.4042 4.8475 15.0125C4.4725 14.6208 4.24333 14.15 4.16 13.6C3.52667 13.5167 3.01 13.2417 2.61 12.775C2.21 12.3083 2.01 11.7583 2.01 11.125C2.01 10.7917 2.0725 10.4708 2.1975 10.1625C2.3225 9.85417 2.50167 9.58333 2.735 9.35L8.535 3.575L11.81 6.85C11.8433 6.9 11.8933 6.9375 11.96 6.9625C12.0267 6.9875 12.0933 7 12.16 7C12.31 7 12.435 6.95417 12.535 6.8625C12.635 6.77083 12.685 6.65 12.685 6.5C12.685 6.43333 12.6725 6.36667 12.6475 6.3C12.6225 6.23333 12.585 6.18333 12.535 6.15L8.96 2.575C8.77667 2.375 8.56417 2.22917 8.3225 2.1375C8.08083 2.04583 7.82667 2 7.56 2C7.31 2 7.06 2.04583 6.81 2.1375C6.56 2.22917 6.335 2.375 6.135 2.575L2.61 6.125C2.46 6.275 2.335 6.45 2.235 6.65C2.135 6.85 2.06833 7.05 2.035 7.25C2.00167 7.45 2.00167 7.65417 2.035 7.8625C2.06833 8.07083 2.135 8.26667 2.235 8.45L0.785 9.9C0.501667 9.51667 0.293333 9.09583 0.16 8.6375C0.0266667 8.17917 -0.0233333 7.71667 0.01 7.25C0.0433333 6.78333 0.16 6.32917 0.36 5.8875C0.56 5.44583 0.835 5.05 1.185 4.7L4.71 1.175C5.11 0.791667 5.55583 0.5 6.0475 0.3C6.53917 0.1 7.04333 0 7.56 0C8.07667 0 8.58083 0.1 9.0725 0.3C9.56417 0.5 10.0017 0.791667 10.385 1.175L10.66 1.45L10.935 1.175C11.335 0.791667 11.7808 0.5 12.2725 0.3C12.7642 0.1 13.2683 0 13.785 0C14.3017 0 14.8058 0.1 15.2975 0.3C15.7892 0.5 16.2267 0.791667 16.61 1.175L20.835 5.4C21.2183 5.78333 21.51 6.225 21.71 6.725C21.91 7.225 22.01 7.73333 22.01 8.25C22.01 8.76667 21.91 9.27083 21.71 9.7625C21.51 10.2542 21.2183 10.6917 20.835 11.075L12.635 19.25C12.4017 19.4833 12.1308 19.6667 11.8225 19.8C11.5142 19.9333 11.1933 20 10.86 20Z"
+                                                fill="#FFECB9" />
+                                        </svg>
+
+                                    </div>
+
+                                    <h4
+                                        class="text-[#FFECB9] font-[400] font-hanken uppercase text-[15px] sm:text-[16px] leading-tight sm:leading-normal">
+                                        COMMITMENT
+                                    </h4>
+
+                                </div>
+
+                                <p
+                                    class="mt-2 text-[#D1C6AB] font-hanken font-[400] text-[13px] sm:text-[14px] leading-5 sm:leading-6 lg:leading-[20px]">
+                                    Beyond sales, we assist with claim processes and verification
+                                    for winners nationwide.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Quote -->
+
+                        <div
+                            class="rounded-lg sm:rounded-xl lg:rounded-[16px] border border-[#FFECB91A] bg-[#1E1B4B66] p-4 sm:p-5 md:p-6">
+
+                            <p
+                                class="italic font-hanken text-[#D1C6AB] text-[15px] sm:text-[16px] leading-5 sm:leading-6 lg:leading-6">
+
+                                "Success is not just about winning; it's about playing with trust.
+                                We've served 50,000+ customers with honesty and transparency."
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT -->
+
+                    <div class="flex justify-center lg:justify-end mt-0">
+
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5 lg:gap-6 items-center w-full lg:w-auto">
+
+                            <!-- LEFT COLUMN -->
+
+                            <div class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 lg:pt-20">
+
+                                <div
+                                    class="p-4 sm:p-5 md:p-6 lg:p-8 w-full lg:w-[268px] backdrop-blur-8 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[24px] bg-[#312E81CC] border border-[#FACC151A] flex flex-col justify-center items-center">
+
+                                    <h3
+                                        class="font-libre text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-[#FFECB9] font-[700] leading-tight sm:leading-[36px] md:leading-[44px] lg:leading-[48px] tracking-tight sm:tracking-[-0.48px] md:tracking-[-0.72px] lg:tracking-[-0.96px]">
+                                        2020
+                                    </h3>
+
+                                    <span
+                                        class="mt-1 font-hanken uppercase text-[10px] sm:text-[11px] lg:text-[12px] leading-4 lg:leading-[16px] text-[#D1C6AB]">
+                                        ESTABLISHED
+                                    </span>
+
+                                </div>
+
+                                <div
+                                    class="p-4 sm:p-5 md:p-6 lg:p-8 w-full  lg:w-[268px] backdrop-blur-8 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[24px] bg-[#312E81CC] border border-[#FACC151A] flex flex-col justify-center items-center">
+
+                                    <h3
+                                        class="font-libre text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-[#FFECB9] font-[700] leading-tight sm:leading-[36px] md:leading-[44px] lg:leading-[48px] tracking-tight sm:tracking-[-0.48px] md:tracking-[-0.72px] lg:tracking-[-0.96px]">
+                                        100%
+                                    </h3>
+
+                                    <span
+                                        class="mt-1 font-hanken uppercase text-[10px] sm:text-[11px] lg:text-[12px] leading-4 lg:leading-[16px] text-[#D1C6AB]">
+                                        GOVT AUTHORIZED
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <!-- RIGHT COLUMN -->
+
+                            <div class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
+
+                                <div
+                                    class="p-4 sm:p-5 md:p-6 lg:p-8 w-full lg:w-[268px] backdrop-blur-8 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[24px] bg-[#312E81CC] border border-[#FACC151A] flex flex-col justify-center items-center">
+
+                                    <h3
+                                        class="font-libre text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-[#FFECB9] font-[700] leading-tight sm:leading-[36px] md:leading-[44px] lg:leading-[48px] tracking-tight sm:tracking-[-0.48px] md:tracking-[-0.72px] lg:tracking-[-0.96px]">
+                                        50K+
+                                    </h3>
+
+                                    <span
+                                        class="mt-1 font-hanken uppercase text-[10px] sm:text-[11px] lg:text-[12px] leading-4 lg:leading-[16px] text-[#D1C6AB]">
+                                        HAPPY CUSTOMERS
+                                    </span>
+
+                                </div>
+
+                                <div
+                                    class="p-4 sm:p-5 md:p-6 lg:p-8 w-full lg:w-[256px] rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-[24px] backdrop-blur-md bg-[#FACC151A] border border-[#FFECB966] flex flex-col justify-center items-center">
+
+                                    <svg width="12" height="24" viewBox="0 0 15 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="w-3 h-6 sm:w-4 sm:h-8 lg:w-[15px] lg:h-[30px]">
+                                        <path
+                                            d="M0 0H15V11.775C15 12.35 14.875 12.8625 14.625 13.3125C14.375 13.7625 14.025 14.125 13.575 14.4L8.25 17.55L9.3 21H15L10.35 24.3L12.15 30L7.5 26.475L2.85 30L4.65 24.3L0 21H5.7L6.75 17.55L1.425 14.4C0.975 14.125 0.625 13.7625 0.375 13.3125C0.125 12.8625 0 12.35 0 11.775V0ZM3 3V11.775L6 13.575V3H3ZM12 3H9V13.575L12 11.775V3Z"
+                                            fill="#FFECB9" />
+                                    </svg>
+
+                                    <span
+                                        class="mt-1 font-hanken uppercase text-[10px] sm:text-[11px] lg:text-[12px] leading-4 lg:leading-[16px] text-[#FFECB9]">
+                                        LEADING AGENCY
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="py-8 sm:py-10 md:py-12 lg:py-14 xl:py-[65px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[60px]">
+
+            <!-- Top Section -->
+
+            <div class="grid lg:grid-cols-12 gap-4 sm:gap-5 md:gap-6">
+
+                <!-- Left Card -->
+
+                <div
+                    class="lg:col-span-8 rounded-lg sm:rounded-2xl lg:rounded-[16px] overflow-hidden relative border border-[#D4AF374A] bg-[#1A1A1A99] backdrop-blur-md">
+
+                    <img src="assets/images/map.png" class="absolute inset-0 w-full h-full object-cover opacity-[15%]">
+
+                    <div class="relative z-10 h-full p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-between">
+
+                        <span
+                            class="inline-flex font-inter mb-2 sm:mb-0 items-center gap-2 w-fit rounded-full border border-[#10B98133] bg-[#10B9811A] px-3 py-1 font-[700] text-[9px] sm:text-[10px] tracking-[0.5px] sm:tracking-[1px] text-[#10B981]">
+
+                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+                                <path
+                                    d="M3.8 10.5L2.85 8.9L1.05 8.5L1.225 6.65L0 5.25L1.225 3.85L1.05 2L2.85 1.6L3.8 0L5.5 0.725L7.2 0L8.15 1.6L9.95 2L9.775 3.85L11 5.25L9.775 6.65L9.95 8.5L8.15 8.9L7.2 10.5L5.5 9.775L3.8 10.5ZM4.975 7.025L7.8 4.2L7.1 3.475L4.975 5.6L3.9 4.55L3.2 5.25L4.975 7.025Z"
+                                    fill="#10B981" />
+                            </svg>
+
+                            <span>OFFICIAL MAIN HEADQUARTERS</span>
+                        </span>
+
+                        <h2
+                            class="text-[#E5E2E1] font-montserrat mb-2 sm:mb-0 text-2xl sm:text-3xl md:text-[32px] lg:text-[36px] font-[600] leading-snug sm:leading-normal lg:leading-[1.2]">
+                            Monte Carlo HQ
+                        </h2>
+
+                        <p
+                            class="text-[#B0B0B0] text-base sm:text-[16px] md:text-[16px] lg:text-[18px] font-inter max-w-[500px] font-[400] leading-6 sm:leading-7 lg:leading-[1.4]">
+                            777 Fortune Avenue, Financial District Monte Carlo,
+                            MC98000
+                        </p>
+
+                        <div
+                            class="flex flex-col sm:flex-row gap-6 sm:gap-8 lg:gap-12 font-inter mt-4 sm:mt-5 md:mt-6 lg:mt-7">
+
+                            <div>
+
+                                <p
+                                    class="text-[#F2CA50] uppercase text-[12px] sm:text-[13px] lg:text-[14px] font-[700] tracking-[0.5px] sm:tracking-[0.75px] lg:tracking-[1px]">
+                                    Status
+                                </p>
+
+                                <p
+                                    class="text-[#E5E2E1] text-sm sm:text-base lg:text-[16px] font-[400] mt-[4px] sm:mt-[5px] lg:mt-[6px]">
+                                    Available 24/7
+                                </p>
+
+                            </div>
+
+                            <div>
+
+                                <p
+                                    class="text-[#F2CA50] font-inter uppercase text-[12px] sm:text-[13px] lg:text-[14px] font-[700] tracking-[0.5px] sm:tracking-[0.75px] lg:tracking-[1px]">
+                                    Security
+                                </p>
+
+                                <p
+                                    class="text-[#E5E2E1] text-sm sm:text-base lg:text-[16px] font-[400] mt-[4px] sm:mt-[5px] lg:mt-[6px]">
+                                    256-Bit SSL Encrypted
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+
+                <div class="lg:col-span-4 flex flex-col gap-5">
+
+                    <div
+                        class="relative bg-[#2B2774] rounded-[16px] p-6 flex gap-6 items-center border border-[#4a4290] overflow-hidden">
+                        <div class="absolute left-0 top-0 h-full w-[4px]  bg-[#F2CA50]"></div>
+
+                        <div
+                            class="w-14 h-14 rounded-full bg-[#F2CA501A] flex items-center justify-center text-yellow-400 text-xl">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 12H12V10H4V12ZM4 9H16V7H4V9ZM4 6H16V4H4V6ZM0 20V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16H4L0 20ZM3.15 14H18V2H2V15.125L3.15 14ZM2 14V2V14Z"
+                                    fill="#F2CA50" />
+                            </svg>
+
+                        </div>
+
+                        <div class=" font-inter">
+
+                            <h4 class="text-[#E5E2E1] font-[700] text-[16px]">
+                                WhatsApp Support
+                            </h4>
+
+                            <p class="text-[#B0B0B0] text-[12px] font-[400] mt-[6px]">
+                                Instant connection to concierge
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bg-[#2B2774] rounded-[16px] p-6 flex gap-6 items-center border border-[#4a4290]">
+
+                        <div
+                            class="w-14 h-14 rounded-full bg-[#1d164f] flex items-center justify-center text-yellow-400 text-xl">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.95 13.55L12.6 7.9L11.175 6.475L6.95 10.7L4.85 8.6L3.425 10.025L6.95 13.55ZM8 20C5.68333 19.4167 3.77083 18.0875 2.2625 16.0125C0.754167 13.9375 0 11.6333 0 9.1V3L8 0L16 3V9.1C16 11.6333 15.2458 13.9375 13.7375 16.0125C12.2292 18.0875 10.3167 19.4167 8 20ZM8 17.9C9.73333 17.35 11.1667 16.25 12.3 14.6C13.4333 12.95 14 11.1167 14 9.1V4.375L8 2.125L2 4.375V9.1C2 11.1167 2.56667 12.95 3.7 14.6C4.83333 16.25 6.26667 17.35 8 17.9Z"
+                                    fill="#F2CA50" />
+                            </svg>
+
+
+                        </div>
+
+                        <div class=" font-inter">
+
+                            <h4 class="text-[#E5E2E1] font-[700] text-[16px]">
+                                License Verification
+                            </h4>
+
+                            <p class="text-[#B0B0B0] text-[12px] font-[400] mt-[6px]">
+                                View our regulatory credentials
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bg-[#2B2774] rounded-[16px] p-6 flex gap-6 items-center border border-[#4a4290] ">
+
+                        <div
+                            class="w-14 h-14 rounded-full bg-[#1d164f] flex items-center justify-center text-yellow-400 text-xl">
+                            <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 21C1.45 21 0.979167 20.8042 0.5875 20.4125C0.195833 20.0208 0 19.55 0 19V9C0 8.45 0.195833 7.97917 0.5875 7.5875C0.979167 7.19583 1.45 7 2 7H3V5C3 3.61667 3.4875 2.4375 4.4625 1.4625C5.4375 0.4875 6.61667 0 8 0C9.38333 0 10.5625 0.4875 11.5375 1.4625C12.5125 2.4375 13 3.61667 13 5V7H14C14.55 7 15.0208 7.19583 15.4125 7.5875C15.8042 7.97917 16 8.45 16 9V19C16 19.55 15.8042 20.0208 15.4125 20.4125C15.0208 20.8042 14.55 21 14 21H2ZM2 19H14V9H2V19ZM8 16C8.55 16 9.02083 15.8042 9.4125 15.4125C9.80417 15.0208 10 14.55 10 14C10 13.45 9.80417 12.9792 9.4125 12.5875C9.02083 12.1958 8.55 12 8 12C7.45 12 6.97917 12.1958 6.5875 12.5875C6.19583 12.9792 6 13.45 6 14C6 14.55 6.19583 15.0208 6.5875 15.4125C6.97917 15.8042 7.45 16 8 16ZM5 7H11V5C11 4.16667 10.7083 3.45833 10.125 2.875C9.54167 2.29167 8.83333 2 8 2C7.16667 2 6.45833 2.29167 5.875 2.875C5.29167 3.45833 5 4.16667 5 5V7ZM2 19V9V19Z"
+                                    fill="#F2CA50" />
+                            </svg>
+
+
+                        </div>
+
+                        <div class=" font-inter">
+
+                            <h4 class="text-[#E5E2E1] font-[700] text-[16px]">
+                                Secure Channel
+                            </h4>
+
+                            <p class="text-[#B0B0B0] text-[12px] font-[400] mt-[6px]">
+                                Private encrypted communications
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <footer class="bg-[#12073F] border-t border-[#4D4632]">
+
+            <section class="py-16 px-8 md:px-16 lg:px-[60px]">
+
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-14">
+
+                    <!-- Company -->
+
+                    <div>
+
+                        <img src="assets/images/footer.png" class="h-10 w-12">
+
+                        <h2 class="text-[#FFECB9] text-[28px] font-[700] mt-[6px] font-libre">
+                            Anju Lottery
+                        </h2>
+
+                        <p class="text-[#D1C6AB] text-[16px] font-[400] mt-6 font-hanken leading-6">
+
+                            Kerala government-authorized lottery agency serving dreams since 2020 with integrity and
+                            speed.
+
+                        </p>
+
+                        <div class="flex gap-5 mt-8">
+
+                            <div
+                                class="w-12 h-12 rounded-full border border-[#4D4632] flex justify-center items-center">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.66667 15C4.80556 15 3.22917 14.3542 1.9375 13.0625C0.645833 11.7708 0 10.1944 0 8.33333C0 6.47222 0.645833 4.89583 1.9375 3.60417C3.22917 2.3125 4.80556 1.66667 6.66667 1.66667C8.52778 1.66667 10.1042 2.3125 11.3958 3.60417C12.6875 4.89583 13.3333 6.47222 13.3333 8.33333C13.3333 10.1944 12.6875 11.7708 11.3958 13.0625C10.1042 14.3542 8.52778 15 6.66667 15ZM6.66667 13.3333C8.05556 13.3333 9.23611 12.8472 10.2083 11.875C11.1806 10.9028 11.6667 9.72222 11.6667 8.33333C11.6667 8.18056 11.6597 8.03472 11.6458 7.89583C11.6319 7.75694 11.6111 7.61111 11.5833 7.45833C10.5556 7.56944 9.5625 7.45486 8.60417 7.11458C7.64583 6.77431 6.80556 6.23611 6.08333 5.5C5.55556 6.22222 4.90625 6.81944 4.13542 7.29167C3.36458 7.76389 2.54167 8.07639 1.66667 8.22917C1.63889 9.63194 2.11111 10.8333 3.08333 11.8333C4.05556 12.8333 5.25 13.3333 6.66667 13.3333ZM4.58333 10C4.34722 10 4.14931 9.92014 3.98958 9.76042C3.82986 9.60069 3.75 9.40278 3.75 9.16667C3.75 8.93056 3.82986 8.73264 3.98958 8.57292C4.14931 8.41319 4.34722 8.33333 4.58333 8.33333C4.81944 8.33333 5.01736 8.41319 5.17708 8.57292C5.33681 8.73264 5.41667 8.93056 5.41667 9.16667C5.41667 9.40278 5.33681 9.60069 5.17708 9.76042C5.01736 9.92014 4.81944 10 4.58333 10ZM8.75 10C8.51389 10 8.31597 9.92014 8.15625 9.76042C7.99653 9.60069 7.91667 9.40278 7.91667 9.16667C7.91667 8.93056 7.99653 8.73264 8.15625 8.57292C8.31597 8.41319 8.51389 8.33333 8.75 8.33333C8.98611 8.33333 9.18403 8.41319 9.34375 8.57292C9.50347 8.73264 9.58333 8.93056 9.58333 9.16667C9.58333 9.40278 9.50347 9.60069 9.34375 9.76042C9.18403 9.92014 8.98611 10 8.75 10ZM5.33333 3.52083C4.58333 3.72917 3.92361 4.08681 3.35417 4.59375C2.78472 5.10069 2.34722 5.70833 2.04167 6.41667C2.77778 6.19444 3.43056 5.82986 4 5.32292C4.56944 4.81597 5.01389 4.21528 5.33333 3.52083ZM6.52083 3.33333C6.97917 4.125 7.60764 4.74653 8.40625 5.19792C9.20486 5.64931 10.0625 5.86111 10.9792 5.83333C10.5208 5.04167 9.89236 4.42014 9.09375 3.96875C8.29514 3.51736 7.4375 3.30556 6.52083 3.33333ZM13.3333 16.6667V12.5H14.5833V14.9167C15.3889 14 16.0069 12.9792 16.4375 11.8542C16.8681 10.7292 17.0833 9.55556 17.0833 8.33333C17.0833 7.11111 16.8681 5.9375 16.4375 4.8125C16.0069 3.6875 15.3889 2.66667 14.5833 1.75V4.16667H13.3333V0H17.5V1.25H15.8125C16.6319 2.25 17.2569 3.35417 17.6875 4.5625C18.1181 5.77083 18.3333 7.02778 18.3333 8.33333C18.3333 9.63889 18.1181 10.8958 17.6875 12.1042C17.2569 13.3125 16.6319 14.4167 15.8125 15.4167H17.5V16.6667H13.3333Z"
+                                        fill="#D1C6AB" />
+                                </svg>
+
+                            </div>
+
+                            <div
+                                class="w-12 h-12 rounded-full border border-[#4D4632] flex justify-center items-center">
+                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.33333 12.0833C9.375 12.0833 10.2604 11.7188 10.9896 10.9896C11.7188 10.2604 12.0833 9.375 12.0833 8.33333C12.0833 7.29167 11.7188 6.40625 10.9896 5.67708C10.2604 4.94792 9.375 4.58333 8.33333 4.58333C7.29167 4.58333 6.40625 4.94792 5.67708 5.67708C4.94792 6.40625 4.58333 7.29167 4.58333 8.33333C4.58333 9.375 4.94792 10.2604 5.67708 10.9896C6.40625 11.7188 7.29167 12.0833 8.33333 12.0833ZM8.33333 10.4167C7.75 10.4167 7.25694 10.2153 6.85417 9.8125C6.45139 9.40972 6.25 8.91667 6.25 8.33333C6.25 7.75 6.45139 7.25694 6.85417 6.85417C7.25694 6.45139 7.75 6.25 8.33333 6.25C8.91667 6.25 9.40972 6.45139 9.8125 6.85417C10.2153 7.25694 10.4167 7.75 10.4167 8.33333C10.4167 8.91667 10.2153 9.40972 9.8125 9.8125C9.40972 10.2153 8.91667 10.4167 8.33333 10.4167ZM1.66667 15C1.20833 15 0.815972 14.8368 0.489583 14.5104C0.163194 14.184 0 13.7917 0 13.3333V3.33333C0 2.875 0.163194 2.48264 0.489583 2.15625C0.815972 1.82986 1.20833 1.66667 1.66667 1.66667H4.29167L5.83333 0H10.8333L12.375 1.66667H15C15.4583 1.66667 15.8507 1.82986 16.1771 2.15625C16.5035 2.48264 16.6667 2.875 16.6667 3.33333V13.3333C16.6667 13.7917 16.5035 14.184 16.1771 14.5104C15.8507 14.8368 15.4583 15 15 15H1.66667ZM1.66667 13.3333H15V3.33333H11.625L10.1042 1.66667H6.5625L5.04167 3.33333H1.66667V13.3333Z"
+                                        fill="#D1C6AB" />
+                                </svg>
+
+                            </div>
+
+                            <div
+                                class="w-12 h-12 rounded-full border border-[#4D4632] flex justify-center items-center">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.25 10.4167L12.0833 6.66667L6.25 2.91667V10.4167ZM1.66667 13.3333C1.20833 13.3333 0.815972 13.1701 0.489583 12.8438C0.163194 12.5174 0 12.125 0 11.6667V1.66667C0 1.20833 0.163194 0.815972 0.489583 0.489583C0.815972 0.163194 1.20833 0 1.66667 0H15C15.4583 0 15.8507 0.163194 16.1771 0.489583C16.5035 0.815972 16.6667 1.20833 16.6667 1.66667V11.6667C16.6667 12.125 16.5035 12.5174 16.1771 12.8438C15.8507 13.1701 15.4583 13.3333 15 13.3333H1.66667ZM1.66667 11.6667H15V1.66667H1.66667V11.6667ZM1.66667 11.6667V1.66667V11.6667Z"
+                                        fill="#D1C6AB" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Links -->
+
+                    <div>
+
+                        <h3 class="text-[#FFECB9] font-hanken font-[400] text-[18px] mb-7">
+                            QUICK LINKS
+                        </h3>
+
+                        <ul class="space-y-[18px] font-hanken font-[400] text-[16px] text-[#D1C6AB]">
+
+                            <li>Daily Tickets</li>
+
+                            <li>Bumper Tickets</li>
+
+                            <li>Official Results</li>
+
+                            <li>About Us</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Legal -->
+
+                    <div>
+
+                        <h3 class="text-[#FFECB9] font-hanken font-[400] text-[18px] mb-7">
+                            LEGAL & TRUST
+                        </h3>
+
+                        <ul class="space-y-[18px] font-hanken font-[400] text-[16px] text-[#D1C6AB]">
+
+                            <li>Terms of Service</li>
+
+                            <li>Privacy Policy</li>
+
+                            <li>Responsible Gaming</li>
+
+                            <li>Claim Assistance</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Contact -->
+
+                    <div>
+
+                        <h3 class="text-[#FFECB9]  backdrop-blur-md font-hanken font-[400] text-[18px] mb-7">
+                            DIRECT CONTACT
+                        </h3>
+
+                        <div class="bg-[#312E81CC] rounded-[14px] p-[18px]">
+                            <p class="flex items-center gap-3 text-white">
+                                <svg class="w-[17px] h-[17px] shrink-0" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.33333 16.6667C7.41667 16.6667 6.53125 16.5243 5.67708 16.2396C4.82292 15.9549 4.04167 15.5417 3.33333 15L4.54167 13.7917C5.125 14.1944 5.73611 14.4965 6.375 14.6979C7.01389 14.8993 7.66667 15 8.33333 15C10.1806 15 11.7535 14.3507 13.0521 13.0521C14.3507 11.7535 15 10.1806 15 8.33333C15 6.48611 14.3507 4.91319 13.0521 3.61458C11.7535 2.31597 10.1806 1.66667 8.33333 1.66667C6.48611 1.66667 4.91319 2.31597 3.61458 3.61458C2.31597 4.91319 1.66667 6.48611 1.66667 8.33333H0C0 7.18056 0.21875 6.09722 0.65625 5.08333C1.09375 4.06944 1.6875 3.1875 2.4375 2.4375C3.1875 1.6875 4.06944 1.09375 5.08333 0.65625C6.09722 0.21875 7.18056 0 8.33333 0C9.48611 0 10.566 0.21875 11.5729 0.65625C12.5799 1.09375 13.4618 1.69097 14.2188 2.44792C14.9757 3.20486 15.5729 4.08681 16.0104 5.09375C16.4479 6.10069 16.6667 7.17708 16.6667 8.32292C16.6667 9.46875 16.4479 10.5486 16.0104 11.5625C15.5729 12.5764 14.9757 13.4618 14.2188 14.2188C13.4618 14.9757 12.5799 15.5729 11.5729 16.0104C10.566 16.4479 9.48611 16.6667 8.33333 16.6667ZM1.64583 13.2708L5.04167 9.875L7.54167 11.9583L11.6667 7.83333V10H13.3333V5H8.33333V6.66667H10.5L7.45833 9.70833L4.95833 7.625L0.770833 11.8125C0.923611 12.1319 1.05903 12.3924 1.17708 12.5938C1.29514 12.7951 1.45139 13.0208 1.64583 13.2708Z"
+                                        fill="#FFECB9" />
+                                </svg>
+
+                                <span class="text-[16px] font-hanken leading-6 text-[#E3DFFF]">
+                                    +91 9345362855
+                                </span>
+                            </p>
+
+                            <button
+                                class="mt-5 w-full bg-[#FACC151A] text-[14px] font-[400] font-hanken border border-[#FFECB94D] rounded-[10px] py-[10px] text-[#FFECB9] hover:bg-[#534b9d] duration-300">
+
+                                CALL NOW
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <div class="border-t border-[#4D46324D]">
+
+                <div class="px-8 md:px-16 lg:px-15 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+                    <p class="text-[#D1C6AB] leading-[24px] font-hanken text-[16px]">
+
+                        © 2024 Anju Lottery Agency. Government Authorized Distributor.
+
+                    </p>
+
+                    <div
+                        class="inline-flex items-center gap-2 border border-[#FACC154D] rounded-full px-4 py-1 bg-[#FACC151A]">
+                        <svg class="w-[13px] h-[13px] shrink-0" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.43333 12.25L3.325 10.3833L1.225 9.91667L1.42917 7.75833L0 6.125L1.42917 4.49167L1.225 2.33333L3.325 1.86667L4.43333 0L6.41667 0.845833L8.4 0L9.50833 1.86667L11.6083 2.33333L11.4042 4.49167L12.8333 6.125L11.4042 7.75833L11.6083 9.91667L9.50833 10.3833L8.4 12.25L6.41667 11.4042L4.43333 12.25ZM4.92917 10.7625L6.41667 10.1208L7.93333 10.7625L8.75 9.3625L10.3542 8.98333L10.2083 7.35L11.2875 6.125L10.2083 4.87083L10.3542 3.2375L8.75 2.8875L7.90417 1.4875L6.41667 2.12917L4.9 1.4875L4.08333 2.8875L2.47917 3.2375L2.625 4.87083L1.54583 6.125L2.625 7.35L2.47917 9.0125L4.08333 9.3625L4.92917 10.7625ZM5.80417 8.19583L9.1 4.9L8.28333 4.05417L5.80417 6.53333L4.55 5.30833L3.73333 6.125L5.80417 8.19583Z"
+                                fill="#FACC15" />
+                        </svg>
+
+                        <span
+                            class="text-[10px] md:text-[10px] font-[400] uppercase leading-[15px] text-[#FACC15] whitespace-nowrap">
+                            KERALA STATE LOTTERY PARTNER
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            // =========================
+            // Desktop Navigation
+            // =========================
+
+            const links = document.querySelectorAll(".nav-link");
+            const indicator = document.getElementById("indicator");
+
+            function moveIndicator(link) {
+                indicator.style.width = link.offsetWidth + "px";
+                indicator.style.left = link.offsetLeft + "px";
+            }
+
+            if (links.length) {
+
+                links[0].classList.add("active");
+                moveIndicator(links[0]);
+
+                links.forEach(link => {
+
+                    link.addEventListener("click", function () {
+
+                        links.forEach(item => item.classList.remove("active"));
+                        this.classList.add("active");
+
+                        moveIndicator(this);
+
+                    });
+
+                });
+
+            }
+
+            // =========================
+            // Mobile Menu
+            // =========================
+            const menuBtn = document.getElementById("menuBtn");
+            const mobileMenu = document.getElementById("mobileMenu");
+
+            const openIcon = document.getElementById("openIcon");
+            const closeIcon = document.getElementById("closeIcon");
+
+            menuBtn.addEventListener("click", () => {
+
+                if (mobileMenu.classList.contains("max-h-0")) {
+
+                    mobileMenu.classList.remove(
+                        "max-h-0",
+                        "opacity-0",
+                        "-translate-y-4"
+                    );
+
+                    mobileMenu.classList.add(
+                        "max-h-screen",
+                        "opacity-100",
+                        "translate-y-0"
+                    );
+
+                } else {
+
+                    mobileMenu.classList.remove(
+                        "max-h-screen",
+                        "opacity-100",
+                        "translate-y-0"
+                    );
+
+                    mobileMenu.classList.add(
+                        "max-h-0",
+                        "opacity-0",
+                        "-translate-y-4"
+                    );
+                }
+
+                openIcon.classList.toggle("hidden");
+                closeIcon.classList.toggle("hidden");
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
