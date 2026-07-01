@@ -153,7 +153,7 @@ html[lang="ml"] .about-head {
 }
 @media (max-width: 639px) {
 html[lang="ml"] .about-desc {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
 }
 
@@ -163,7 +163,7 @@ html[lang="ml"] .feature {
     line-height: 22px;
 }
 html[lang="ml"] .feature-desc {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 18px;
 }
 
