@@ -64,3 +64,107 @@
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 639px) {
+
+    html[lang="ml"] .hero-titles {
+        font-size: 30px;
+        line-height: 46px;
+    }
+
+}
+
+html[lang="ml"] .location-text {
+        font-size: 11px;
+        line-height: 24px;
+    }
+
+@media (min-width: 1024px) {
+    html[lang="ml"] .premium-Head {
+        font-size: 27px;
+    }
+}
+@media (min-width: 1024px) {
+    html[lang="ml"] .premium-sub {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 639px) {
+    html[lang="ml"] .branch-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+@media (max-width: 639px) {
+    html[lang="ml"] .ticket-head {
+        font-size: 22px;
+      line-height: 27px;
+    }
+}
+
+@media (min-width: 768px) {
+    html[lang="ml"] .ticket-head {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    html[lang="ml"] .ticket-sub {
+        font-size: 14px;
+        margin-top: -7px;
+    }
+}
+
+
+html[lang="ml"] .tickets-name {
+        font-size: 17px;
+}
+
+@media (max-width: 639px) {
+html[lang="ml"] .result-head {
+    font-size: 20px;
+    line-height: 27px;
+}
+}
+
+@media (max-width: 639px) {
+html[lang="ml"] .blog-head {
+    font-size: 19px;
+    line-height: 24px;
+}
+
+}
+
+/* @media (min-width: 768px) {
+    html[lang="ml"] .blog-head {
+    font-size: 25px;
+
+}
+} */
+
+@media (max-width: 639px) {
+html[lang="ml"] .about-head {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+}
+@media (max-width: 639px) {
+html[lang="ml"] .about-desc {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+}
+html[lang="ml"] .feature {
+    font-size: 15px;
+    line-height: 22px;
+}
+html[lang="ml"] .feature-desc {
+    font-size: 11px;
+    line-height: 18px;
+}
+
+
