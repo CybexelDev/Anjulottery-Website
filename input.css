@@ -100,7 +100,7 @@ html[lang="ml"] .location-text {
 @media (max-width: 639px) {
     html[lang="ml"] .ticket-head {
         font-size: 22px;
-      line-height: 27px;
+      line-height: 25px;
     }
 }
 
