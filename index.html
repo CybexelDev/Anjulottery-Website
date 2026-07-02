@@ -32,7 +32,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&family=Hanken+Grotesk:wght@100..900&family=Inter:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="bg-[#0F0B3C] text-white">
@@ -41,87 +41,77 @@
     <!-- popup modal open website -->
 
     <div id="welcomeModalOverlay"
-    class="fixed inset-0 z-[9998] hidden items-center justify-center px-4 bg-[#0F0B3C]/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
+        class="fixed inset-0 z-[9998] hidden items-center justify-center px-4 bg-[#0F0B3C]/80 backdrop-blur-sm opacity-0 transition-opacity duration-300">
 
-    <div id="welcomeModalCard"
-        class="relative w-full max-w-[440px] bg-[#18124A] border border-[#FACC154D] rounded-[20px]
+        <div id="welcomeModalCard" class="relative w-full max-w-[440px] bg-[#18124A] border border-[#FACC154D] rounded-[20px]
         shadow-[0_0_60px_rgba(250,204,21,0.15)] px-7 py-9 sm:px-8 sm:py-9
         transform scale-95 opacity-0 transition-all duration-300 overflow-hidden">
 
-        <!-- Glow -->
-        <div
-            class="pointer-events-none absolute -top-16 -right-16 w-52 h-52 rounded-full bg-[#FACC15]/10 blur-[80px]">
-        </div>
+            <!-- Glow -->
+            <div
+                class="pointer-events-none absolute -top-16 -right-16 w-52 h-52 rounded-full bg-[#FACC15]/10 blur-[80px]">
+            </div>
 
-        <!-- Close -->
-        <button id="welcomeModalClose"
-            class="absolute top-4 right-4 w-9 h-9 rounded-full border border-[#FFECB933]
+            <!-- Close -->
+            <button id="welcomeModalClose" class="absolute top-4 right-4 w-9 h-9 rounded-full border border-[#FFECB933]
             bg-[#312E81CC] flex items-center justify-center text-[#FFECB9]
             hover:bg-[#4338CA] hover:border-[#FFECB966] transition">
 
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M1 1L13 13M13 1L1 13"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round" />
-            </svg>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
 
-        </button>
+            </button>
 
-        <!-- Badge -->
-        <div
-            class="relative z-10 inline-flex items-center gap-2 px-4 py-2 border bg-[#FFECB90D] border-[#FFECB94D] rounded-full mb-5">
+            <!-- Badge -->
+            <div
+                class="relative z-10 inline-flex items-center gap-2 px-4 py-2 border bg-[#FFECB90D] border-[#FFECB94D] rounded-full mb-5">
 
-            <svg width="16" height="15" viewBox="0 0 22 21" fill="none">
-                <path
-                    d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
-                    fill="#FACC15" />
-            </svg>
+                <svg width="16" height="15" viewBox="0 0 22 21" fill="none">
+                    <path
+                        d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
+                        fill="#FACC15" />
+                </svg>
 
-            <p
-                class="font-hanken text-[10px] sm:text-[11px] font-[650] tracking-[1.4px] uppercase text-[#FACC15]">
-                Welcome to Anju Lottery
+                <p class="font-hanken text-[10px] sm:text-[11px] font-[650] tracking-[1.4px] uppercase text-[#FACC15]">
+                    Welcome to Anju Lottery
+                </p>
+
+            </div>
+
+            <!-- Heading -->
+            <h2
+                class="relative z-10 font-libre text-[26px] sm:text-[30px] leading-[36px] font-[700] text-[#FFECB9] mb-4">
+                Your Trusted Kerala <br class="hidden sm:block">
+                Lottery Agency
+            </h2>
+
+            <!-- Description -->
+            <p class="relative z-10 font-hanken text-[14px] sm:text-[15px] leading-6 text-[#D1C6AB] mb-7">
+
+                Explore the latest Kerala Lottery tickets, bumper lotteries,
+                winning results, and agency information.
+
+                Stay updated with daily lottery news and ticket availability.
+
             </p>
 
-        </div>
+            <!-- Buttons -->
+            <div class="relative z-10 flex flex-col sm:flex-row gap-3">
 
-        <!-- Heading -->
-        <h2
-            class="relative z-10 font-libre text-[26px] sm:text-[30px] leading-[36px] font-[700] text-[#FFECB9] mb-4">
-            Your Trusted Kerala <br class="hidden sm:block">
-            Lottery Agency
-        </h2>
-
-        <!-- Description -->
-        <p
-            class="relative z-10 font-hanken text-[14px] sm:text-[15px] leading-6 text-[#D1C6AB] mb-7">
-
-            Explore the latest Kerala Lottery tickets, bumper lotteries,
-            winning results, and agency information.
-
-            Stay updated with daily lottery news and ticket availability.
-
-        </p>
-
-        <!-- Buttons -->
-        <div class="relative z-10 flex flex-col sm:flex-row gap-3">
-
-            <!-- Change #tickets to your section id -->
-            <a href="#tickets"
-                id="welcomeModalClaim"
-                class="flex-1 text-center bg-[#FACC15]
+                <!-- Change #tickets to your section id -->
+                <a href="#tickets" id="welcomeModalClaim" class="flex-1 text-center bg-[#FACC15]
                 text-[#1E1B4B] font-hanken font-[700]
                 text-[12px] tracking-[1px] uppercase
                 px-5 py-3.5 rounded-[12px]
                 hover:bg-yellow-300
                 transition duration-300">
 
-                View Tickets
+                    View Tickets
 
-            </a>
+                </a>
 
-            <button id="welcomeModalDismiss"
-                class="flex-1 text-center bg-transparent
+                <button id="welcomeModalDismiss" class="flex-1 text-center bg-transparent
                 border border-[#FFECB94D]
                 hover:border-[#FFECB966]
                 text-[#FFECB9]
@@ -133,15 +123,15 @@
                 rounded-[12px]
                 transition duration-300">
 
-                Continue Browsing
+                    Continue Browsing
 
-            </button>
+                </button>
+
+            </div>
 
         </div>
 
     </div>
-
-</div>
 
 
     <!-- ================= NAVBAR ================= -->
@@ -159,96 +149,80 @@
                 <!-- Desktop Menu -->
                 <ul id="navbar" class="relative hidden lg:flex  lg:gap-6 xl:gap-8 font-inter text-[15px]">
 
-<li><a href="#home" class="nav-link active">Home</a></li>
-<li><a href="#shop" class="nav-link">Shop Gallery</a></li>
-<li><a href="#about" class="nav-link">About</a></li>
-<li><a href="#blogs" class="nav-link" >Blogs</a></li>
-<li><a href="#tickets" class="nav-link">Daily Tickets</a></li>
-<li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#shop" class="nav-link">Shop Gallery</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#blogs" class="nav-link">Blogs</a></li>
+                    <li><a href="#tickets" class="nav-link">Daily Tickets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                     <!-- Sliding underline -->
                     <span id="indicator"></span>
 
                 </ul>
 
                 <!-- Mobile Button -->
-<!-- Right Side -->
-<div class="flex items-center gap-4">
+                <!-- Right Side -->
+                <div class="flex items-center gap-4">
 
-    <!-- Language Switcher (Desktop) -->
-   <!-- Language Dropdown -->
-<div class="relative" id="languageDropdown">
+                    <!-- Language Switcher (Desktop) -->
+                    <!-- Language Dropdown -->
+                    <div class="relative" id="languageDropdown">
 
-    <!-- Button -->
-    <button id="languageBtn"
-        class="flex items-center gap-2 bg-[#312E81] border border-[#F2CA50]/30 rounded-lg px-3 py-2 text-[#F2CA50] hover:border-[#F2CA50] transition">
+                        <!-- Button -->
+                        <button id="languageBtn"
+                            class="flex items-center gap-2 bg-[#312E81] border border-[#F2CA50]/30 rounded-lg px-3 py-2 text-[#F2CA50] hover:border-[#F2CA50] transition">
 
-        <span id="selectedLanguage" class="text-xs md:text-sm">
-            English
-        </span>
+                            <span id="selectedLanguage" class="text-xs md:text-sm">
+                                English
+                            </span>
 
-        <svg id="arrow"
-            class="w-4 h-4 transition-transform duration-300"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24">
+                            <svg id="arrow" class="w-4 h-4 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
 
-            <path stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
-        </svg>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
 
-    </button>
+                        </button>
 
-    <!-- Dropdown -->
-    <div id="languageMenu"
-        class="absolute right-0 mt-2 w-40 bg-[#312E81] border border-[#F2CA50]/30 rounded-lg shadow-xl overflow-hidden hidden z-[9999]">
+                        <!-- Dropdown -->
+                        <div id="languageMenu"
+                            class="absolute right-0 mt-2 w-40 bg-[#312E81] border border-[#F2CA50]/30 rounded-lg shadow-xl overflow-hidden hidden z-[9999]">
 
-        <button
-            data-lang="en"
-            class="language-option w-full text-left px-4 py-3 hover:bg-[#4338CA] transition text-sm text-white">
-            English
-        </button>
+                            <button data-lang="en"
+                                class="language-option w-full text-left px-4 py-3 hover:bg-[#4338CA] transition text-sm text-white">
+                                English
+                            </button>
 
-        <button
-            data-lang="ml"
-            class="language-option w-full text-left px-4 py-3 hover:bg-[#4338CA] transition text-sm text-white">
-            മലയാളം
-        </button>
+                            <button data-lang="ml"
+                                class="language-option w-full text-left px-4 py-3 hover:bg-[#4338CA] transition text-sm text-white">
+                                മലയാളം
+                            </button>
 
-    </div>
+                        </div>
 
-</div>
+                    </div>
 
-    <!-- Mobile Button -->
-    <button id="menuBtn" class="lg:hidden text-[#F2CA50]">
+                    <!-- Mobile Button -->
+                    <button id="menuBtn" class="lg:hidden text-[#F2CA50]">
 
-        <!-- Hamburger -->
-        <svg id="openIcon" xmlns="http://www.w3.org/2000/svg"
-            class="w-8 h-8" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
-                d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+                        <!-- Hamburger -->
+                        <svg id="openIcon" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
 
-        <!-- Close -->
-        <svg id="closeIcon"
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-8 h-8 hidden"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2.5"
-                d="M6 6L18 18M18 6L6 18" />
-        </svg>
+                        <!-- Close -->
+                        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M6 6L18 18M18 6L6 18" />
+                        </svg>
 
-    </button>
+                    </button>
 
-</div>
+                </div>
 
             </div>
 
@@ -270,7 +244,7 @@ z-50">
 
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#shop" class="nav-link">Shop Gallery</a></li>
-                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#blogs" class="nav-link">Blogs</a></li>
                     <li><a href="#tickets" class="nav-link">Daily Tickets</a></li>
                     <li><a href="#contact" class="nav-link">Contacts</a></li>
@@ -311,8 +285,8 @@ z-50">
                     </div>
 
                     <!-- Heading -->
-                    <h1
-                        class="hero-titles font-libre text-[36px] leading-[46px] sm:text-[42px]  sm:leading-[52px]  lg:leading-[60px] font-[700] gradient-text malayalam-title" data-key="hero_title">
+                    <h1 class="hero-titles font-libre text-[36px] leading-[46px] sm:text-[42px]  sm:leading-[52px]  lg:leading-[60px] font-[700] gradient-text malayalam-title"
+                        data-key="hero_title">
 
                         Welcome to Anju <br>
 
@@ -323,8 +297,8 @@ z-50">
                     </h1>
 
                     <!-- Description -->
-                    <p
-                        class="font-hanken text-[16px] sm:text-[18px] lg:text-[20px] font-[400] leading-7 text-[#D1C6AB]" data-key="hero_desc">
+                    <p class="font-hanken text-[16px] sm:text-[18px] lg:text-[20px] font-[400] leading-7 text-[#D1C6AB]"
+                        data-key="hero_desc">
 
                         Kerala's Most Trusted Lottery Agency Since 2020.
                         Providing authentic government lottery tickets to
@@ -335,50 +309,50 @@ z-50">
 
                     <!-- Button & Counter -->
                     <!-- Buttons & Counter -->
-<div class="flex flex-col sm:flex-row sm:items-center gap-5">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-5">
 
-    <div class="flex flex-row gap-3">
+                        <div class="flex flex-row gap-3">
 
-        <!-- View Daily Tickets Button -->
-        <button
-            class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-hanken font-[700] px-8 py-4 rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
+                            <!-- View Daily Tickets Button -->
+                            <button
+                                class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-hanken font-[700] px-8 py-4 rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
 
-            VIEW DAILY TICKETS
+                                VIEW DAILY TICKETS
 
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
-                    fill="#6C5700" />
-            </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
+                                        fill="#6C5700" />
+                                </svg>
 
-        </button>
+                            </button>
 
-        <!-- WhatsApp Contact Now Button -->
-<a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
-            target="_blank" rel="noopener noreferrer"
-            class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-[700] px-7 py-[10px] rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
-
-
-               <i class="fa-brands fa-whatsapp" style="font-size:25px;color:black;"></i>
+                            <!-- WhatsApp Contact Now Button -->
+                            <a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-[700] px-7 py-[10px] rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
 
 
-        </a>
+                                <i class="fa-brands fa-whatsapp" style="font-size:25px;color:black;"></i>
 
-    </div>
 
-    <div class="font-hanken border-l border-[#4D4632] pl-6">
+                            </a>
 
-        <h3 class="font-[700] text-[16px] leading-[24px] text-[#FFECB9]">
-            50,000+
-        </h3>
+                        </div>
 
-        <p class="text-[12px] font-[400] leading-[16px] uppercase text-[#D1C6AB]">
-            Happy Customers
-        </p>
+                        <div class="font-hanken border-l border-[#4D4632] pl-6">
 
-    </div>
+                            <h3 class="font-[700] text-[16px] leading-[24px] text-[#FFECB9]">
+                                50,000+
+                            </h3>
 
-</div>
+                            <p class="text-[12px] font-[400] leading-[16px] uppercase text-[#D1C6AB]">
+                                Happy Customers
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -404,11 +378,12 @@ z-50">
         <section id="shop" class="py-10 sm:py-12 md:py-14 lg:py-[65px] px-5 sm:px-8 md:px-10 lg:px-[60px]">
             <!-- Heading -->
             <div class="text-center mb-10">
-                <h2 class="branch-title text-2xl md:text-[32px] font-[700] leading-[40px] font-libre text-[#FFECB9]" data-key="branch_title">
+                <h2 class="branch-title text-2xl md:text-[32px] font-[700] leading-[40px] font-libre text-[#FFECB9]"
+                    data-key="branch_title">
                     Visit Our Branches
                 </h2>
-                <p
-                    class="font-hanken text-[#D1C6AB] font-[350] text-[15px] md:text-[16px] leading-[24px] mt-3 max-w-2xl mx-auto" data-key="branch_sub">
+                <p class="font-hanken text-[#D1C6AB] font-[350] text-[15px] md:text-[16px] leading-[24px] mt-3 max-w-2xl mx-auto"
+                    data-key="branch_sub">
                     Experience the professional environment where millions of dreams are processed daily with
                     transparency and care.
                 </p>
@@ -445,7 +420,8 @@ z-50">
                                 fill="#FFECB9" />
                         </svg>
                         <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
-                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Medical center Hospital, Rajakkad, Idukki</h3>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Medical center Hospital,
+                            Rajakkad, Idukki</h3>
                         <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
                     </div>
 
@@ -521,38 +497,36 @@ z-50">
 
                             <div class="my-3">
 
-    <p
-        class="text-[13px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-[#D1C6AB] font-[400] text-center sm:text-left">
-        Open Daily:
-        <span class=" text-[14px] lg:text-[10px] xl:text-[14px]">9:00 AM - 9:00
-            PM</span>
-    </p>
+                                <p
+                                    class="text-[13px] sm:text-[14px] lg:text-[14px] xl:text-[14px] text-[#D1C6AB] font-[400] text-center sm:text-left">
+                                    Open Daily:
+                                    <span class=" text-[14px] lg:text-[10px] xl:text-[14px]">9:00 AM - 9:00
+                                        PM</span>
+                                </p>
 
-</div>
-<div class="flex flex-row gap-2 w-full">
+                            </div>
+                            <div class="flex flex-row gap-2 w-full">
 
-    <!-- Call Now Button -->
-    <a href="tel:+919447901980"
-        class="flex-1 bg-[#FACC15] text-[#1E1B4B] px-4 py-2 rounded-[9px]
+                                <!-- Call Now Button -->
+                                <a href="tel:+919447901980" class="flex-1 bg-[#FACC15] text-[#1E1B4B] px-4 py-2 rounded-[9px]
         font-[900] text-[12px] sm:text-[13.1px]
         hover:bg-yellow-300 transition flex items-center justify-center gap-2">
-        <i class="fa-solid fa-phone text-[12px]"></i>
-                    CALL NOW
+                                    <i class="fa-solid fa-phone text-[12px]"></i>
+                                    CALL NOW
 
-    </a>
+                                </a>
 
-    <!-- WhatsApp Button -->
-<a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
-        target="_blank" rel="noopener noreferrer"
-        class="flex-1 bg-[#FACC15] text-[#1E1B4B] px-4 py-2 rounded-[9px]
+                                <!-- WhatsApp Button -->
+                                <a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
+                                    target="_blank" rel="noopener noreferrer" class="flex-1 bg-[#FACC15] text-[#1E1B4B] px-4 py-2 rounded-[9px]
         font-[900] text-[12px] sm:text-[13.1px]
         hover:bg-yellow-300 transition flex items-center justify-center gap-2">
-        <i class="fa-brands fa-whatsapp text-[18px]"></i>
-                    WHATSAPP
+                                    <i class="fa-brands fa-whatsapp text-[18px]"></i>
+                                    WHATSAPP
 
-    </a>
+                                </a>
 
-</div>
+                            </div>
 
                         </div>
 
@@ -572,7 +546,8 @@ z-50">
                                 fill="#FFECB9" />
                         </svg>
                         <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
-                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Near Sree Krishna Jewellery, Adimaly</h3>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Near Sree Krishna Jewellery,
+                            Adimaly</h3>
                         <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
                     </div>
 
@@ -586,7 +561,8 @@ z-50">
                                 fill="#FFECB9" />
                         </svg>
                         <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
-                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Private, Bus Stand Road, Adimaly, Idukki</h3>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Private, Bus Stand Road,
+                            Adimaly, Idukki</h3>
                         <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
                     </div>
 
@@ -600,7 +576,8 @@ z-50">
                                 fill="#FFECB9" />
                         </svg>
                         <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
-                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Near Matha Bar, Adimaly, Idukki</h3>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Near Matha Bar, Adimaly, Idukki
+                        </h3>
                         <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
                     </div>
 
@@ -628,7 +605,8 @@ z-50">
                                 fill="#FFECB9" />
                         </svg>
                         <p class="text-[12px]  font-[400] text-[#D1C6AB] mt-[6px] uppercase">Location</p>
-                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Near Adimally pvt busstand, Idukki</h3>
+                        <h3 class="font-[700] text-[16px] text-[#FFECB9] location-text">Near Adimally pvt busstand,
+                            Idukki</h3>
                         <p class="text-[14px] text-[#D1C6AB] font-[400]">Open Daily: 9:00 AM - 9:00 PM</p>
                     </div>
 
@@ -668,21 +646,21 @@ z-50">
                                 </div>
 
                                 <!-- Heading -->
-                                <h1
-                                    class="premium-Head text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]" data-key="premiumHead">
+                                <h1 class="premium-Head text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]"
+                                    data-key="premiumHead">
                                     WIN BIG TODAY!
                                 </h1>
 
                                 <!-- Subheading -->
-                                <p
-                                    class="premium-sub text-lg sm:text-xl md:text-2xl text-[#D1C6AB] font-[400] font-libre mb-4 sm:mb-6" data-key="premiumSub">
+                                <p class="premium-sub text-lg sm:text-xl md:text-2xl text-[#D1C6AB] font-[400] font-libre mb-4 sm:mb-6"
+                                    data-key="premiumSub">
                                     Limited Tickets
                                     Available
                                 </p>
 
                                 <!-- Description -->
-                                <p
-                                    class="text-[#E3DFFFCC] font-[350] max-w-[450px] text-sm sm:text-base md:text-lg lg:text-[18px] leading-6 sm:leading-7 lg:leading-[28px] font-hanken mb-6 sm:mb-8" data-key="premiumDesc">
+                                <p class="text-[#E3DFFFCC] font-[350] max-w-[450px] text-sm sm:text-base md:text-lg lg:text-[18px] leading-6 sm:leading-7 lg:leading-[28px] font-hanken mb-6 sm:mb-8"
+                                    data-key="premiumDesc">
                                     Experience the gold standard of lottery gaming. Secure your entry for the upcoming
                                     grand
                                     draw and join the ranks of our elite winners.
@@ -767,7 +745,8 @@ z-50">
                                         </svg>
 
                                         <div>
-                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Instatnt Ticket Booking</p>
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Instatnt Ticket Booking
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -903,12 +882,13 @@ z-50">
 
                 <div class="text-center flex flex-col gap-[10px] md:gap-[17px]">
 
-                    <h2 class="ticket-head font-libre font-[700] text-[26px] sm:text-[32px] text-[#FFECB9] leading-[44px]" data-key="ticketHead">
+                    <h2 class="ticket-head font-libre font-[700] text-[26px] sm:text-[32px] text-[#FFECB9] leading-[44px]"
+                        data-key="ticketHead">
                         Daily Fortune Draws
                     </h2>
 
-                    <p
-                        class="ticket-sub text-[#D1C6AB] font-hanken max-w-[330px] md:max-w-[739.2px] font-[400] mx-auto text-[15px] sm:text-[17px] leading-[24px] sm:leading-6" data-key="ticketSub">
+                    <p class="ticket-sub text-[#D1C6AB] font-hanken max-w-[330px] md:max-w-[739.2px] font-[400] mx-auto text-[15px] sm:text-[17px] leading-[24px] sm:leading-6"
+                        data-key="ticketSub">
                         Discover our collection of daily lottery tickets. Each day offers
                         a unique chance to win the ₹1 Crore jackpot.
                     </p>
@@ -1335,13 +1315,13 @@ z-50">
 
             <!-- Header -->
             <div id="results" class="mb-12 mt-20 sm:mt-32">
-                <h2
-                    class="result-head text-[26px] text-center sm:text-start md:text-[32px] leading-[40px] font-[700] text-[#FFECB9] font-libre mb-2 sm:mb-4" data-key="resultHead">
+                <h2 class="result-head text-[26px] text-center sm:text-start md:text-[32px] leading-[40px] font-[700] text-[#FFECB9] font-libre mb-2 sm:mb-4"
+                    data-key="resultHead">
                     Latest Draw Results
                     <span class="hidden sm:inline"> (Daily)</span>
                 </h2>
-                <p
-                    class="text-[#D1C6AB] hanken text-center sm:text-start font-[400] leading-[24px] text-[16px] sm:text-[16px] max-w-xl" data-key="resultSub">
+                <p class="text-[#D1C6AB] hanken text-center sm:text-start font-[400] leading-[24px] text-[16px] sm:text-[16px] max-w-xl"
+                    data-key="resultSub">
                     Check the winning numbers from the most recent Kerala State Lottery draws.
                 </p>
             </div>
@@ -1372,7 +1352,8 @@ z-50">
 
                     <!-- Winning Number Section -->
                     <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
-                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]" data-key="resultDesc">
+                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]"
+                            data-key="resultDesc">
                             Winning Number
                         </p>
                         <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
@@ -1404,7 +1385,8 @@ z-50">
 
                     <!-- Winning Number Section -->
                     <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
-                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]" data-key="resultDesc">
+                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]"
+                            data-key="resultDesc">
                             Winning Number
                         </p>
                         <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
@@ -1436,7 +1418,8 @@ z-50">
 
                     <!-- Winning Number Section -->
                     <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
-                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]" data-key="resultDesc">
+                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]"
+                            data-key="resultDesc">
                             Winning Number
                         </p>
                         <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
@@ -1455,7 +1438,8 @@ z-50">
 
             <!-- Heading -->
             <div class="mb-12">
-                <h2 class=" blog-head font-libre font-[700] text-[#FFECB9] text-[26px] md:text-[32px]" data-key="blogHead">
+                <h2 class=" blog-head font-libre font-[700] text-[#FFECB9] text-[26px] md:text-[32px]"
+                    data-key="blogHead">
                     Lottery Insights & Winner Stories
                 </h2>
 
@@ -1610,14 +1594,16 @@ z-50">
                     <!-- LEFT -->
                     <div class="flex flex-col gap-6 sm:gap-8">
 
-                        <h2
-                            class="about-head font-libre text-[24px]  sm:text-[32px] leading-tight sm:leading-[36px] md:leading-[38px] lg:leading-[40px] font-[700] text-[#FFECB9]" data-key="aboutHead">
+                        <h2 class="about-head font-libre text-[24px]  sm:text-[32px] leading-tight sm:leading-[36px] md:leading-[38px] lg:leading-[40px] font-[700] text-[#FFECB9]"
+                            data-key="aboutHead">
                             Decades of Trust in Every Ticket
                         </h2>
 
-                        <p class="about-desc font-hanken text-[15px] sm:text-[16px] leading-6 sm:leading-7 text-[#D1C6AB]" data-key="aboutDesc">
-                            Established in 2020, Anju Lottery Agency is a trusted Government Authorized Kerala State Lottery distributor in Palakkad.
-                             We provide genuine lottery tickets with reliable and customer-friendly service.
+                        <p class="about-desc font-hanken text-[15px] sm:text-[16px] leading-6 sm:leading-7 text-[#D1C6AB]"
+                            data-key="aboutDesc">
+                            Established in 2020, Anju Lottery Agency is a trusted Government Authorized Kerala State
+                            Lottery distributor in Palakkad.
+                            We provide genuine lottery tickets with reliable and customer-friendly service.
                         </p>
 
                         <!-- Features -->
@@ -1640,15 +1626,15 @@ z-50">
 
                                     </div>
 
-                                    <h4
-                                        class="feature text-[#FFECB9] font-[400] font-hanken uppercase text-[15px] sm:text-[16px] leading-tight sm:leading-normal" data-key="feature1">
+                                    <h4 class="feature text-[#FFECB9] font-[400] font-hanken uppercase text-[15px] sm:text-[16px] leading-tight sm:leading-normal"
+                                        data-key="feature1">
                                         FULLY COMPLIANT
                                     </h4>
 
                                 </div>
 
-                                <p
-                                    class="feature-desc mt-2 text-[#D1C6AB] font-hanken font-[400] text-[13px] lsm:text-[14px] leading-5 sm:leading-6 lg:leading-[20px]" data-key="featureDesc2">
+                                <p class="feature-desc mt-2 text-[#D1C6AB] font-hanken font-[400] text-[13px] lsm:text-[14px] leading-5 sm:leading-6 lg:leading-[20px]"
+                                    data-key="featureDesc2">
                                     We strictly follow all Kerala Government Lottery Department
                                     regulations for 100% legal play.
                                 </p>
@@ -1672,15 +1658,15 @@ z-50">
 
                                     </div>
 
-                                    <h4
-                                        class="feature text-[#FFECB9] font-[400] font-hanken uppercase text-[15px] sm:text-[16px] leading-tight sm:leading-normal" data-key="feature2">
+                                    <h4 class="feature text-[#FFECB9] font-[400] font-hanken uppercase text-[15px] sm:text-[16px] leading-tight sm:leading-normal"
+                                        data-key="feature2">
                                         COMMITMENT
                                     </h4>
 
                                 </div>
 
-                                <p
-                                    class="feature-desc mt-2 text-[#D1C6AB] font-hanken font-[400] text-[13px] sm:text-[14px] leading-5 sm:leading-6 lg:leading-[20px]" data-key="featureDesc1">
+                                <p class="feature-desc mt-2 text-[#D1C6AB] font-hanken font-[400] text-[13px] sm:text-[14px] leading-5 sm:leading-6 lg:leading-[20px]"
+                                    data-key="featureDesc1">
                                     Beyond sales, we assist with claim processes and verification
                                     for winners nationwide.
                                 </p>
@@ -1694,8 +1680,8 @@ z-50">
                         <div
                             class="rounded-lg sm:rounded-xl lg:rounded-[16px] border border-[#FFECB91A] bg-[#1E1B4B66] p-4 sm:p-5 md:p-6">
 
-                            <p
-                                class="feature-desc italic font-hanken text-[#D1C6AB] text-[15px] sm:text-[16px] leading-5 sm:leading-6 lg:leading-6" data-key="qoute">
+                            <p class="feature-desc italic font-hanken text-[#D1C6AB] text-[15px] sm:text-[16px] leading-5 sm:leading-6 lg:leading-6"
+                                data-key="qoute">
 
                                 "Success is not just about winning; it's about playing with trust.
                                 We've served 50,000+ customers with honesty and transparency."
@@ -1797,7 +1783,8 @@ z-50">
         </section>
 
 
-        <section id="contact" class="py-8 sm:py-10 md:py-12 lg:py-14 xl:py-[65px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[60px]">
+        <section id="contact"
+            class="py-8 sm:py-10 md:py-12 lg:py-14 xl:py-[65px] px-4 sm:px-6 md:px-8 lg:px-10 xl:px-[60px]">
 
             <!-- Top Section -->
 
@@ -2041,11 +2028,11 @@ z-50">
 
                         <ul class="space-y-[18px] font-hanken font-[400] text-[16px] text-[#D1C6AB]">
 
-                            <li ><a href="#tickets">Daily Tickets</a></li>
+                            <li><a href="#results">Home</a></li>
+
+                            <li><a href="#tickets">Daily Tickets</a></li>
 
                             <li><a href="#blogs">Blogs</a></li>
-
-                            <li><a href="#results">Official Results</a></li>
 
                             <li><a href="#about">About Us</a></li>
 
@@ -2097,15 +2084,15 @@ z-50">
                                 </span>
                             </p>
                             <a href="tel:+919447901980">
-                                 <button
-                                class="mt-5 w-full bg-[#FACC151A] text-[14px] font-[400] font-hanken border border-[#FFECB94D] rounded-[10px] py-[10px] text-[#FFECB9] hover:bg-[#534b9d] duration-300">
+                                <button
+                                    class="mt-5 w-full bg-[#FACC151A] text-[14px] font-[400] font-hanken border border-[#FFECB94D] rounded-[10px] py-[10px] text-[#FFECB9] hover:bg-[#534b9d] duration-300">
 
-                                CALL NOW
+                                    CALL NOW
 
-                            </button>
+                                </button>
                             </a>
 
-                           
+
 
                         </div>
 
@@ -2147,71 +2134,71 @@ z-50">
         </footer>
     </div>
 
-<script src="./js/language.js"></script>
+    <script src="./js/language.js"></script>
     <script>
 
         document.addEventListener("DOMContentLoaded", () => {
 
-    // =========================
-    // Welcome Popup
-    // =========================
+            // =========================
+            // Welcome Popup
+            // =========================
 
-    const STORAGE_KEY = "anjuWelcomeModalSeen";
+            const STORAGE_KEY = "anjuWelcomeModalSeen";
 
-    const overlay = document.getElementById("welcomeModalOverlay");
-    const card = document.getElementById("welcomeModalCard");
+            const overlay = document.getElementById("welcomeModalOverlay");
+            const card = document.getElementById("welcomeModalCard");
 
-    const closeBtn = document.getElementById("welcomeModalClose");
-    const dismissBtn = document.getElementById("welcomeModalDismiss");
-    const viewBtn = document.getElementById("welcomeModalClaim");
+            const closeBtn = document.getElementById("welcomeModalClose");
+            const dismissBtn = document.getElementById("welcomeModalDismiss");
+            const viewBtn = document.getElementById("welcomeModalClaim");
 
-    if (overlay && card && closeBtn && dismissBtn && viewBtn) {
+            if (overlay && card && closeBtn && dismissBtn && viewBtn) {
 
-        function openModal() {
+                function openModal() {
 
-            overlay.classList.remove("hidden");
-            overlay.classList.add("flex");
+                    overlay.classList.remove("hidden");
+                    overlay.classList.add("flex");
 
-            requestAnimationFrame(() => {
-                overlay.classList.remove("opacity-0");
-                card.classList.remove("opacity-0", "scale-95");
-            });
+                    requestAnimationFrame(() => {
+                        overlay.classList.remove("opacity-0");
+                        card.classList.remove("opacity-0", "scale-95");
+                    });
 
-            document.body.style.overflow = "hidden";
-        }
+                    document.body.style.overflow = "hidden";
+                }
 
-        function closeModal() {
+                function closeModal() {
 
-            overlay.classList.add("opacity-0");
-            card.classList.add("opacity-0", "scale-95");
+                    overlay.classList.add("opacity-0");
+                    card.classList.add("opacity-0", "scale-95");
 
-            document.body.style.overflow = "";
+                    document.body.style.overflow = "";
 
-            setTimeout(() => {
-                overlay.classList.add("hidden");
-                overlay.classList.remove("flex");
-            }, 300);
+                    setTimeout(() => {
+                        overlay.classList.add("hidden");
+                        overlay.classList.remove("flex");
+                    }, 300);
 
-        }
+                }
 
-        setTimeout(openModal, 800);
+                setTimeout(openModal, 800);
 
-        closeBtn.addEventListener("click", closeModal);
-        dismissBtn.addEventListener("click", closeModal);
-        viewBtn.addEventListener("click", closeModal);
+                closeBtn.addEventListener("click", closeModal);
+                dismissBtn.addEventListener("click", closeModal);
+                viewBtn.addEventListener("click", closeModal);
 
-        overlay.addEventListener("click", (e) => {
-            if (e.target === overlay) {
-                closeModal();
+                overlay.addEventListener("click", (e) => {
+                    if (e.target === overlay) {
+                        closeModal();
+                    }
+                });
+
+                document.addEventListener("keydown", (e) => {
+                    if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
+                        closeModal();
+                    }
+                });
             }
-        });
-
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
-                closeModal();
-            }
-        });
-    }
 
 
 
@@ -2292,53 +2279,53 @@ z-50">
             });
 
 
-const languageDropdown = document.getElementById("languageDropdown");
-const languageBtn = document.getElementById("languageBtn");
-const languageMenu = document.getElementById("languageMenu");
-const selectedLanguage = document.getElementById("selectedLanguage");
-const arrow = document.getElementById("arrow");
+            const languageDropdown = document.getElementById("languageDropdown");
+            const languageBtn = document.getElementById("languageBtn");
+            const languageMenu = document.getElementById("languageMenu");
+            const selectedLanguage = document.getElementById("selectedLanguage");
+            const arrow = document.getElementById("arrow");
 
-languageBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    languageMenu.classList.toggle("hidden");
-    arrow.classList.toggle("rotate-180");
-});
+            languageBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                languageMenu.classList.toggle("hidden");
+                arrow.classList.toggle("rotate-180");
+            });
 
-document.querySelectorAll(".language-option").forEach(option => {
+            document.querySelectorAll(".language-option").forEach(option => {
 
-    option.addEventListener("click", async () => {
+                option.addEventListener("click", async () => {
 
-        const lang = option.dataset.lang;
+                    const lang = option.dataset.lang;
 
-        // Close dropdown
-        languageMenu.classList.add("hidden");
-        arrow.classList.remove("rotate-180");
+                    // Close dropdown
+                    languageMenu.classList.add("hidden");
+                    arrow.classList.remove("rotate-180");
 
-        // Update button text
-        selectedLanguage.textContent = option.textContent.trim();
+                    // Update button text
+                    selectedLanguage.textContent = option.textContent.trim();
 
-        if (lang === "en") {
+                    if (lang === "en") {
 
-    document.documentElement.lang = "en";
-    localStorage.removeItem("language");
-    location.reload();
+                        document.documentElement.lang = "en";
+                        localStorage.removeItem("language");
+                        location.reload();
 
-} else {
+                    } else {
 
-    await loadMalayalam();
-    document.documentElement.lang = "ml";
+                        await loadMalayalam();
+                        document.documentElement.lang = "ml";
 
-}
-    });
+                    }
+                });
 
-});
+            });
 
-document.addEventListener("click", (e) => {
-    if (!languageDropdown.contains(e.target)) {
-        languageMenu.classList.add("hidden");
-        arrow.classList.remove("rotate-180");
-    }
-});
+            document.addEventListener("click", (e) => {
+                if (!languageDropdown.contains(e.target)) {
+                    languageMenu.classList.add("hidden");
+                    arrow.classList.remove("rotate-180");
+                }
+            });
         });
     </script>
 
