@@ -53,11 +53,11 @@
             </div>
 
             <!-- Close -->
-            <button id="welcomeModalClose" class="absolute top-4 right-4 w-9 h-9 rounded-full border border-[#FFECB933]
+            <button id="welcomeModalClose" class="absolute top-2 sm:top-4 right-4 w-6 sm:w-9 h-6 sm:h-9 rounded-full border border-[#FFECB933]
             bg-[#312E81CC] flex items-center justify-center text-[#FFECB9]
             hover:bg-[#4338CA] hover:border-[#FFECB966] transition">
 
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <svg class="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 14 14" fill="none">
                     <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
                 </svg>
 
@@ -73,21 +73,23 @@
                         fill="#FACC15" />
                 </svg>
 
-                <p class="font-hanken text-[10px] sm:text-[11px] font-[650] tracking-[1.4px] uppercase text-[#FACC15]" data-key="popupTitle">
+                <p class="font-hanken text-[10px] sm:text-[11px] font-[650] tracking-[1.4px] uppercase text-[#FACC15]"
+                    data-key="popupTitle">
                     Welcome to Anju Lottery
                 </p>
 
             </div>
 
             <!-- Heading -->
-            <h2
-                class="popup-head relative z-10 font-libre text-[26px] sm:text-[30px] leading-[36px] font-[700] text-[#FFECB9] mb-4" data-key="popupHead">
+            <h2 class="popup-head relative z-10 font-libre text-[26px] sm:text-[30px] leading-[36px] font-[700] text-[#FFECB9] mb-4"
+                data-key="popupHead">
                 Your Trusted Kerala <br class="hidden sm:block">
                 Lottery Agency
             </h2>
 
             <!-- Description -->
-            <p class="feature relative z-10 font-hanken text-[14px] sm:text-[15px] leading-6 text-[#D1C6AB] mb-7" data-key="popupDesc">
+            <p class="feature relative z-10 font-hanken text-[14px] sm:text-[15px] leading-6 text-[#D1C6AB] mb-7"
+                data-key="popupDesc">
 
                 Explore the latest Kerala Lottery tickets, bumper lotteries,
                 winning results, and agency information.
@@ -314,10 +316,10 @@ z-50">
                         <div class="flex flex-row gap-3">
 
                             <!-- View Daily Tickets Button -->
-                            <button
+                            <a href="#tickets"
                                 class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-hanken font-[700] px-8 py-4 rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
 
-                                VIEW DAILY TICKETS
+                                <span>VIEW DAILY TICKETS</span>
 
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -325,7 +327,7 @@ z-50">
                                         fill="#6C5700" />
                                 </svg>
 
-                            </button>
+                            </a>
 
                             <!-- WhatsApp Contact Now Button -->
                             <a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
@@ -669,9 +671,11 @@ z-50">
                                 <!-- CTA and Stats -->
                                 <div
                                     class="flex flex-col xs:flex-row sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[16px]">
-                                    <button
+                                    <a href="#tickets"
                                         class="bg-[#FACC15] hover:bg-yellow-500 text-[#1E1B4B] text-[11px] sm:text-[12px] hanken font-[700] py-3 sm:py-4 px-6 sm:px-10 shadow-[0_0_40px_rgba(250,204,21,0.15)] rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center sm:justify-start gap-2 whitespace-nowrap">
-                                        COLLECT NOW
+
+                                        <span>COLLECT NOW</span>
+
                                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -679,7 +683,7 @@ z-50">
                                                 fill="#1E1B4B" />
                                         </svg>
 
-                                    </button>
+                                    </a>
                                     <div
                                         class="border border-[#4D4632] rounded-[8px] px-3 sm:px-4 py-2 flex items-center gap-2 sm:gap-4 bg-[#0F0B3C66] backdrop-blur-md w-full sm:w-fit">
                                         <!-- User Icons -->
@@ -726,7 +730,7 @@ z-50">
                                         </svg>
 
                                         <div>
-                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Government Authorised
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Govt Authorised
                                             </p>
                                         </div>
                                     </div>
@@ -745,7 +749,7 @@ z-50">
                                         </svg>
 
                                         <div>
-                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Instatnt Ticket Booking
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Instatnt Ticket
                                             </p>
                                         </div>
                                     </div>
@@ -944,7 +948,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Bhagyadhara" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -1002,7 +1006,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -1061,7 +1065,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Dhanalakshmi" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -1120,7 +1124,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Karunya Plus" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -1178,7 +1182,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Bhagyadhara" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -1234,7 +1238,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -1291,7 +1295,7 @@ z-50">
 
                                 </div>
 
-                                <button
+                                <button data-lottery="Bhagyadhara" onclick="collectNow(this)"
                                     class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
                                 </button>
@@ -2327,6 +2331,16 @@ z-50">
                 }
             });
         });
+
+        function collectNow(btn) {
+    const lotteryName = btn.getAttribute('data-lottery');
+    const phoneNumber = '919447901980'; // replace with your WhatsApp number, country code + number, no + or spaces
+
+    const message = `Hi, I want to enquire about the ${lotteryName} lottery ticket. Please share the details.`;
+
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+}
     </script>
 
 </body>
