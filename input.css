@@ -167,4 +167,18 @@ html[lang="ml"] .feature-desc {
     line-height: 18px;
 }
 
+@media (min-width: 768px) {
+    html[lang="ml"] .popup-head {
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 639px) {
+    html[lang="ml"] .popup-head {
+        font-size: 21px;
+        line-height: 26px;
+    }
+}
+
+
 
