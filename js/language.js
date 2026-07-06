@@ -1,3 +1,25 @@
+async function loadPopupMalayalam() {
+    try {
+        const response = await fetch("lang/ml.json");
+        const translations = await response.json();
+
+        document.querySelectorAll(".popup-ml").forEach((element) => {
+            const key = element.dataset.key;
+
+            if (translations[key]) {
+                element.textContent = translations[key];
+            }
+        });
+
+    } catch (error) {
+        console.error("Popup translation error:", error);
+    }
+}
+
+
+
+
+
 async function loadMalayalam() {
     try {
         const response = await fetch("lang/ml.json");
@@ -6,8 +28,8 @@ async function loadMalayalam() {
         // =========================
         // 1. data-key SYSTEM
         // =========================
-        document.querySelectorAll("[data-key]").forEach((element) => {
-            const key = element.dataset.key;
+document.querySelectorAll("[data-key]:not(.popup-ml)").forEach((element) => {
+                const key = element.dataset.key;
 
             if (translations[key]) {
                 element.textContent = translations[key];
@@ -61,13 +83,16 @@ async function loadMalayalam() {
 
 window.addEventListener("DOMContentLoaded", () => {
 
+    // Popup always Malayalam
+    loadPopupMalayalam();
+
+    // Rest of website
     const savedLang = localStorage.getItem("language");
 
     if (savedLang === "ml") {
 
         document.documentElement.lang = "ml";
         loadMalayalam();
-
         document.getElementById("selectedLanguage").textContent = "മലയാളം";
 
     } else {

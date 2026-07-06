@@ -94,7 +94,7 @@ html[lang="ml"] .location-text {
 
 @media (min-width: 1024px) {
     html[lang="ml"] .premium-Head {
-        font-size: 27px;
+        font-size: 23px;
     }
 }
 @media (min-width: 1024px) {
@@ -193,5 +193,10 @@ html[lang="ml"] .feature-desc {
     }
 }
 
+
+html[lang="ml"] .ticket-desc {
+    font-size: 9px;
+    line-height: 18px;
+}
 
 
