@@ -6,28 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anju Lottery</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        instrument: ["Instrument Sans", "sans-serif"],
-                        cormorant: ["Cormorant Garamond", "serif"],
-                        inter: ["Inter", "sans-serif"],
-                        montserrat: ["Montserrat", "sans-serif"],
-                        hanken: ["Hanken Grotesk", "sans-serif"],
-                        libre: ["Libre Caslon Text", "serif"],
-                    },
-                },
-            },
-        };
-    </script>
-
-
-    <!-- <link rel="stylesheet" href="./dist/output.css"> -->
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="./dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&family=Hanken+Grotesk:wght@100..900&family=Inter:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"
@@ -335,8 +315,7 @@ z-50">
                                 class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-[700] px-7 py-[10px] rounded-[12px] tracking-[1.2px] flex items-center gap-3 hover:scale-105 duration-300">
 
 
-                                <i class="fa-brands fa-whatsapp" style="font-size:25px;color:black;"></i>
-
+                                <i class="fa-brands fa-whatsapp text-[#25D366] text-[25px]"></i>
 
                             </a>
 
@@ -372,6 +351,153 @@ z-50">
 
                 </div>
 
+            </div>
+
+        </section>
+
+
+
+        <section class=" overflow-hidden">
+            <!-- Hero Banner Section -->
+            <div class="px-4 sm:px-6 md:px-12 lg:px-[60px]">
+
+                <div class="mx-2 sm:mx-4 md:mx-6 my-8 sm:my-12 md:my-20 bg-cover bg-center rounded-xl sm:rounded-2xl overflow-hidden border border-[#FACC1533]  shadow-[0_0_40px_rgba(250,204,21,0.15)]"
+                    style="background-image: url('./assets/images/banner.png');">
+
+                    <!-- Content -->
+                    <div class="relative z-10 p-4 sm:p-6 md:p-8">
+
+                        <!-- Content -->
+                        <div class="relative z-10 flex flex-col md:flex-row justify-between items-start gap-6 sm:gap-8">
+                            <!-- Left Content -->
+                            <div
+                                class="flex-1 max-w-[660px] px-4 sm:px-8 md:px-12 lg:px-14 py-6 sm:py-8 md:py-10 w-full md:w-auto">
+                                <!-- Badge -->
+                                <div
+                                    class="inline-flex items-center gap-2 bg-[#FACC151A] border border-[#FACC154D] rounded-full px-3 py-2 mb-4 sm:mb-6">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 10.6667L6.66667 8.63333L9.33333 10.6667L8.33333 7.36667L11 5.46667H7.73333L6.66667 2L5.6 5.46667H2.33333L5 7.36667L4 10.6667ZM6.66667 13.3333C5.74444 13.3333 4.87778 13.1583 4.06667 12.8083C3.25556 12.4583 2.55 11.9833 1.95 11.3833C1.35 10.7833 0.875 10.0778 0.525 9.26667C0.175 8.45555 0 7.58889 0 6.66667C0 5.74444 0.175 4.87778 0.525 4.06667C0.875 3.25556 1.35 2.55 1.95 1.95C2.55 1.35 3.25556 0.875 4.06667 0.525C4.87778 0.175 5.74444 0 6.66667 0C7.58889 0 8.45555 0.175 9.26667 0.525C10.0778 0.875 10.7833 1.35 11.3833 1.95C11.9833 2.55 12.4583 3.25556 12.8083 4.06667C13.1583 4.87778 13.3333 5.74444 13.3333 6.66667C13.3333 7.58889 13.1583 8.45555 12.8083 9.26667C12.4583 10.0778 11.9833 10.7833 11.3833 11.3833C10.7833 11.9833 10.0778 12.4583 9.26667 12.8083C8.45555 13.1583 7.58889 13.3333 6.66667 13.3333Z"
+                                            fill="#FACC15" />
+                                    </svg>
+
+                                    <span
+                                        class="text-[#FACC15] font-[700] text-[11px] sm:text-[12px] font-hanken">PREMIUM
+                                        DRAW</span>
+                                </div>
+
+                                <!-- Heading -->
+                                <h1 class="premium-Head text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]"
+                                    data-key="premiumHead">
+                                    WIN BIG TODAY!
+                                </h1>
+
+                                <!-- Subheading -->
+                                <p class="premium-sub text-lg sm:text-xl md:text-2xl text-[#D1C6AB] font-[400] font-libre mb-4 sm:mb-6"
+                                    data-key="premiumSub">
+                                    Limited Tickets
+                                    Available
+                                </p>
+
+                                <!-- Description -->
+                                <p class="text-[#E3DFFFCC] font-[350] max-w-[450px] text-sm sm:text-base md:text-lg lg:text-[18px] leading-6 sm:leading-7 lg:leading-[28px] font-hanken mb-6 sm:mb-8"
+                                    data-key="premiumDesc">
+                                    Experience the gold standard of lottery gaming. Secure your entry for the upcoming
+                                    grand
+                                    draw and join the ranks of our elite winners.
+                                </p>
+
+                                <!-- CTA and Stats -->
+                                <div
+                                    class="flex flex-col xs:flex-row sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[16px]">
+                                    <a href="#tickets"
+                                        class="bg-[#FACC15] hover:bg-yellow-500 text-[#1E1B4B] text-[11px] sm:text-[12px] hanken font-[700] py-3 sm:py-4 px-6 sm:px-10 shadow-[0_0_40px_rgba(250,204,21,0.15)] rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center sm:justify-start gap-2 whitespace-nowrap">
+
+                                        <span>COLLECT NOW</span>
+
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.13125 6.75H0V5.25H9.13125L4.93125 1.05L6 0L12 6L6 12L4.93125 10.95L9.13125 6.75Z"
+                                                fill="#1E1B4B" />
+                                        </svg>
+
+                                    </a>
+                                    <div
+                                        class="border border-[#4D4632] rounded-[8px] px-3 sm:px-4 py-2 flex items-center gap-2 sm:gap-4 bg-[#0F0B3C66] backdrop-blur-md w-full sm:w-fit">
+                                        <!-- User Icons -->
+                                        <svg width="40" height="24" viewBox="0 0 56 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" class="sm:w-14 sm:h-8">
+                                            <rect x="1" y="1" width="30" height="30" rx="15" fill="#1C1949" />
+                                            <rect x="1" y="1" width="30" height="30" rx="15" stroke="#1E1B4B"
+                                                stroke-width="2" />
+                                            <path
+                                                d="M15.9997 16C15.358 16 14.8087 15.7716 14.3518 15.3146C13.8948 14.8577 13.6663 14.3084 13.6663 13.6667C13.6663 13.025 13.8948 12.4757 14.3518 12.0188C14.8087 11.5618 15.358 11.3334 15.9997 11.3334C16.6413 11.3334 17.1906 11.5618 17.6476 12.0188C18.1045 12.4757 18.333 13.025 18.333 13.6667C18.333 14.3084 18.1045 14.8577 17.6476 15.3146C17.1906 15.7716 16.6413 16 15.9997 16ZM11.333 20.6667V19.0334C11.333 18.7028 11.4181 18.399 11.5882 18.1219C11.7584 17.8448 11.9844 17.6334 12.2663 17.4875C12.8691 17.1862 13.4816 16.9601 14.1038 16.8094C14.7261 16.6587 15.358 16.5834 15.9997 16.5834C16.6413 16.5834 17.2733 16.6587 17.8955 16.8094C18.5177 16.9601 19.1302 17.1862 19.733 17.4875C20.015 17.6334 20.241 17.8448 20.4111 18.1219C20.5813 18.399 20.6663 18.7028 20.6663 19.0334V20.6667H11.333ZM12.4997 19.5H19.4997V19.0334C19.4997 18.9264 19.4729 18.8292 19.4195 18.7417C19.366 18.6542 19.2955 18.5862 19.208 18.5375C18.683 18.275 18.1531 18.0782 17.6184 17.9469C17.0837 17.8157 16.5441 17.75 15.9997 17.75C15.4552 17.75 14.9156 17.8157 14.3809 17.9469C13.8462 18.0782 13.3163 18.275 12.7913 18.5375C12.7038 18.5862 12.6334 18.6542 12.5799 18.7417C12.5264 18.8292 12.4997 18.9264 12.4997 19.0334V19.5ZM15.9997 14.8334C16.3205 14.8334 16.5952 14.7191 16.8236 14.4907C17.0521 14.2622 17.1663 13.9875 17.1663 13.6667C17.1663 13.3459 17.0521 13.0712 16.8236 12.8427C16.5952 12.6143 16.3205 12.5 15.9997 12.5C15.6788 12.5 15.4042 12.6143 15.1757 12.8427C14.9472 13.0712 14.833 13.3459 14.833 13.6667C14.833 13.9875 14.9472 14.2622 15.1757 14.4907C15.4042 14.7191 15.6788 14.8334 15.9997 14.8334Z"
+                                                fill="#E3DFFF" />
+                                            <rect x="25" y="1" width="30" height="30" rx="15" fill="#1C1949" />
+                                            <rect x="25" y="1" width="30" height="30" rx="15" stroke="#1E1B4B"
+                                                stroke-width="2" />
+                                            <path
+                                                d="M39.9997 16C39.358 16 38.8087 15.7716 38.3518 15.3146C37.8948 14.8577 37.6663 14.3084 37.6663 13.6667C37.6663 13.025 37.8948 12.4757 38.3518 12.0188C38.8087 11.5618 39.358 11.3334 39.9997 11.3334C40.6413 11.3334 41.1906 11.5618 41.6476 12.0188C42.1045 12.4757 42.333 13.025 42.333 13.6667C42.333 14.3084 42.1045 14.8577 41.6476 15.3146C41.1906 15.7716 40.6413 16 39.9997 16ZM35.333 20.6667V19.0334C35.333 18.7028 35.4181 18.399 35.5882 18.1219C35.7584 17.8448 35.9844 17.6334 36.2663 17.4875C36.8691 17.1862 37.4816 16.9601 38.1038 16.8094C38.7261 16.6587 39.358 16.5834 39.9997 16.5834C40.6413 16.5834 41.2733 16.6587 41.8955 16.8094C42.5177 16.9601 43.1302 17.1862 43.733 17.4875C44.015 17.6334 44.241 17.8448 44.4111 18.1219C44.5813 18.399 44.6663 18.7028 44.6663 19.0334V20.6667H35.333ZM36.4997 19.5H43.4997V19.0334C43.4997 18.9264 43.4729 18.8292 43.4195 18.7417C43.366 18.6542 43.2955 18.5862 43.208 18.5375C42.683 18.275 42.1531 18.0782 41.6184 17.9469C41.0837 17.8157 40.5441 17.75 39.9997 17.75C39.4552 17.75 38.9156 17.8157 38.3809 17.9469C37.8462 18.0782 37.3163 18.275 36.7913 18.5375C36.7038 18.5862 36.6334 18.6542 36.5799 18.7417C36.5264 18.8292 36.4997 18.9264 36.4997 19.0334V19.5ZM39.9997 14.8334C40.3205 14.8334 40.5952 14.7191 40.8236 14.4907C41.0521 14.2622 41.1663 13.9875 41.1663 13.6667C41.1663 13.3459 41.0521 13.0712 40.8236 12.8427C40.5952 12.6143 40.3205 12.5 39.9997 12.5C39.6788 12.5 39.4042 12.6143 39.1757 12.8427C38.9472 13.0712 38.833 13.3459 38.833 13.6667C38.833 13.9875 38.9472 14.2622 39.1757 14.4907C39.4042 14.7191 39.6788 14.8334 39.9997 14.8334Z"
+                                                fill="#E3DFFF" />
+                                        </svg>
+
+
+                                        <!-- Text -->
+                                        <div>
+                                            <p
+                                                class="text-[#D1C6AB] leading-5 sm:leading-[21px] text-xs sm:text-[14px] font-[400] font-hanken whitespace-nowrap">
+                                                1,140+ Booking Today</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Side - Badges and Decorative -->
+                            <div
+                                class="flex flex-row md:flex-col gap-3 font-hanken sm:gap-4 w-full md:w-fit md:ml-auto md:mt-auto md:items-end">
+                                <!-- Government Authorized Badge -->
+                                <div
+                                    class="bg-[#1E1B4B99] border border-[#FFECB933] w-fit rounded-lg sm:rounded-xl p-2 sm:p-3 backdrop-blur-md hover:border-slate-600/70 transition-all flex-1 md:flex-initial">
+                                    <div class="flex items-center gap-2">
+                                        <svg width="20" height="20" viewBox="0 0 22 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 h-5 sm:w-[22px] sm:h-[21px] flex-shrink-0">
+                                            <path
+                                                d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM8.45 18.45L11 17.35L13.6 18.45L15 16.05L17.75 15.4L17.5 12.6L19.35 10.5L17.5 8.35L17.75 5.55L15 4.95L13.55 2.55L11 3.65L8.4 2.55L7 4.95L4.25 5.55L4.5 8.35L2.65 10.5L4.5 12.6L4.25 15.45L7 16.05L8.45 18.45ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
+                                                fill="#FACC15" />
+                                        </svg>
+
+                                        <div>
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Govt Authorised
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secure Payment Badge -->
+                                <div
+                                    class="bg-[#1E1B4B99] border border-[#FFECB933] w-fit rounded-lg sm:rounded-xl p-2 sm:p-3 backdrop-blur-md hover:border-slate-600/70 transition-all flex-1 md:flex-initial">
+                                    <div class="flex items-center gap-2">
+                                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="w-4 h-5 sm:w-4 sm:h-[21px] flex-shrink-0">
+                                            <path
+                                                d="M2 21C1.45 21 0.979167 20.8042 0.5875 20.4125C0.195833 20.0208 0 19.55 0 19V9C0 8.45 0.195833 7.97917 0.5875 7.5875C0.979167 7.19583 1.45 7 2 7H3V5C3 3.61667 3.4875 2.4375 4.4625 1.4625C5.4375 0.4875 6.61667 0 8 0C9.38333 0 10.5625 0.4875 11.5375 1.4625C12.5125 2.4375 13 3.61667 13 5V7H14C14.55 7 15.0208 7.19583 15.4125 7.5875C15.8042 7.97917 16 8.45 16 9V19C16 19.55 15.8042 20.0208 15.4125 20.4125C15.0208 20.8042 14.55 21 14 21H2ZM2 19H14V9H2V19ZM8 16C8.55 16 9.02083 15.8042 9.4125 15.4125C9.80417 15.0208 10 14.55 10 14C10 13.45 9.80417 12.9792 9.4125 12.5875C9.02083 12.1958 8.55 12 8 12C7.45 12 6.97917 12.1958 6.5875 12.5875C6.19583 12.9792 6 13.45 6 14C6 14.55 6.19583 15.0208 6.5875 15.4125C6.97917 15.8042 7.45 16 8 16ZM5 7H11V5C11 4.16667 10.7083 3.45833 10.125 2.875C9.54167 2.29167 8.83333 2 8 2C7.16667 2 6.45833 2.29167 5.875 2.875C5.29167 3.45833 5 4.16667 5 5V7ZM2 19V9V19Z"
+                                                fill="#FACC15" />
+                                        </svg>
+
+                                        <div>
+                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Instatnt Ticket
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -617,265 +743,121 @@ z-50">
             </div>
         </section>
 
-        <section class=" overflow-hidden">
-            <!-- Hero Banner Section -->
-            <div class="px-4 sm:px-6 md:px-12 lg:px-[60px]">
 
+
+        <!-- Features Grid Section -->
+        <div class="bg-[#18144580] px-6 sm:px-6 md:px-12 lg:px-[60px] py-10 sm:py-20">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <!-- Card 1: Govt Authorized -->
                 <div
-                    class="mx-2 sm:mx-4 md:mx-6 my-8 sm:my-12 md:my-20 bg-[url('./assets/images/banner.png')] bg-cover bg-center rounded-xl sm:rounded-2xl overflow-hidden border border-[#FACC1533]  shadow-[0_0_40px_rgba(250,204,21,0.15)]">
+                    class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                    <!-- Icon -->
+                    <div class="flex items-center justify-center">
+                        <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 30C8.525 29.125 5.65625 27.1312 3.39375 24.0187C1.13125 20.9062 0 17.45 0 13.65V4.5L12 0L24 4.5V13.65C24 17.45 22.8688 20.9062 20.6063 24.0187C18.3438 27.1312 15.475 29.125 12 30ZM12 26.85C14.425 26.1 16.45 24.6187 18.075 22.4062C19.7 20.1938 20.65 17.725 20.925 15H12V3.1875L3 6.5625V13.65C3 13.925 3 14.15 3 14.325C3 14.5 3.025 14.725 3.075 15H12V26.85Z"
+                                fill="#FFECB9" />
+                        </svg>
+                    </div>
 
                     <!-- Content -->
-                    <div class="relative z-10 p-4 sm:p-6 md:p-8">
+                    <h3
+                        class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                        Govt Authorized
+                    </h3>
 
-                        <!-- Content -->
-                        <div class="relative z-10 flex flex-col md:flex-row justify-between items-start gap-6 sm:gap-8">
-                            <!-- Left Content -->
-                            <div
-                                class="flex-1 max-w-[660px] px-4 sm:px-8 md:px-12 lg:px-14 py-6 sm:py-8 md:py-10 w-full md:w-auto">
-                                <!-- Badge -->
-                                <div
-                                    class="inline-flex items-center gap-2 bg-[#FACC151A] border border-[#FACC154D] rounded-full px-3 py-2 mb-4 sm:mb-6">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M4 10.6667L6.66667 8.63333L9.33333 10.6667L8.33333 7.36667L11 5.46667H7.73333L6.66667 2L5.6 5.46667H2.33333L5 7.36667L4 10.6667ZM6.66667 13.3333C5.74444 13.3333 4.87778 13.1583 4.06667 12.8083C3.25556 12.4583 2.55 11.9833 1.95 11.3833C1.35 10.7833 0.875 10.0778 0.525 9.26667C0.175 8.45555 0 7.58889 0 6.66667C0 5.74444 0.175 4.87778 0.525 4.06667C0.875 3.25556 1.35 2.55 1.95 1.95C2.55 1.35 3.25556 0.875 4.06667 0.525C4.87778 0.175 5.74444 0 6.66667 0C7.58889 0 8.45555 0.175 9.26667 0.525C10.0778 0.875 10.7833 1.35 11.3833 1.95C11.9833 2.55 12.4583 3.25556 12.8083 4.06667C13.1583 4.87778 13.3333 5.74444 13.3333 6.66667C13.3333 7.58889 13.1583 8.45555 12.8083 9.26667C12.4583 10.0778 11.9833 10.7833 11.3833 11.3833C10.7833 11.9833 10.0778 12.4583 9.26667 12.8083C8.45555 13.1583 7.58889 13.3333 6.66667 13.3333Z"
-                                            fill="#FACC15" />
-                                    </svg>
+                    <p
+                        class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                        Official Kerala State Lottery agency since 1967
+                    </p>
 
-                                    <span
-                                        class="text-[#FACC15] font-[700] text-[11px] sm:text-[12px] font-hanken">PREMIUM
-                                        DRAW</span>
-                                </div>
+                </div>
 
-                                <!-- Heading -->
-                                <h1 class="premium-Head text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]"
-                                    data-key="premiumHead">
-                                    WIN BIG TODAY!
-                                </h1>
+                <!-- Card 2: Daily Results -->
+                <div
+                    class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
 
-                                <!-- Subheading -->
-                                <p class="premium-sub text-lg sm:text-xl md:text-2xl text-[#D1C6AB] font-[400] font-libre mb-4 sm:mb-6"
-                                    data-key="premiumSub">
-                                    Limited Tickets
-                                    Available
-                                </p>
+                    <!-- Icon -->
+                    <div class="flex items-center justify-center">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.95 22.05L22.05 19.95L16.5 14.4V7.5H13.5V15.6L19.95 22.05ZM15 30C12.925 30 10.975 29.6063 9.15 28.8188C7.325 28.0312 5.7375 26.9625 4.3875 25.6125C3.0375 24.2625 1.96875 22.675 1.18125 20.85C0.39375 19.025 0 17.075 0 15C0 12.925 0.39375 10.975 1.18125 9.15C1.96875 7.325 3.0375 5.7375 4.3875 4.3875C5.7375 3.0375 7.325 1.96875 9.15 1.18125C10.975 0.39375 12.925 0 15 0C17.075 0 19.025 0.39375 20.85 1.18125C22.675 1.96875 24.2625 3.0375 25.6125 4.3875C26.9625 5.7375 28.0312 7.325 28.8188 9.15C29.6063 10.975 30 12.925 30 15C30 17.075 29.6063 19.025 28.8188 20.85C28.0312 22.675 26.9625 24.2625 25.6125 25.6125C24.2625 26.9625 22.675 28.0312 20.85 28.8188C19.025 29.6063 17.075 30 15 30ZM15 27C18.325 27 21.1562 25.8312 23.4937 23.4937C25.8312 21.1562 27 18.325 27 15C27 11.675 25.8312 8.84375 23.4937 6.50625C21.1562 4.16875 18.325 3 15 3C11.675 3 8.84375 4.16875 6.50625 6.50625C4.16875 8.84375 3 11.675 3 15C3 18.325 4.16875 21.1562 6.50625 23.4937C8.84375 25.8312 11.675 27 15 27Z"
+                                fill="#FFECB9" />
+                        </svg>
 
-                                <!-- Description -->
-                                <p class="text-[#E3DFFFCC] font-[350] max-w-[450px] text-sm sm:text-base md:text-lg lg:text-[18px] leading-6 sm:leading-7 lg:leading-[28px] font-hanken mb-6 sm:mb-8"
-                                    data-key="premiumDesc">
-                                    Experience the gold standard of lottery gaming. Secure your entry for the upcoming
-                                    grand
-                                    draw and join the ranks of our elite winners.
-                                </p>
-
-                                <!-- CTA and Stats -->
-                                <div
-                                    class="flex flex-col xs:flex-row sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 md:gap-[16px]">
-                                    <a href="#tickets"
-                                        class="bg-[#FACC15] hover:bg-yellow-500 text-[#1E1B4B] text-[11px] sm:text-[12px] hanken font-[700] py-3 sm:py-4 px-6 sm:px-10 shadow-[0_0_40px_rgba(250,204,21,0.15)] rounded-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center sm:justify-start gap-2 whitespace-nowrap">
-
-                                        <span>COLLECT NOW</span>
-
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.13125 6.75H0V5.25H9.13125L4.93125 1.05L6 0L12 6L6 12L4.93125 10.95L9.13125 6.75Z"
-                                                fill="#1E1B4B" />
-                                        </svg>
-
-                                    </a>
-                                    <div
-                                        class="border border-[#4D4632] rounded-[8px] px-3 sm:px-4 py-2 flex items-center gap-2 sm:gap-4 bg-[#0F0B3C66] backdrop-blur-md w-full sm:w-fit">
-                                        <!-- User Icons -->
-                                        <svg width="40" height="24" viewBox="0 0 56 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg" class="sm:w-14 sm:h-8">
-                                            <rect x="1" y="1" width="30" height="30" rx="15" fill="#1C1949" />
-                                            <rect x="1" y="1" width="30" height="30" rx="15" stroke="#1E1B4B"
-                                                stroke-width="2" />
-                                            <path
-                                                d="M15.9997 16C15.358 16 14.8087 15.7716 14.3518 15.3146C13.8948 14.8577 13.6663 14.3084 13.6663 13.6667C13.6663 13.025 13.8948 12.4757 14.3518 12.0188C14.8087 11.5618 15.358 11.3334 15.9997 11.3334C16.6413 11.3334 17.1906 11.5618 17.6476 12.0188C18.1045 12.4757 18.333 13.025 18.333 13.6667C18.333 14.3084 18.1045 14.8577 17.6476 15.3146C17.1906 15.7716 16.6413 16 15.9997 16ZM11.333 20.6667V19.0334C11.333 18.7028 11.4181 18.399 11.5882 18.1219C11.7584 17.8448 11.9844 17.6334 12.2663 17.4875C12.8691 17.1862 13.4816 16.9601 14.1038 16.8094C14.7261 16.6587 15.358 16.5834 15.9997 16.5834C16.6413 16.5834 17.2733 16.6587 17.8955 16.8094C18.5177 16.9601 19.1302 17.1862 19.733 17.4875C20.015 17.6334 20.241 17.8448 20.4111 18.1219C20.5813 18.399 20.6663 18.7028 20.6663 19.0334V20.6667H11.333ZM12.4997 19.5H19.4997V19.0334C19.4997 18.9264 19.4729 18.8292 19.4195 18.7417C19.366 18.6542 19.2955 18.5862 19.208 18.5375C18.683 18.275 18.1531 18.0782 17.6184 17.9469C17.0837 17.8157 16.5441 17.75 15.9997 17.75C15.4552 17.75 14.9156 17.8157 14.3809 17.9469C13.8462 18.0782 13.3163 18.275 12.7913 18.5375C12.7038 18.5862 12.6334 18.6542 12.5799 18.7417C12.5264 18.8292 12.4997 18.9264 12.4997 19.0334V19.5ZM15.9997 14.8334C16.3205 14.8334 16.5952 14.7191 16.8236 14.4907C17.0521 14.2622 17.1663 13.9875 17.1663 13.6667C17.1663 13.3459 17.0521 13.0712 16.8236 12.8427C16.5952 12.6143 16.3205 12.5 15.9997 12.5C15.6788 12.5 15.4042 12.6143 15.1757 12.8427C14.9472 13.0712 14.833 13.3459 14.833 13.6667C14.833 13.9875 14.9472 14.2622 15.1757 14.4907C15.4042 14.7191 15.6788 14.8334 15.9997 14.8334Z"
-                                                fill="#E3DFFF" />
-                                            <rect x="25" y="1" width="30" height="30" rx="15" fill="#1C1949" />
-                                            <rect x="25" y="1" width="30" height="30" rx="15" stroke="#1E1B4B"
-                                                stroke-width="2" />
-                                            <path
-                                                d="M39.9997 16C39.358 16 38.8087 15.7716 38.3518 15.3146C37.8948 14.8577 37.6663 14.3084 37.6663 13.6667C37.6663 13.025 37.8948 12.4757 38.3518 12.0188C38.8087 11.5618 39.358 11.3334 39.9997 11.3334C40.6413 11.3334 41.1906 11.5618 41.6476 12.0188C42.1045 12.4757 42.333 13.025 42.333 13.6667C42.333 14.3084 42.1045 14.8577 41.6476 15.3146C41.1906 15.7716 40.6413 16 39.9997 16ZM35.333 20.6667V19.0334C35.333 18.7028 35.4181 18.399 35.5882 18.1219C35.7584 17.8448 35.9844 17.6334 36.2663 17.4875C36.8691 17.1862 37.4816 16.9601 38.1038 16.8094C38.7261 16.6587 39.358 16.5834 39.9997 16.5834C40.6413 16.5834 41.2733 16.6587 41.8955 16.8094C42.5177 16.9601 43.1302 17.1862 43.733 17.4875C44.015 17.6334 44.241 17.8448 44.4111 18.1219C44.5813 18.399 44.6663 18.7028 44.6663 19.0334V20.6667H35.333ZM36.4997 19.5H43.4997V19.0334C43.4997 18.9264 43.4729 18.8292 43.4195 18.7417C43.366 18.6542 43.2955 18.5862 43.208 18.5375C42.683 18.275 42.1531 18.0782 41.6184 17.9469C41.0837 17.8157 40.5441 17.75 39.9997 17.75C39.4552 17.75 38.9156 17.8157 38.3809 17.9469C37.8462 18.0782 37.3163 18.275 36.7913 18.5375C36.7038 18.5862 36.6334 18.6542 36.5799 18.7417C36.5264 18.8292 36.4997 18.9264 36.4997 19.0334V19.5ZM39.9997 14.8334C40.3205 14.8334 40.5952 14.7191 40.8236 14.4907C41.0521 14.2622 41.1663 13.9875 41.1663 13.6667C41.1663 13.3459 41.0521 13.0712 40.8236 12.8427C40.5952 12.6143 40.3205 12.5 39.9997 12.5C39.6788 12.5 39.4042 12.6143 39.1757 12.8427C38.9472 13.0712 38.833 13.3459 38.833 13.6667C38.833 13.9875 38.9472 14.2622 39.1757 14.4907C39.4042 14.7191 39.6788 14.8334 39.9997 14.8334Z"
-                                                fill="#E3DFFF" />
-                                        </svg>
-
-
-                                        <!-- Text -->
-                                        <div>
-                                            <p
-                                                class="text-[#D1C6AB] leading-5 sm:leading-[21px] text-xs sm:text-[14px] font-[400] font-hanken whitespace-nowrap">
-                                                1,140+ Booking Today</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Right Side - Badges and Decorative -->
-                            <div
-                                class="flex flex-row md:flex-col gap-3 font-hanken sm:gap-4 w-full md:w-fit md:ml-auto md:mt-auto md:items-end">
-                                <!-- Government Authorized Badge -->
-                                <div
-                                    class="bg-[#1E1B4B99] border border-[#FFECB933] w-fit rounded-lg sm:rounded-xl p-2 sm:p-3 backdrop-blur-md hover:border-slate-600/70 transition-all flex-1 md:flex-initial">
-                                    <div class="flex items-center gap-2">
-                                        <svg width="20" height="20" viewBox="0 0 22 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-5 h-5 sm:w-[22px] sm:h-[21px] flex-shrink-0">
-                                            <path
-                                                d="M7.6 21L5.7 17.8L2.1 17L2.45 13.3L0 10.5L2.45 7.7L2.1 4L5.7 3.2L7.6 0L11 1.45L14.4 0L16.3 3.2L19.9 4L19.55 7.7L22 10.5L19.55 13.3L19.9 17L16.3 17.8L14.4 21L11 19.55L7.6 21ZM8.45 18.45L11 17.35L13.6 18.45L15 16.05L17.75 15.4L17.5 12.6L19.35 10.5L17.5 8.35L17.75 5.55L15 4.95L13.55 2.55L11 3.65L8.4 2.55L7 4.95L4.25 5.55L4.5 8.35L2.65 10.5L4.5 12.6L4.25 15.45L7 16.05L8.45 18.45ZM9.95 14.05L15.6 8.4L14.2 6.95L9.95 11.2L7.8 9.1L6.4 10.5L9.95 14.05Z"
-                                                fill="#FACC15" />
-                                        </svg>
-
-                                        <div>
-                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Govt Authorised
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Secure Payment Badge -->
-                                <div
-                                    class="bg-[#1E1B4B99] border border-[#FFECB933] w-fit rounded-lg sm:rounded-xl p-2 sm:p-3 backdrop-blur-md hover:border-slate-600/70 transition-all flex-1 md:flex-initial">
-                                    <div class="flex items-center gap-2">
-                                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            class="w-4 h-5 sm:w-4 sm:h-[21px] flex-shrink-0">
-                                            <path
-                                                d="M2 21C1.45 21 0.979167 20.8042 0.5875 20.4125C0.195833 20.0208 0 19.55 0 19V9C0 8.45 0.195833 7.97917 0.5875 7.5875C0.979167 7.19583 1.45 7 2 7H3V5C3 3.61667 3.4875 2.4375 4.4625 1.4625C5.4375 0.4875 6.61667 0 8 0C9.38333 0 10.5625 0.4875 11.5375 1.4625C12.5125 2.4375 13 3.61667 13 5V7H14C14.55 7 15.0208 7.19583 15.4125 7.5875C15.8042 7.97917 16 8.45 16 9V19C16 19.55 15.8042 20.0208 15.4125 20.4125C15.0208 20.8042 14.55 21 14 21H2ZM2 19H14V9H2V19ZM8 16C8.55 16 9.02083 15.8042 9.4125 15.4125C9.80417 15.0208 10 14.55 10 14C10 13.45 9.80417 12.9792 9.4125 12.5875C9.02083 12.1958 8.55 12 8 12C7.45 12 6.97917 12.1958 6.5875 12.5875C6.19583 12.9792 6 13.45 6 14C6 14.55 6.19583 15.0208 6.5875 15.4125C6.97917 15.8042 7.45 16 8 16ZM5 7H11V5C11 4.16667 10.7083 3.45833 10.125 2.875C9.54167 2.29167 8.83333 2 8 2C7.16667 2 6.45833 2.29167 5.875 2.875C5.29167 3.45833 5 4.16667 5 5V7ZM2 19V9V19Z"
-                                                fill="#FACC15" />
-                                        </svg>
-
-                                        <div>
-                                            <p class="text-[12px] font-semibold text-[#E3DFFF]">Instatnt Ticket
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
+
+                    <!-- Content -->
+                    <h3
+                        class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                        Daily Results
+                    </h3>
+
+                    <p
+                        class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                        Winner announcements sharp at 3:00 PM daily.
+                    </p>
+
+                </div>
+
+                <!-- Card 3: 24/7 Support -->
+                <div
+                    class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                    <!-- Icon -->
+                    <div class="flex items-center justify-center">
+                        <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.5 27V24H25.5V13.35C25.5 10.425 24.4813 7.94375 22.4438 5.90625C20.4062 3.86875 17.925 2.85 15 2.85C12.075 2.85 9.59375 3.86875 7.55625 5.90625C5.51875 7.94375 4.5 10.425 4.5 13.35V22.5H3C2.175 22.5 1.46875 22.2062 0.88125 21.6187C0.29375 21.0312 0 20.325 0 19.5V16.5C0 15.975 0.13125 15.4812 0.39375 15.0188C0.65625 14.5563 1.025 14.1875 1.5 13.9125L1.6125 11.925C1.8125 10.225 2.30625 8.65 3.09375 7.2C3.88125 5.75 4.86875 4.4875 6.05625 3.4125C7.24375 2.3375 8.60625 1.5 10.1438 0.9C11.6813 0.3 13.3 0 15 0C16.7 0 18.3125 0.3 19.8375 0.9C21.3625 1.5 22.725 2.33125 23.925 3.39375C25.125 4.45625 26.1125 5.7125 26.8875 7.1625C27.6625 8.6125 28.1625 10.1875 28.3875 11.8875L28.5 13.8375C28.975 14.0625 29.3438 14.4 29.6063 14.85C29.8688 15.3 30 15.775 30 16.275V19.725C30 20.225 29.8688 20.7 29.6063 21.15C29.3438 21.6 28.975 21.9375 28.5 22.1625V24C28.5 24.825 28.2062 25.5312 27.6187 26.1187C27.0312 26.7062 26.325 27 25.5 27H13.5ZM10.5 16.5C10.075 16.5 9.71875 16.3563 9.43125 16.0688C9.14375 15.7812 9 15.425 9 15C9 14.575 9.14375 14.2188 9.43125 13.9312C9.71875 13.6437 10.075 13.5 10.5 13.5C10.925 13.5 11.2812 13.6437 11.5688 13.9312C11.8563 14.2188 12 14.575 12 15C12 15.425 11.8563 15.7812 11.5688 16.0688C11.2812 16.3563 10.925 16.5 10.5 16.5ZM19.5 16.5C19.075 16.5 18.7188 16.3563 18.4312 16.0688C18.1437 15.7812 18 15.425 18 15C18 14.575 18.1437 14.2188 18.4312 13.9312C18.7188 13.6437 19.075 13.5 19.5 13.5C19.925 13.5 20.2812 13.6437 20.5688 13.9312C20.8563 14.2188 21 14.575 21 15C21 15.425 20.8563 15.7812 20.5688 16.0688C20.2812 16.3563 19.925 16.5 19.5 16.5ZM6.0375 14.175C5.8625 11.525 6.6625 9.25 8.4375 7.35C10.2125 5.45 12.425 4.5 15.075 4.5C17.3 4.5 19.2563 5.20625 20.9438 6.61875C22.6313 8.03125 23.65 9.8375 24 12.0375C21.725 12.0125 19.6313 11.4 17.7188 10.2C15.8062 9 14.3375 7.375 13.3125 5.325C12.9125 7.325 12.0688 9.10625 10.7812 10.6687C9.49375 12.2312 7.9125 13.4 6.0375 14.175Z"
+                                fill="#FFECB9" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Content -->
+                    <h3
+                        class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                        24/7 Support
+                    </h3>
+
+                    <p
+                        class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                        Dedicated WhatsApp assistance for all bookings.
+                    </p>
+
+                </div>
+
+                <!-- Card 4: Fast Claims -->
+                <div
+                    class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
+
+                    <!-- Icon -->
+                    <div class="flex items-center justify-center">
+                        <svg width="33" height="24" viewBox="0 0 33 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5 13.5C18.25 13.5 17.1875 13.0625 16.3125 12.1875C15.4375 11.3125 15 10.25 15 9C15 7.75 15.4375 6.6875 16.3125 5.8125C17.1875 4.9375 18.25 4.5 19.5 4.5C20.75 4.5 21.8125 4.9375 22.6875 5.8125C23.5625 6.6875 24 7.75 24 9C24 10.25 23.5625 11.3125 22.6875 12.1875C21.8125 13.0625 20.75 13.5 19.5 13.5ZM9 18C8.175 18 7.46875 17.7062 6.88125 17.1187C6.29375 16.5312 6 15.825 6 15V3C6 2.175 6.29375 1.46875 6.88125 0.88125C7.46875 0.29375 8.175 0 9 0H30C30.825 0 31.5313 0.29375 32.1188 0.88125C32.7063 1.46875 33 2.175 33 3V15C33 15.825 32.7063 16.5312 32.1188 17.1187C31.5313 17.7062 30.825 18 30 18H9ZM12 15H27C27 14.175 27.2938 13.4688 27.8813 12.8813C28.4688 12.2938 29.175 12 30 12V6C29.175 6 28.4688 5.70625 27.8813 5.11875C27.2938 4.53125 27 3.825 27 3H12C12 3.825 11.7062 4.53125 11.1187 5.11875C10.5312 5.70625 9.825 6 9 6V12C9.825 12 10.5312 12.2938 11.1187 12.8813C11.7062 13.4688 12 14.175 12 15ZM28.5 24H3C2.175 24 1.46875 23.7062 0.88125 23.1187C0.29375 22.5312 0 21.825 0 21V4.5H3V21H28.5V24ZM9 15V3V15Z"
+                                fill="#FFECB9" />
+                        </svg>
+
+                    </div>
+
+                    <!-- Content -->
+                    <h3
+                        class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
+                        Fast Claims
+                    </h3>
+
+                    <p
+                        class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
+                        Expert guidance for hassle-free prize collection.
+                    </p>
+
                 </div>
             </div>
+        </div>
 
-            <!-- Features Grid Section -->
-            <div class="bg-[#18144580] px-6 sm:px-6 md:px-12 lg:px-[60px] py-10 sm:py-20">
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                    <!-- Card 1: Govt Authorized -->
-                    <div
-                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
 
-                        <!-- Icon -->
-                        <div class="flex items-center justify-center">
-                            <svg width="24" height="30" viewBox="0 0 24 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 30C8.525 29.125 5.65625 27.1312 3.39375 24.0187C1.13125 20.9062 0 17.45 0 13.65V4.5L12 0L24 4.5V13.65C24 17.45 22.8688 20.9062 20.6063 24.0187C18.3438 27.1312 15.475 29.125 12 30ZM12 26.85C14.425 26.1 16.45 24.6187 18.075 22.4062C19.7 20.1938 20.65 17.725 20.925 15H12V3.1875L3 6.5625V13.65C3 13.925 3 14.15 3 14.325C3 14.5 3.025 14.725 3.075 15H12V26.85Z"
-                                    fill="#FFECB9" />
-                            </svg>
-                        </div>
-
-                        <!-- Content -->
-                        <h3
-                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
-                            Govt Authorized
-                        </h3>
-
-                        <p
-                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
-                            Official Kerala State Lottery agency since 1967
-                        </p>
-
-                    </div>
-
-                    <!-- Card 2: Daily Results -->
-                    <div
-                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
-
-                        <!-- Icon -->
-                        <div class="flex items-center justify-center">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.95 22.05L22.05 19.95L16.5 14.4V7.5H13.5V15.6L19.95 22.05ZM15 30C12.925 30 10.975 29.6063 9.15 28.8188C7.325 28.0312 5.7375 26.9625 4.3875 25.6125C3.0375 24.2625 1.96875 22.675 1.18125 20.85C0.39375 19.025 0 17.075 0 15C0 12.925 0.39375 10.975 1.18125 9.15C1.96875 7.325 3.0375 5.7375 4.3875 4.3875C5.7375 3.0375 7.325 1.96875 9.15 1.18125C10.975 0.39375 12.925 0 15 0C17.075 0 19.025 0.39375 20.85 1.18125C22.675 1.96875 24.2625 3.0375 25.6125 4.3875C26.9625 5.7375 28.0312 7.325 28.8188 9.15C29.6063 10.975 30 12.925 30 15C30 17.075 29.6063 19.025 28.8188 20.85C28.0312 22.675 26.9625 24.2625 25.6125 25.6125C24.2625 26.9625 22.675 28.0312 20.85 28.8188C19.025 29.6063 17.075 30 15 30ZM15 27C18.325 27 21.1562 25.8312 23.4937 23.4937C25.8312 21.1562 27 18.325 27 15C27 11.675 25.8312 8.84375 23.4937 6.50625C21.1562 4.16875 18.325 3 15 3C11.675 3 8.84375 4.16875 6.50625 6.50625C4.16875 8.84375 3 11.675 3 15C3 18.325 4.16875 21.1562 6.50625 23.4937C8.84375 25.8312 11.675 27 15 27Z"
-                                    fill="#FFECB9" />
-                            </svg>
-
-                        </div>
-
-                        <!-- Content -->
-                        <h3
-                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
-                            Daily Results
-                        </h3>
-
-                        <p
-                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
-                            Winner announcements sharp at 3:00 PM daily.
-                        </p>
-
-                    </div>
-
-                    <!-- Card 3: 24/7 Support -->
-                    <div
-                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
-
-                        <!-- Icon -->
-                        <div class="flex items-center justify-center">
-                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M13.5 27V24H25.5V13.35C25.5 10.425 24.4813 7.94375 22.4438 5.90625C20.4062 3.86875 17.925 2.85 15 2.85C12.075 2.85 9.59375 3.86875 7.55625 5.90625C5.51875 7.94375 4.5 10.425 4.5 13.35V22.5H3C2.175 22.5 1.46875 22.2062 0.88125 21.6187C0.29375 21.0312 0 20.325 0 19.5V16.5C0 15.975 0.13125 15.4812 0.39375 15.0188C0.65625 14.5563 1.025 14.1875 1.5 13.9125L1.6125 11.925C1.8125 10.225 2.30625 8.65 3.09375 7.2C3.88125 5.75 4.86875 4.4875 6.05625 3.4125C7.24375 2.3375 8.60625 1.5 10.1438 0.9C11.6813 0.3 13.3 0 15 0C16.7 0 18.3125 0.3 19.8375 0.9C21.3625 1.5 22.725 2.33125 23.925 3.39375C25.125 4.45625 26.1125 5.7125 26.8875 7.1625C27.6625 8.6125 28.1625 10.1875 28.3875 11.8875L28.5 13.8375C28.975 14.0625 29.3438 14.4 29.6063 14.85C29.8688 15.3 30 15.775 30 16.275V19.725C30 20.225 29.8688 20.7 29.6063 21.15C29.3438 21.6 28.975 21.9375 28.5 22.1625V24C28.5 24.825 28.2062 25.5312 27.6187 26.1187C27.0312 26.7062 26.325 27 25.5 27H13.5ZM10.5 16.5C10.075 16.5 9.71875 16.3563 9.43125 16.0688C9.14375 15.7812 9 15.425 9 15C9 14.575 9.14375 14.2188 9.43125 13.9312C9.71875 13.6437 10.075 13.5 10.5 13.5C10.925 13.5 11.2812 13.6437 11.5688 13.9312C11.8563 14.2188 12 14.575 12 15C12 15.425 11.8563 15.7812 11.5688 16.0688C11.2812 16.3563 10.925 16.5 10.5 16.5ZM19.5 16.5C19.075 16.5 18.7188 16.3563 18.4312 16.0688C18.1437 15.7812 18 15.425 18 15C18 14.575 18.1437 14.2188 18.4312 13.9312C18.7188 13.6437 19.075 13.5 19.5 13.5C19.925 13.5 20.2812 13.6437 20.5688 13.9312C20.8563 14.2188 21 14.575 21 15C21 15.425 20.8563 15.7812 20.5688 16.0688C20.2812 16.3563 19.925 16.5 19.5 16.5ZM6.0375 14.175C5.8625 11.525 6.6625 9.25 8.4375 7.35C10.2125 5.45 12.425 4.5 15.075 4.5C17.3 4.5 19.2563 5.20625 20.9438 6.61875C22.6313 8.03125 23.65 9.8375 24 12.0375C21.725 12.0125 19.6313 11.4 17.7188 10.2C15.8062 9 14.3375 7.375 13.3125 5.325C12.9125 7.325 12.0688 9.10625 10.7812 10.6687C9.49375 12.2312 7.9125 13.4 6.0375 14.175Z"
-                                    fill="#FFECB9" />
-                            </svg>
-
-                        </div>
-
-                        <!-- Content -->
-                        <h3
-                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
-                            24/7 Support
-                        </h3>
-
-                        <p
-                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
-                            Dedicated WhatsApp assistance for all bookings.
-                        </p>
-
-                    </div>
-
-                    <!-- Card 4: Fast Claims -->
-                    <div
-                        class="bg-[#312E81CC] border border-[#FACC151A] rounded-[16px] px-[14px] py-6 sm:px-12 sm:py-8 transition-all duration-300 cursor-pointer group flex flex-col gap-3 sm:gap-3.5 hover:scale-[1.02]">
-
-                        <!-- Icon -->
-                        <div class="flex items-center justify-center">
-                            <svg width="33" height="24" viewBox="0 0 33 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.5 13.5C18.25 13.5 17.1875 13.0625 16.3125 12.1875C15.4375 11.3125 15 10.25 15 9C15 7.75 15.4375 6.6875 16.3125 5.8125C17.1875 4.9375 18.25 4.5 19.5 4.5C20.75 4.5 21.8125 4.9375 22.6875 5.8125C23.5625 6.6875 24 7.75 24 9C24 10.25 23.5625 11.3125 22.6875 12.1875C21.8125 13.0625 20.75 13.5 19.5 13.5ZM9 18C8.175 18 7.46875 17.7062 6.88125 17.1187C6.29375 16.5312 6 15.825 6 15V3C6 2.175 6.29375 1.46875 6.88125 0.88125C7.46875 0.29375 8.175 0 9 0H30C30.825 0 31.5313 0.29375 32.1188 0.88125C32.7063 1.46875 33 2.175 33 3V15C33 15.825 32.7063 16.5312 32.1188 17.1187C31.5313 17.7062 30.825 18 30 18H9ZM12 15H27C27 14.175 27.2938 13.4688 27.8813 12.8813C28.4688 12.2938 29.175 12 30 12V6C29.175 6 28.4688 5.70625 27.8813 5.11875C27.2938 4.53125 27 3.825 27 3H12C12 3.825 11.7062 4.53125 11.1187 5.11875C10.5312 5.70625 9.825 6 9 6V12C9.825 12 10.5312 12.2938 11.1187 12.8813C11.7062 13.4688 12 14.175 12 15ZM28.5 24H3C2.175 24 1.46875 23.7062 0.88125 23.1187C0.29375 22.5312 0 21.825 0 21V4.5H3V21H28.5V24ZM9 15V3V15Z"
-                                    fill="#FFECB9" />
-                            </svg>
-
-                        </div>
-
-                        <!-- Content -->
-                        <h3
-                            class="text-[#FFECB9] text-[15px] sm:text-[18px] leading-[27px] font-libre font-[400] text-center">
-                            Fast Claims
-                        </h3>
-
-                        <p
-                            class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
-                            Expert guidance for hassle-free prize collection.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
         <section id="tickets" class="py-10 sm:py-12 md:py-14 lg:py-[65px] px-5 sm:px-8 md:px-10 lg:px-[60px]">
@@ -905,11 +887,12 @@ z-50">
 
                     <!-- CARD -->
 
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                MONDAY
-                            </div>
+                    <!-- Lottery Card -->
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -920,38 +903,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l1.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Bhagyadhara
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                            <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
 
-                                </div>
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
 
-                                <button data-lottery="Bhagyadhara" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -963,11 +943,11 @@ z-50">
 
 
                     <!-- CARD -->
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                TUESDAY
-                            </div>
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -978,38 +958,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l2.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Sthree Sakthi
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                            <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
-
-                                </div>
 
                                 <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
+
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -1022,11 +999,11 @@ z-50">
 
 
                     <!-- CARD -->
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                WEDNESDAY
-                            </div>
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1037,38 +1014,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l5.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Dhanalakshmi
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                            <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
 
-                                </div>
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
 
-                                <button data-lottery="Dhanalakshmi" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -1081,11 +1055,11 @@ z-50">
 
                     <!-- Friday -->
 
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                THURSDAY
-                            </div>
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1096,38 +1070,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l4.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Karunya Plus
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                            <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
 
-                                </div>
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
 
-                                <button data-lottery="Karunya Plus" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -1138,12 +1109,11 @@ z-50">
                     <!-- CARD -->
 
 
-                    <!-- Saturday -->
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                FRIDAY
-                            </div>
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1154,38 +1124,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l2.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Bhagyadhara
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                            <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
 
-                                </div>
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
 
-                                <button data-lottery="Bhagyadhara" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -1195,11 +1162,11 @@ z-50">
 
                     <!-- CARD -->
 
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                SATURDAY
-                            </div>
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1210,38 +1177,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l1.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Sthree Sakthi
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                            <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
-
-                                </div>
 
                                 <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
+
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -1252,11 +1216,11 @@ z-50">
 
                     <!-- Sunday -->
 
-                    <div class="card rounded-[18px] border border-[#4D4632] overflow-hidden">
-                        <div class="overflow-hidden flex flex-row bg-[#1E1B4B] justify-between ">
-                            <div class="day-tag font-hanken px-12 py-3.5 font-[700] leading-[16.5px] w-fit">
-                                SUNDAY
-                            </div>
+                    <div
+                        class="bg-gradient-to-b from-[#17143A] to-[#100E29] border border-[#4D4632] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#FFECB980] hover:shadow-2xl">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-end px-4 py-4">
                             <div class="flex  items-center px-3">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1267,38 +1231,35 @@ z-50">
 
 
                             </div>
-                        </div>
 
-                        <div>
-                            <img src="assets/images/l4.jpg" class="w-full h-40 object-cover mt-0">
 
                         </div>
 
+                        <!-- Divider -->
+                        <div class="border-t border-dashed border-[#4D4632]"></div>
 
+                        <!-- Body -->
                         <div class="p-6">
 
-                            <h3 class="text-[#FFECB9] font-libre font-[400] text-[22px] leading-[33px] tickets-name">
+                            <h3 class="text-[#FFECB9] text-2xl font-libre tickets-name">
                                 Bhagyadhara
                             </h3>
 
-                            <p class="uppercase font-hanken text-[13px] leading-[18px] text-[#D1C6AB] mt-1">
-                                Prize: ₹1 Crore
+                            <p class="text-[#D1C6AB] text-sm mt-2 font-hanken">
+                                Draw: 3:00 PM
                             </p>
 
-                            <div class="flex justify-between items-center font-hanken mt-6">
+                            <!-- Status + Button -->
+                           <div class="flex items-center justify-center mt-6">
 
-                                <div>
 
-                                    <p class="text-[#D1C6AB] font-[350] text-[15px] leading-[22px]">
-                                        DRAW: 3 PM
-                                    </p>
 
-                                </div>
+                                <button data-lottery="Sthree Sakthi" onclick="collectNow(this)"
+                                    class="px-4 cursor-pointer py-2 font-hanken rounded-lg border border-[#FFECB980] text-[#FFECB9] text-sm font-medium hover:bg-[#E3A83B] hover:text-[#1E1B4B] transition">
 
-                                <button data-lottery="Bhagyadhara" onclick="collectNow(this)"
-                                    class="bg-[#FFECB91A] hover:bg-[#756fb4] duration-300 text-[#FFECB9] font-[400] text-[14px] px-4 py-2 rounded-[9px]">
                                     Collect Now
-                                </button>
+
+                                    </button>
 
                             </div>
 
@@ -1306,133 +1267,11 @@ z-50">
 
                     </div>
 
-                    <!-- CARD -->
-
-
 
                 </div>
 
             </div>
 
-
-
-
-            <!-- Header -->
-            <div id="results" class="mb-12 mt-20 sm:mt-32">
-                <h2 class="result-head text-[26px] text-center sm:text-start md:text-[32px] leading-[40px] font-[700] text-[#FFECB9] font-libre mb-2 sm:mb-4"
-                    data-key="resultHead">
-                    Latest Draw Results
-                    <span class="hidden sm:inline"> (Daily)</span>
-                </h2>
-                <p class="text-[#D1C6AB] hanken text-center sm:text-start font-[400] leading-[24px] text-[16px] sm:text-[16px] max-w-xl"
-                    data-key="resultSub">
-                    Check the winning numbers from the most recent Kerala State Lottery draws.
-                </p>
-            </div>
-
-            <!-- Results Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-[90px] items-start">
-
-                <!-- Card 1: Akshaya -->
-                <div
-                    class="bg-[#312E81CC] rounded-[16px] p-8 border border-[#FFECB933] backdrop-blur-md hover:border-[#FFECB966]  transition-all duration-300">
-                    <!-- Top Section with Title and Medal Icon -->
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <h3 class="text-[#FFECB9] text-[16px] font-[400] font-libre mb-1" data-key="result1">
-                                Akshaya
-                            </h3>
-                            <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase">
-                                Draw Date: MAY 22, 2024
-                            </p>
-                        </div>
-                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.675 11.7L6.55 8.85L4.25 7H7.1L8 4.2L8.9 7H11.75L9.425 8.85L10.3 11.7L8 9.925L5.675 11.7ZM2 21V13.275C1.36667 12.575 0.875 11.775 0.525 10.875C0.175 9.975 0 9.01667 0 8C0 5.76667 0.775 3.875 2.325 2.325C3.875 0.775 5.76667 0 8 0C10.2333 0 12.125 0.775 13.675 2.325C15.225 3.875 16 5.76667 16 8C16 9.01667 15.825 9.975 15.475 10.875C15.125 11.775 14.6333 12.575 14 13.275V21L8 19L2 21ZM8 14C9.66667 14 11.0833 13.4167 12.25 12.25C13.4167 11.0833 14 9.66667 14 8C14 6.33333 13.4167 4.91667 12.25 3.75C11.0833 2.58333 9.66667 2 8 2C6.33333 2 4.91667 2.58333 3.75 3.75C2.58333 4.91667 2 6.33333 2 8C2 9.66667 2.58333 11.0833 3.75 12.25C4.91667 13.4167 6.33333 14 8 14ZM4 18.025L8 17L12 18.025V14.925C11.4167 15.2583 10.7875 15.5208 10.1125 15.7125C9.4375 15.9042 8.73333 16 8 16C7.26667 16 6.5625 15.9042 5.8875 15.7125C5.2125 15.5208 4.58333 15.2583 4 14.925V18.025Z"
-                                fill="#FACC15" />
-                        </svg>
-
-                    </div>
-
-                    <!-- Winning Number Section -->
-                    <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
-                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]"
-                            data-key="resultDesc">
-                            Winning Number
-                        </p>
-                        <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
-                            AK-123456
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 2: Karunya Plus -->
-                <div
-                    class="bg-[#312E81CC] rounded-[16px] p-8 border border-[#FFECB933] backdrop-blur-md hover:border-[#FFECB966]  transition-all duration-300">
-                    <!-- Top Section with Title and Medal Icon -->
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <h3 class="text-[#FFECB9] text-[16px] font-[400] font-libre mb-1" data-key="result2">
-                                Karunya Plus
-                            </h3>
-                            <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase">
-                                Draw Date: MAY 21, 2024
-                            </p>
-                        </div>
-                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.675 11.7L6.55 8.85L4.25 7H7.1L8 4.2L8.9 7H11.75L9.425 8.85L10.3 11.7L8 9.925L5.675 11.7ZM2 21V13.275C1.36667 12.575 0.875 11.775 0.525 10.875C0.175 9.975 0 9.01667 0 8C0 5.76667 0.775 3.875 2.325 2.325C3.875 0.775 5.76667 0 8 0C10.2333 0 12.125 0.775 13.675 2.325C15.225 3.875 16 5.76667 16 8C16 9.01667 15.825 9.975 15.475 10.875C15.125 11.775 14.6333 12.575 14 13.275V21L8 19L2 21ZM8 14C9.66667 14 11.0833 13.4167 12.25 12.25C13.4167 11.0833 14 9.66667 14 8C14 6.33333 13.4167 4.91667 12.25 3.75C11.0833 2.58333 9.66667 2 8 2C6.33333 2 4.91667 2.58333 3.75 3.75C2.58333 4.91667 2 6.33333 2 8C2 9.66667 2.58333 11.0833 3.75 12.25C4.91667 13.4167 6.33333 14 8 14ZM4 18.025L8 17L12 18.025V14.925C11.4167 15.2583 10.7875 15.5208 10.1125 15.7125C9.4375 15.9042 8.73333 16 8 16C7.26667 16 6.5625 15.9042 5.8875 15.7125C5.2125 15.5208 4.58333 15.2583 4 14.925V18.025Z"
-                                fill="#FACC15" />
-                        </svg>
-
-                    </div>
-
-                    <!-- Winning Number Section -->
-                    <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
-                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]"
-                            data-key="resultDesc">
-                            Winning Number
-                        </p>
-                        <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
-                            KN-987654
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 3: Bhagyadhara -->
-                <div
-                    class="bg-[#312E81CC] rounded-[16px] p-8 border border-[#FFECB933] backdrop-blur-md hover:border-[#FFECB966]  transition-all duration-300">
-                    <!-- Top Section with Title and Medal Icon -->
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <h3 class="text-[#FFECB9] text-[16px] font-[400] font-libre mb-1" data-key="result3">
-                                Bhagyadhara
-                            </h3>
-                            <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase">
-                                Draw Date: MAY 20, 2024
-                            </p>
-                        </div>
-                        <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.675 11.7L6.55 8.85L4.25 7H7.1L8 4.2L8.9 7H11.75L9.425 8.85L10.3 11.7L8 9.925L5.675 11.7ZM2 21V13.275C1.36667 12.575 0.875 11.775 0.525 10.875C0.175 9.975 0 9.01667 0 8C0 5.76667 0.775 3.875 2.325 2.325C3.875 0.775 5.76667 0 8 0C10.2333 0 12.125 0.775 13.675 2.325C15.225 3.875 16 5.76667 16 8C16 9.01667 15.825 9.975 15.475 10.875C15.125 11.775 14.6333 12.575 14 13.275V21L8 19L2 21ZM8 14C9.66667 14 11.0833 13.4167 12.25 12.25C13.4167 11.0833 14 9.66667 14 8C14 6.33333 13.4167 4.91667 12.25 3.75C11.0833 2.58333 9.66667 2 8 2C6.33333 2 4.91667 2.58333 3.75 3.75C2.58333 4.91667 2 6.33333 2 8C2 9.66667 2.58333 11.0833 3.75 12.25C4.91667 13.4167 6.33333 14 8 14ZM4 18.025L8 17L12 18.025V14.925C11.4167 15.2583 10.7875 15.5208 10.1125 15.7125C9.4375 15.9042 8.73333 16 8 16C7.26667 16 6.5625 15.9042 5.8875 15.7125C5.2125 15.5208 4.58333 15.2583 4 14.925V18.025Z"
-                                fill="#FACC15" />
-                        </svg>
-
-                    </div>
-
-                    <!-- Winning Number Section -->
-                    <div class="bg-[#1E1B4B80] rounded-[12px] p-6 text-center border border-[#4D46324D]">
-                        <p class="text-[#D1C6AB] text-[12px] font-hanken uppercase tracking-[2px] mb-2 font-[400]"
-                            data-key="resultDesc">
-                            Winning Number
-                        </p>
-                        <p class="text-[#FACC15] text-[30px] font-[400] font-libre tracking-[1.5px]">
-                            AK-123456
-                        </p>
-                    </div>
-                </div>
-
-            </div>
         </section>
 
 
@@ -2333,14 +2172,14 @@ z-50">
         });
 
         function collectNow(btn) {
-    const lotteryName = btn.getAttribute('data-lottery');
-    const phoneNumber = '919447901980'; // replace with your WhatsApp number, country code + number, no + or spaces
+            const lotteryName = btn.getAttribute('data-lottery');
+            const phoneNumber = '919447901980'; // replace with your WhatsApp number, country code + number, no + or spaces
 
-    const message = `Hi, I want to enquire about the ${lotteryName} lottery ticket. Please share the details.`;
+            const message = `Hi, I want to enquire about the ${lotteryName} lottery ticket. Please share the details.`;
 
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-}
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
     </script>
 
 </body>

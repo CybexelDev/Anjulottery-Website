@@ -1,3 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-instrument: "Instrument Sans", sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-hanken: "Hanken Grotesk", sans-serif;
+  --font-libre: "Libre Caslon Text", serif;
+}
+
+
+
 #navbar {
     position: relative;
     padding-bottom: 6px;
