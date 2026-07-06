@@ -1148,6 +1148,18 @@
     --tw-tracking: 0.5px;
     letter-spacing: 0.5px;
   }
+  .tracking-\[0\.6px\] {
+    --tw-tracking: 0.6px;
+    letter-spacing: 0.6px;
+  }
+  .tracking-\[0\.7px\] {
+    --tw-tracking: 0.7px;
+    letter-spacing: 0.7px;
+  }
+  .tracking-\[0px\] {
+    --tw-tracking: 0px;
+    letter-spacing: 0px;
+  }
   .tracking-\[1\.2px\] {
     --tw-tracking: 1.2px;
     letter-spacing: 1.2px;
