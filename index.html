@@ -296,14 +296,14 @@ z-50">
                         <div class="flex flex-row gap-3">
 
                             <!-- View Daily Tickets Button -->
-                           <a href="#tickets" class="ticket-btn font-hanken" id="ticketBtn">
-    <span data-key="btnName" class="label">VIEW DAILY TICKETS</span>
-    <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
-            fill="#6C5700" />
-    </svg>
-</a>
+                            <a href="#tickets" class="ticket-btn font-hanken" id="ticketBtn">
+                                <span data-key="btnName" class="label">VIEW DAILY TICKETS</span>
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
+                                        fill="#6C5700" />
+                                </svg>
+                            </a>
 
                             <!-- WhatsApp Contact Button -->
                             <a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
@@ -913,7 +913,7 @@ z-50">
                                 Bhagyadhara
                             </h3>
 
-                           <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
+                            <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
                                 Enquire Now for Ticket Availability
                             </p>
 
@@ -968,7 +968,7 @@ z-50">
                                 Sthree Sakthi
                             </h3>
 
-                         <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
+                            <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
                                 Enquire Now for Ticket Availability
                             </p>
 
@@ -1024,7 +1024,7 @@ z-50">
                                 Dhanalakshmi
                             </h3>
 
-                           <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
+                            <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
                                 Enquire Now for Ticket Availability
                             </p>
 
@@ -1080,7 +1080,7 @@ z-50">
                                 Karunya Plus
                             </h3>
 
-                           <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
+                            <p class="ticket-desc text-[#D1C6AB] text-sm mt-2 font-hanken" data-key="ticketDesc">
                                 Enquire Now for Ticket Availability
                             </p>
 
@@ -2097,12 +2097,14 @@ z-50">
             const selectedLanguage = document.getElementById("selectedLanguage");
             const arrow = document.getElementById("arrow");
 
+            // Toggle dropdown
             languageBtn.addEventListener("click", (e) => {
                 e.stopPropagation();
                 languageMenu.classList.toggle("hidden");
                 arrow.classList.toggle("rotate-180");
             });
 
+            // Language selection
             document.querySelectorAll(".language-option").forEach(option => {
 
                 option.addEventListener("click", async () => {
@@ -2113,25 +2115,26 @@ z-50">
                     languageMenu.classList.add("hidden");
                     arrow.classList.remove("rotate-180");
 
-                    // Update button text
-                    selectedLanguage.textContent = option.textContent.trim();
-
                     if (lang === "en") {
 
+                        localStorage.setItem("language", "en");
                         document.documentElement.lang = "en";
-                        localStorage.removeItem("language");
                         location.reload();
 
                     } else {
 
                         await loadMalayalam();
                         document.documentElement.lang = "ml";
+                        localStorage.setItem("language", "ml");
+                        selectedLanguage.textContent = "മലയാളം";
 
                     }
+
                 });
 
             });
 
+            // Close dropdown when clicking outside
             document.addEventListener("click", (e) => {
                 if (!languageDropdown.contains(e.target)) {
                     languageMenu.classList.add("hidden");
@@ -2153,17 +2156,17 @@ z-50">
 
 
         const ticketBtn = document.getElementById('ticketBtn');
-ticketBtn.addEventListener('click', function(e) {
-  const rect = ticketBtn.getBoundingClientRect();
-  const ripple = document.createElement('span');
-  const size = Math.max(rect.width, rect.height);
-  ripple.className = 'ripple';
-  ripple.style.width = ripple.style.height = size + 'px';
-  ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
-  ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
-  ticketBtn.appendChild(ripple);
-  setTimeout(() => ripple.remove(), 600);
-});
+        ticketBtn.addEventListener('click', function (e) {
+            const rect = ticketBtn.getBoundingClientRect();
+            const ripple = document.createElement('span');
+            const size = Math.max(rect.width, rect.height);
+            ripple.className = 'ripple';
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+            ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+            ticketBtn.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 600);
+        });
     </script>
 
 </body>
