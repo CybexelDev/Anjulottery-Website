@@ -197,27 +197,25 @@ html[lang="ml"] .feature-desc {
 html[lang="ml"] .ticket-desc {
     font-size: 9px;
     line-height: 18px;
-}
-
-@layer components {
+}@layer components {
   .ticket-btn {
     position: relative;
     width: fit-content;
     background: #FACC15;
     color: #6C5700;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
-    padding: 16px 32px;
+    padding: 16px 18px;
     border-radius: 12px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 0.3s ease;
-    animation: slide-in 0.6s ease-out 0.2s backwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slide-in 0.6s ease-out 0.2s backwards, pulse-glow 2.4s ease-in-out infinite;
   }
 
   .ticket-btn .label,
@@ -234,30 +232,31 @@ html[lang="ml"] .ticket-desc {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
+    left: -150%;
+    width: 60%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(218, 218, 218, 0.756), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95) 50%, transparent);
     z-index: 1;
-    animation: shimmer 1.3s ease-in-out infinite;
+    animation: shimmer 1.6s ease-in-out infinite;
   }
 
   .ticket-btn:hover {
-    transform: scale(1.02) translateY(-2px);
+    transform: scale(1.07) translateY(-3px);
+    box-shadow: 0 10px 24px rgba(250, 204, 21, 0.5), 0 0 0 4px rgba(250, 204, 21, 0.15);
   }
 
   .ticket-btn:hover .arrow {
-    transform: translateX(5px);
+    transform: translateX(6px);
   }
 
   .ticket-btn:active {
-    transform: scale(0.97);
+    transform: scale(0.96);
   }
 }
 
 @keyframes shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
+  0% { left: -150%; }
+  100% { left: 250%; }
 }
 
 @keyframes slide-in {
@@ -265,4 +264,21 @@ html[lang="ml"] .ticket-desc {
   100% { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(250, 204, 21, 0); }
+}
 
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(108, 87, 0, 0.25);
+  transform: scale(0);
+  animation: ripple-anim 0.6s ease-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes ripple-anim {
+  to { transform: scale(3); opacity: 0; }
+}
