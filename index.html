@@ -296,18 +296,14 @@ z-50">
                         <div class="flex flex-row gap-3">
 
                             <!-- View Daily Tickets Button -->
-                            <a href="#tickets"
-                                class="w-fit bg-[#FACC15] text-[#6C5700] text-[12px] font-hanken font-[700] px-8 py-4 rounded-[12px] tracking-[0.4px] flex items-center gap-3 hover:scale-105 duration-300">
-
-                                <span data-key="btnName">VIEW DAILY TICKETS</span>
-
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
-                                        fill="#6C5700" />
-                                </svg>
-
-                            </a>
+                           <a href="#tickets" class="ticket-btn font-hanken" id="ticketBtn">
+    <span data-key="btnName" class="label">VIEW DAILY TICKETS</span>
+    <svg class="arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z"
+            fill="#6C5700" />
+    </svg>
+</a>
 
                             <!-- WhatsApp Contact Button -->
                             <a href="https://wa.me/919447901980?text=Hello%20Anju%20Lottery,%20I%20would%20like%20to%20know%20more%20about%20your%20lottery%20tickets."
@@ -2167,6 +2163,21 @@ z-50">
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(url, '_blank');
         }
+
+
+
+        const ticketBtn = document.getElementById('ticketBtn');
+ticketBtn.addEventListener('click', function(e) {
+  const rect = ticketBtn.getBoundingClientRect();
+  const ripple = document.createElement('span');
+  const size = Math.max(rect.width, rect.height);
+  ripple.className = 'ripple';
+  ripple.style.width = ripple.style.height = size + 'px';
+  ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+  ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+  ticketBtn.appendChild(ripple);
+  setTimeout(() => ripple.remove(), 600);
+});
     </script>
 
 </body>
