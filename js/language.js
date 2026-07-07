@@ -1,16 +1,38 @@
+async function loadPopupMalayalam() {
+    try {
+        const response = await fetch("lang/ml.json");
+        const translations = await response.json();
+
+        document.querySelectorAll(".popup-ml").forEach((element) => {
+            const key = element.dataset.key;
+
+            if (translations[key]) {
+                element.textContent = translations[key];
+            }
+        });
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+
+
+
 async function loadMalayalam() {
   try {
     const response = await fetch("lang/ml.json");
     const translations = await response.json();
 
     // Translate data-key elements
-    document.querySelectorAll("[data-key]").forEach((element) => {
-      const key = element.dataset.key;
+   document.querySelectorAll("[data-key]:not(.popup-ml)").forEach((element) => {
+    const key = element.dataset.key;
 
-      if (translations[key]) {
+    if (translations[key]) {
         element.textContent = translations[key];
-      }
-    });
+    }
+});
 
     // Locations
     const locationElements = document.querySelectorAll(".location-text");
@@ -60,6 +82,8 @@ function loadEnglish() {
 // Page Load
 // =============================
 window.addEventListener("DOMContentLoaded", async () => {
+      await loadPopupMalayalam();
+
   const savedLanguage = localStorage.getItem("language") || "ml";
 
   if (savedLanguage === "ml") {
