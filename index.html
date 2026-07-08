@@ -79,37 +79,60 @@
             </p>
 
             <!-- Buttons -->
-            <div class="relative z-10 flex flex-col sm:flex-row gap-3">
+     <div class="relative z-10 flex flex-col sm:flex-row gap-3">
 
-                <!-- Change #tickets to your section id -->
-                <a href="#tickets" id="welcomeModalClaim" class="popup-ml flex-1 text-center bg-[#FACC15]
-                text-[#1E1B4B] font-hanken font-[700]
-                text-[11px] tracking-[0.6px] uppercase
-                px-5 py-3.5 rounded-[12px]
-                hover:bg-yellow-300
-                transition duration-300" data-key="btnName1">
+    <!-- View Tickets Button -->
+    <a href="#tickets"
+        id="welcomeModalClaim"
+        data-key="btnName1"
+        class="ticket-btn popup-ml w-full sm:flex-1 text-center
+        bg-[#FACC15]
+        text-[#1E1B4B]
+        flex items-center justify-center
 
-                    View Tickets
+        font-hanken font-[700]
+        sm:text-[10px]
+        text-[13px]
+        tracking-[0.2px]
+        uppercase
+        px-5 py-3.5
+        rounded-[12px]
+        hover:bg-yellow-300
+        transition duration-300">
 
-                </a>
+        View Tickets
 
-                <button id="welcomeModalDismiss" class="flex-1 text-center bg-transparent
-                border border-[#FFECB94D]
-                hover:border-[#FFECB966]
-                text-[#FFECB9]
-                font-hanken font-[600]
-                text-[11px]
-                tracking-[1px]
-                uppercase
-                px-5 py-3.5
-                rounded-[12px]
-                transition duration-300">
+    </a>
 
-                    Continue
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20today%27s%20tickets."
+        target="_blank"
+        rel="noopener noreferrer"
+        id="welcomeModalDismiss"
+        class="w-full sm:flex-1
+        flex items-center justify-center gap-2
+        bg-transparent
+        border border-[#FFECB94D]
+        hover:border-[#FFECB966]
+        text-[#FFECB9]
+        font-hanken font-[600]
+        text-[11px]
+        tracking-[1px]
+        uppercase
+        px-5 py-3.5
+        rounded-[12px]
+        transition duration-300">
 
-                </button>
+        <svg class="shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.821.487 3.53 1.338 5.003L2 22l5.11-1.34A9.955 9.955 0 0012.001 22C17.523 22 22 17.522 22 12S17.523 2 12.001 2zm0 18.163a8.14 8.14 0 01-4.156-1.14l-.298-.177-3.096.812.826-3.02-.194-.31A8.129 8.129 0 013.837 12c0-4.508 3.656-8.163 8.164-8.163 4.508 0 8.163 3.655 8.163 8.163 0 4.508-3.655 8.163-8.163 8.163z" />
+        </svg>
 
-            </div>
+        <span>WhatsApp</span>
+
+    </a>
+
+</div>
 
         </div>
 
@@ -282,10 +305,7 @@ z-50">
                     <p class="font-hanken text-[16px] sm:text-[18px] lg:text-[20px] font-[400] leading-7 text-[#D1C6AB]"
                         data-key="hero_desc">
 
-                        Kerala's Most Trusted Lottery Agency Since 2020.
-                        Providing authentic government lottery tickets to
-                        over 50,000+ happy customers across India with
-                        instant digital booking.
+                        Kerala’s Most Trusted Lottery Agency Since 2020. Successfully serving over 30,000+ customers across Kerala with authentic lottery services.
 
                     </p>
 
@@ -320,7 +340,7 @@ z-50">
                         <div class="font-hanken border-l border-[#4D4632] pl-6">
 
                             <h3 class="font-[700] text-[16px] leading-[24px] text-[#FFECB9]">
-                                50,000+
+                                30,000+
                             </h3>
 
                             <p class="text-[12px] font-[400] leading-[16px] uppercase text-[#D1C6AB]">
@@ -384,24 +404,21 @@ z-50">
                                 </div>
 
                                 <!-- Heading -->
-                                <h1 class="premium-Head text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]"
+                                <h1 class="premium-Head text-[#FFECB9] text-2xl sm:text-3xl md:text-4xl lg:text-[38px] font-[700] font-libre leading-tight sm:leading-[40px] md:leading-[48px] lg:leading-[56px]"
                                     data-key="premiumHead">
-                                    WIN BIG TODAY!
+                                    TODAY'S TICKETS AVAILABLE!
                                 </h1>
 
                                 <!-- Subheading -->
                                 <p class="premium-sub text-lg sm:text-xl md:text-2xl text-[#D1C6AB] font-[400] font-libre mb-4 sm:mb-6"
                                     data-key="premiumSub">
-                                    Limited Tickets
-                                    Available
+                                    WIN BIG TODAY!
                                 </p>
 
                                 <!-- Description -->
                                 <p class="text-[#E3DFFFCC] font-[350] max-w-[450px] text-sm sm:text-base md:text-lg lg:text-[18px] leading-6 sm:leading-7 lg:leading-[28px] font-hanken mb-6 sm:mb-8"
                                     data-key="premiumDesc">
-                                    Experience the gold standard of lottery gaming. Secure your entry for the upcoming
-                                    grand
-                                    draw and join the ranks of our elite winners.
+                                    Don't miss out on the ultimate lottery experience. Pre-book your tickets for the next grand draw now and step into the winner's circle!.
                                 </p>
 
                                 <!-- CTA and Stats -->
@@ -765,7 +782,7 @@ z-50">
 
                     <p
                         class="text-[#D1C6AB] font-[hanken] text-[13px] sm:text-[14px] leading-[20px] font-[400] text-center">
-                        Official Kerala State Lottery agency since 1967
+                        Official Kerala State Lottery agency since 2020
                     </p>
 
                 </div>
@@ -1510,7 +1527,7 @@ z-50">
                                 data-key="qoute">
 
                                 "Success is not just about winning; it's about playing with trust.
-                                We've served 50,000+ customers with honesty and transparency."
+                                We've served 30,000+ customers with honesty and transparency."
 
                             </p>
 
@@ -1569,7 +1586,7 @@ z-50">
 
                                     <h3
                                         class="font-libre text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-[#FFECB9] font-[700] leading-tight sm:leading-[36px] md:leading-[44px] lg:leading-[48px] tracking-tight sm:tracking-[-0.48px] md:tracking-[-0.72px] lg:tracking-[-0.96px]">
-                                        50K+
+                                        30K+
                                     </h3>
 
                                     <span
@@ -1917,7 +1934,7 @@ z-50">
 
                     <p class="text-[#D1C6AB] leading-[24px] font-hanken text-[16px]">
 
-                        © 2024 Anju Lottery Agency. Government Authorized Distributor.
+                        © 2026 Anju Lottery Agency. Government Authorized Distributor.
 
                     </p>
 

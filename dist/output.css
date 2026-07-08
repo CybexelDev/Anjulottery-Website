@@ -294,9 +294,6 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .mt-\[4px\] {
     margin-top: 4px;
   }
@@ -940,6 +937,9 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[1px\] {
+    font-size: 1px;
+  }
   .text-\[9px\] {
     font-size: 9px;
   }
@@ -1085,6 +1085,10 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-\[0\.2px\] {
+    --tw-tracking: 0.2px;
+    letter-spacing: 0.2px;
+  }
   .tracking-\[0\.5px\] {
     --tw-tracking: 0.5px;
     letter-spacing: 0.5px;
@@ -1147,6 +1151,9 @@
   }
   .text-\[\#FFECB9\] {
     color: #FFECB9;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-white {
     color: var(--color-white);
@@ -1468,6 +1475,11 @@
   .sm\:w-fit {
     @media (width >= 40rem) {
       width: fit-content;
+    }
+  }
+  .sm\:flex-1 {
+    @media (width >= 40rem) {
+      flex: 1;
     }
   }
   .sm\:grid-cols-2 {
@@ -2198,11 +2210,6 @@
       padding-bottom: calc(var(--spacing) * 24);
     }
   }
-  .lg\:text-\[4px\] {
-    @media (width >= 64rem) {
-      font-size: 4px;
-    }
-  }
   .lg\:text-\[10px\] {
     @media (width >= 64rem) {
       font-size: 10px;
@@ -2236,6 +2243,11 @@
   .lg\:text-\[36px\] {
     @media (width >= 64rem) {
       font-size: 36px;
+    }
+  }
+  .lg\:text-\[38px\] {
+    @media (width >= 64rem) {
+      font-size: 38px;
     }
   }
   .lg\:text-\[48px\] {
