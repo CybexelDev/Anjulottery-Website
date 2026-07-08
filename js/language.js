@@ -18,8 +18,6 @@ async function loadPopupMalayalam() {
 
 
 
-
-
 async function loadMalayalam() {
   try {
     const response = await fetch("lang/ml.json");
